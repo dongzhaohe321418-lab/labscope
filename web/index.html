@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LabScope</title>
+<style>
+  :root { --fg:#1a2233; --muted:#5b6474; --line:#dfe3ea; --accent:#0f6b5c; --bg:#f7f8fa; --card:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e5e9f0; --muted:#9aa4b5; --line:#333a46; --accent:#4fd1b5; --bg:#14181f; --card:#1c222b; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.55 -apple-system, "Segoe UI", sans-serif; color:var(--fg); background:var(--bg); }
+  header { padding:1.2rem 1.5rem .4rem; }
+  h1 { margin:0; font-size:1.35rem; } h1 small { color:var(--muted); font-weight:400; margin-left:.6rem; font-size:.85rem;}
+  nav { display:flex; gap:.4rem; padding:.8rem 1.5rem; flex-wrap:wrap; }
+  nav button { border:1px solid var(--line); background:var(--card); color:var(--fg); padding:.45rem .9rem; border-radius:99px; cursor:pointer; font-size:.9rem; }
+  nav button.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+  main { padding:0 1.5rem 3rem; max-width:1100px; }
+  .controls { display:flex; gap:.6rem; margin:.6rem 0 1rem; flex-wrap:wrap; }
+  input, select { padding:.5rem .7rem; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--fg); font-size:.95rem; min-width:230px; }
+  .go { background:var(--accent); color:#fff; border:none; border-radius:8px; padding:.5rem 1.1rem; cursor:pointer; font-size:.95rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1rem 1.2rem; margin:.8rem 0; }
+  .note { color:var(--muted); font-size:.85rem; }
+  table { border-collapse:collapse; width:100%; font-size:.88rem; }
+  .tablewrap { overflow-x:auto; }
+  th, td { text-align:left; padding:.45rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; white-space:nowrap; }
+  .ev { font-style:italic; color:var(--muted); }
+  .conf { font-variant-numeric:tabular-nums; }
+  .pill { display:inline-block; border:1px solid var(--line); border-radius:99px; padding:0 .55rem; font-size:.78rem; color:var(--muted); margin:0 .25rem .25rem 0; }
+  .bar { display:inline-block; height:.65rem; background:var(--accent); border-radius:3px; vertical-align:middle; }
+  #out:empty::after { content:"Results appear here."; color:var(--muted); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><h1>LabScope <small>instrument → literature evidence → purchase decision</small></h1></header>
+<nav id="tabs"></nav>
+<main>
+  <div class="controls" id="controls"></div>
+  <div id="out"></div>
+</main>
+<script>
+const TABS = {
+  "Model lookup":   { tool:"spec_lookup",   inputs:[{k:"model", ph:"e.g. thermo 42i / T200 / serinus 40"}] },
+  "Papers":         { tool:"paper_search",  inputs:[{k:"model", ph:"model, e.g. 42i"}, {k:"min_confidence", ph:"min confidence (0.7)", opt:1, num:1}] },
+  "Usage profile":  { tool:"usage_profile", inputs:[{k:"model", ph:"model, e.g. APNA-370"}] },
+  "Compare":        { tool:"compare_models",inputs:[{k:"category", ph:"category, e.g. NOx analyzer"}] },
+  "Recommend":      { tool:"recommend",     inputs:[{k:"category", ph:"category, e.g. NOx analyzer"}] },
+  "Market":         { tool:"market_search", inputs:[{k:"model", ph:"model, e.g. 42i"}] },
+};
+let current = "Model lookup";
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function renderTabs() {
+  $("#tabs").innerHTML = Object.keys(TABS).map(t =>
+    `<button class="${t===current?"active":""}" onclick="setTab('${t}')">${t}</button>`).join("");
+  const tab = TABS[current];
+  $("#controls").innerHTML = tab.inputs.map(i =>
+    `<input id="in_${i.k}" placeholder="${i.ph}" onkeydown="if(event.key==='Enter')go()">`).join("")
+    + `<button class="go" onclick="go()">Search</button>`;
+}
+function setTab(t) { current = t; renderTabs(); $("#out").innerHTML = ""; }
+
+async function go() {
+  const tab = TABS[current], args = {};
+  for (const i of tab.inputs) {
+    const v = $("#in_"+i.k).value.trim();
+    if (v) args[i.k] = i.num ? parseFloat(v) : v;
+    else if (!i.opt) return;
+  }
+  $("#out").innerHTML = `<div class="card note">querying…</div>`;
+  const r = await fetch(`/api/${tab.tool}?args=${encodeURIComponent(JSON.stringify(args))}`);
+  const d = await r.json();
+  $("#out").innerHTML = render(tab.tool, d);
+}
+
+function specCard(inst, extra="") {
+  const s = inst.specs || {};
+  return `<div class="card">
+    <h3>${esc(inst.manufacturer)} ${esc(inst.model)} ${extra}</h3>
+    <div>${["status:"+inst.status, inst.category, inst.principle, inst.epa_designation?("EPA "+inst.epa_designation):null]
+      .filter(Boolean).map(x=>`<span class="pill">${esc(x)}</span>`).join("")}</div>
+    <div class="tablewrap"><table>
+      ${Object.entries(s).filter(([,v])=>v!=null).map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}
+      <tr><th>specs source</th><td>${esc(inst.specs_provenance)}</td></tr>
+      <tr><th>linked papers (conf ≥ 0.7)</th><td>${inst.linked_papers}</td></tr>
+      ${inst.datasheet_url?`<tr><th>datasheet</th><td><a href="${esc(inst.datasheet_url)}" target="_blank" rel="noopener">${esc(inst.datasheet_url)}</a></td></tr>`:""}
+      ${inst.aliases?.length?`<tr><th>aliases</th><td>${inst.aliases.map(esc).join(", ")}</td></tr>`:""}
+    </table></div></div>`;
+}
+
+function render(tool, d) {
+  if (d.error) return `<div class="card">error: ${esc(d.error)}</div>`;
+  if (d.found === false || d.message) return `<div class="card">${esc(d.message || "no match")}</div>`;
+  if (tool === "spec_lookup") {
+    let h = specCard(d.instrument, d.fuzzy ? `<span class="pill">fuzzy match ${d.match_score}</span>` : "");
+    if (d.other_candidates?.length) h += `<div class="note">other candidates: ${d.other_candidates.map(c=>esc(c.manufacturer+" "+c.model)).join(" · ")}</div>`;
+    return h;
+  }
+  if (tool === "paper_search") {
+    return `<div class="card"><h3>${esc(d.instrument)} — ${d.total_linked_papers} linked papers (showing ${d.shown}, conf ≥ ${d.min_confidence})</h3>
+      <p class="note">${esc(d.coverage_note)}</p>
+      <div class="tablewrap"><table><tr><th>year</th><th>paper</th><th>venue / fields</th><th>evidence (from paper)</th><th>conf</th></tr>
+      ${d.papers.map(p=>`<tr>
+        <td>${p.year??""}</td>
+        <td>${p.doi?`<a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>`:esc(p.title)}</td>
+        <td>${esc(p.venue??"")}<br><span class="note">${(p.fields||[]).map(esc).join(", ")}</span></td>
+        <td class="ev">${p.evidence_snippet?("“"+esc(p.evidence_snippet)+"”"):`<span class="note">match in ${esc(p.evidence_section||p.link_source)} (no snippet)</span>`}</td>
+        <td class="conf">${p.link_confidence}</td></tr>`).join("")}
+      </table></div></div>`;
+  }
+  if (tool === "usage_profile") {
+    const years = Object.entries(d.papers_per_year||{});
+    const max = Math.max(1, ...years.map(([,v])=>v));
+    return `<div class="card"><h3>${esc(d.instrument)} — ${d.total_linked_papers} papers</h3>
+      <div class="tablewrap"><table>${years.map(([y,v])=>`<tr><th>${y}</th><td><span class="bar" style="width:${Math.round(280*v/max)}px"></span> ${v}</td></tr>`).join("")}</table></div></div>
+      <div class="card"><h3>Top fields</h3>${(d.top_fields||[]).map(f=>`<span class="pill">${esc(f.name)} · ${f.papers}</span>`).join("")}</div>
+      <div class="card"><h3>Top institutions</h3>${(d.top_institutions||[]).map(f=>`<span class="pill">${esc(f.name)} · ${f.papers}</span>`).join("")}</div>
+      <div class="card"><h3>Top venues</h3>${(d.top_venues||[]).map(f=>`<span class="pill">${esc(f.name)} · ${f.papers}</span>`).join("")}
+      <p class="note">${esc(d.coverage_note)}</p></div>`;
+  }
+  if (tool === "compare_models") {
+    return d.matrix.map(i=>specCard(i)).join("");
+  }
+  if (tool === "recommend") {
+    return `<div class="card"><h3>Recommendations — ${esc(d.category)}</h3>
+      <p class="note">ranking: ${esc(d.ranking_basis)}. ${esc(d.coverage_note)}</p>
+      <div class="tablewrap"><table><tr><th>#</th><th>model</th><th>status</th><th>LOD</th><th>papers</th><th>since 2019</th><th>EPA</th><th>example evidence</th></tr>
+      ${d.recommendations.map((r,i)=>`<tr>
+        <td>${i+1}</td><td><b>${esc(r.manufacturer)} ${esc(r.model)}</b><br><span class="note">${esc(r.principle??"")}</span></td>
+        <td>${esc(r.status)}</td><td>${esc(r.lod??"—")}</td>
+        <td>${r.linked_papers}</td><td>${r.papers_since_2019}</td><td>${esc(r.epa_designation??"—")}</td>
+        <td class="ev">${r.example_evidence?("“"+esc(r.example_evidence.evidence_snippet)+"” <span class='note'>("+esc(r.example_evidence.title)+", "+r.example_evidence.year+")</span>"):"—"}</td></tr>`).join("")}
+      </table></div></div>`;
+  }
+  if (tool === "market_search") {
+    return `<div class="card"><h3>${esc(d.instrument)} — ${d.n_listings} listings</h3>
+      ${d.price_range_usd?`<p>price range: $${d.price_range_usd.min} – $${d.price_range_usd.max}</p>`:""}
+      <div class="tablewrap"><table><tr><th>source</th><th>title</th><th>price</th><th>condition</th><th>seen</th></tr>
+      ${d.listings.map(l=>`<tr><td>${esc(l.source)}</td>
+        <td>${l.listing_url?`<a href="${esc(l.listing_url)}" target="_blank" rel="noopener">${esc(l.title)}</a>`:esc(l.title)}</td>
+        <td>${l.price?esc(l.currency+" "+l.price):"—"}</td><td>${esc(l.condition??"")}</td><td>${esc((l.scraped_at||"").slice(0,10))}</td></tr>`).join("")}
+      </table></div><p class="note">${esc(d.note)}</p></div>`;
+  }
+  return `<pre>${esc(JSON.stringify(d,null,2))}</pre>`;
+}
+renderTabs();
+</script>
+</body>
+</html>

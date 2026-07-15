@@ -1,0 +1,5 @@
+httpx[socks]
+anthropic
+pymupdf
+mcp[cli]
+truststore

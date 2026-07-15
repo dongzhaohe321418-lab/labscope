@@ -1,0 +1,13 @@
+.venv/
+db/labscope.sqlite3
+db/labscope.sqlite3-wal
+db/labscope.sqlite3-shm
+data/cache/
+data/logs/
+.certs/
+__pycache__/
+*.pyc
+eval/precision_sample.json
+eval/precision_judged.json
+eval/spec_spotcheck.json
+eval/demo_transcript.md
