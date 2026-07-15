@@ -285,6 +285,35 @@ def recommend(category: str, max_lod_ppb: float | None = None,
     }
 
 
+def overview() -> dict:
+    """Index-wide summary for the web UI landing page (not an agent tool)."""
+    conn = dbm.connect()
+    totals = {
+        "instruments": conn.execute("SELECT COUNT(*) c FROM instruments").fetchone()["c"],
+        "papers": conn.execute("SELECT COUNT(*) c FROM papers").fetchone()["c"],
+        "links": conn.execute(
+            "SELECT COUNT(*) c FROM instrument_paper WHERE confidence >= 0.7").fetchone()["c"],
+        "listings": conn.execute("SELECT COUNT(*) c FROM listings").fetchone()["c"],
+    }
+    categories = []
+    for r in conn.execute(
+        """SELECT category, COUNT(*) n FROM instruments
+           WHERE category IS NOT NULL GROUP BY category ORDER BY n DESC"""):
+        categories.append({"category": r["category"], "models": r["n"]})
+    top = []
+    for r in conn.execute(
+        """SELECT i.manufacturer, i.model, i.category, i.status, i.epa_designation,
+                  COUNT(*) n
+           FROM instrument_paper ip JOIN instruments i ON i.id = ip.instrument_id
+           WHERE ip.confidence >= 0.7
+           GROUP BY ip.instrument_id ORDER BY n DESC LIMIT 12"""):
+        top.append({"manufacturer": r["manufacturer"], "model": r["model"],
+                    "category": r["category"], "status": r["status"],
+                    "epa_designation": r["epa_designation"], "linked_papers": r["n"]})
+    conn.close()
+    return {"totals": totals, "categories": categories, "top_models": top}
+
+
 TOOL_FUNCS = {
     "spec_lookup": spec_lookup,
     "compare_models": compare_models,
@@ -293,3 +322,6 @@ TOOL_FUNCS = {
     "market_search": market_search,
     "recommend": recommend,
 }
+
+# web-only endpoints (not exposed as agent tools / MCP tools)
+WEB_FUNCS = {"overview": overview}

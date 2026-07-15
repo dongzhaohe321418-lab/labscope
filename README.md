@@ -22,6 +22,9 @@ agent/
                      usage_profile, market_search, recommend)
   mcp_server.py      MCP server — plug the tools into Claude Code (no API key needed)
   chat.py            SDK chat agent (needs ANTHROPIC_API_KEY / `ant auth login`)
+web/
+  server.py          stdlib HTTP server exposing the tools as a JSON API
+  index.html         single-page decision UI (search → dossier → compare)
 eval/run_eval.py     linkage precision (LLM-judged + human sample), spec spot-check, e2e
 data/                seed_models.json / .csv, caches, query logs
 ```
@@ -60,6 +63,19 @@ Everything is idempotent and resumable; all external API queries are logged to
 `data/logs/queries.jsonl`; fulltext and PDFs are cached under `data/cache/`.
 
 ## Use it
+
+**Web UI** (recommended — a single decision flow: search → evidence dossier → compare → decide):
+
+```bash
+.venv/bin/python web/server.py 8321      # then open http://127.0.0.1:8321
+```
+
+One search box routes by intent — a **model** (`42i`, `T200`, `Serinus 40`) opens an
+evidence dossier (specs, per-year usage trend, the papers that used it with Methods
+snippets, second-hand listings); a **category** (`NOx 分析仪`, `ozone analyzer`) opens
+ranked recommendations plus an aligned spec-comparison matrix. Stdlib-only backend,
+light/dark themed, responsive. Landing page shows index coverage and the most-cited
+models.
 
 Direct tool calls (no LLM):
 
