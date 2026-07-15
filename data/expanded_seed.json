@@ -1,0 +1,5147 @@
+[
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "42i",
+  "model_aliases": [
+   "Thermo 42i",
+   "Thermo Scientific Model 42i",
+   "TEI 42i",
+   "Model 42i",
+   "Thermo Environmental 42i",
+   "42i NO-NO2-NOx"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-100 ppm (selectable), lowest range 0-50 ppb",
+   "lod": "0.40 ppb (60 s)",
+   "response_time_s": 60,
+   "notes": "NO/NO2/NOx via molybdenum converter. Standard workhorse ambient NOx monitor; molybdenum converter measures NOx (not true NO2)."
+  },
+  "epa_designation": "RFNA-1289-074",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/42I",
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "42i-TL",
+  "model_aliases": [
+   "Thermo 42i-TL",
+   "42i Trace Level",
+   "Model 42i-TL",
+   "TEI 42i-TL",
+   "42iTL",
+   "Thermo Scientific 42i-TL"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.005 to 0-1 ppm (trace level)",
+   "lod": "0.05 ppb (50 ppt)",
+   "response_time_s": 120,
+   "notes": "Confirmed real Thermo product (Model 42i-TL trace-level NOx). Higher sensitivity / lower noise than standard 42i for clean/remote sites."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/42ITL",
+  "status": "current",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "42i-Y",
+  "model_aliases": [
+   "Thermo 42i-Y",
+   "42i-Y NOy",
+   "Model 42i-Y",
+   "TEI 42i-Y",
+   "42i NOy analyzer"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.005 to 0-1 ppm (0-5 to 0-1000 ppb selectable)",
+   "lod": "0.05 ppb",
+   "response_time_s": null,
+   "notes": "Confirmed real (total reactive nitrogen NOy analyzer). Probe/externally-mounted heated molybdenum converter at inlet converts NOy species before transport losses; operated continuously in NOy mode (manufacturer states response <10 s, so a 120 s figure was removed); complies with EPA NCore NOy requirements."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/42IY",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "42iQ",
+  "model_aliases": [
+   "Thermo 42iQ",
+   "Model 42iQ",
+   "42iQ NOx",
+   "Thermo Scientific 42iQ",
+   "iQ series 42iQ"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-100 ppm (selectable)",
+   "lod": "0.40 ppb (60 s)",
+   "response_time_s": 60,
+   "notes": "Confirmed real. Next-generation iQ-series NOx analyzer (onboard diagnostics/iPort connectivity); successor platform to the 42i. LOD corrected from draft 0.50 to Thermo's published 0.40 ppb (60 s)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/42IQ",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "42iQTL",
+  "model_aliases": [
+   "Thermo 42iQ-TL",
+   "42iQ Trace Level",
+   "Model 42iQTL",
+   "42iQTL",
+   "Thermo Scientific 42iQ-TL"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.005 to 0-1 ppm (0-1000 ppb, trace level)",
+   "lod": "0.025 ppb",
+   "response_time_s": 120,
+   "notes": "Confirmed real Thermo product (catalog code 42IQTL). Trace-level iQ-series NOx analyzer; LOD value reflects Thermo's published ~25 ppt (0.025 ppb) zero noise at 120 s averaging rather than a formally stated LDL."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/42IQTL",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "43i",
+  "model_aliases": [
+   "Thermo 43i",
+   "Model 43i",
+   "TEI 43i",
+   "Thermo Scientific 43i",
+   "43i SO2",
+   "Thermo Environmental 43i"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-100 ppm (selectable)",
+   "lod": "1 ppb (60 s)",
+   "response_time_s": 60,
+   "notes": "Pulsed UV fluorescence SO2 analyzer; standard ambient configuration."
+  },
+  "epa_designation": "EQSA-0486-060",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "43i-TLE",
+  "model_aliases": [
+   "Thermo 43i-TLE",
+   "43i Trace Level Enhanced",
+   "Model 43i-TLE",
+   "TEI 43i-TLE",
+   "43iTLE",
+   "Thermo Scientific 43i-TLE"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-0.005 to 0-1 ppm (trace level)",
+   "lod": "0.05 ppb (300 s)",
+   "response_time_s": 120,
+   "notes": "Trace-level enhanced SO2 analyzer for background/clean-air monitoring; widely used in regulatory trace SO2 networks. EPA designation EQSA-0486-060 explicitly covers the 43i-TLE (verified)."
+  },
+  "epa_designation": "EQSA-0486-060",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "43iQ",
+  "model_aliases": [
+   "Thermo 43iQ",
+   "Model 43iQ",
+   "43iQ SO2",
+   "Thermo Scientific 43iQ",
+   "iQ series 43iQ"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-100 ppm (selectable); trace level available",
+   "lod": "0.5 ppb",
+   "response_time_s": 60,
+   "notes": "iQ-series pulsed UV fluorescence SO2 analyzer; successor to 43i. LOD value not independently verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "48i",
+  "model_aliases": [
+   "Thermo 48i",
+   "Model 48i",
+   "TEI 48i",
+   "Thermo Scientific 48i",
+   "48i CO",
+   "Thermo Environmental 48i"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 to 0-10000 ppm (selectable)",
+   "lod": "40 ppb (0.04 ppm, 60 s)",
+   "response_time_s": 60,
+   "notes": "Gas filter correlation IR CO analyzer; standard ambient configuration. Manufacturer LDL 0.04 ppm."
+  },
+  "epa_designation": "RFCA-0981-054",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/48I",
+  "status": "current",
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "48i-TLE",
+  "model_aliases": [
+   "Thermo 48i-TLE",
+   "48i Trace Level Enhanced",
+   "Model 48i-TLE",
+   "TEI 48i-TLE",
+   "48iTLE",
+   "Thermo Scientific 48i-TLE"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 to 0-100 ppm (trace level)",
+   "lod": "20 ppb (300 s)",
+   "response_time_s": 120,
+   "notes": "Enhanced trace-level gas filter correlation CO analyzer for lower ambient concentrations. EPA designation RFCA-0981-054 explicitly covers the 48iTLE (verified). Trace-level LOD (~20 ppb) is plausible vs 40 ppb standard but not independently confirmed."
+  },
+  "epa_designation": "RFCA-0981-054",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/48I-TLE",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "48iQ",
+  "model_aliases": [
+   "Thermo 48iQ",
+   "Model 48iQ",
+   "48iQ CO",
+   "Thermo Scientific 48iQ",
+   "iQ series 48iQ"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 to 0-10000 ppm (selectable)",
+   "lod": "20 ppb",
+   "response_time_s": 60,
+   "notes": "iQ-series gas filter correlation CO analyzer; successor to 48i. LOD value not independently verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "49i",
+  "model_aliases": [
+   "Thermo 49i",
+   "Model 49i",
+   "TEI 49i",
+   "Thermo Scientific 49i",
+   "49i O3",
+   "Thermo Environmental 49i"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-0.05 to 0-200 ppm (selectable)",
+   "lod": "1.0 ppb (60 s)",
+   "response_time_s": 20,
+   "notes": "Dual-cell UV absorption (254 nm) ozone analyzer; standard ambient configuration."
+  },
+  "epa_designation": "EQOA-0880-047",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "49i-PS",
+  "model_aliases": [
+   "Thermo 49i-PS",
+   "49i Primary Standard",
+   "Model 49i-PS",
+   "TEI 49i-PS",
+   "49iPS"
+  ],
+  "category": "calibrator",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-0.05 to 0-1 ppm ozone output",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Ozone primary/transfer standard used to calibrate ambient ozone monitors; internal UV photometer plus ozone generator. No EPA ambient-method designation (it is a calibration standard, not a monitor)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "49iQ",
+  "model_aliases": [
+   "Thermo 49iQ",
+   "Model 49iQ",
+   "49iQ O3",
+   "Thermo Scientific 49iQ",
+   "iQ series 49iQ"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-0.05 to 0-200 ppm (selectable)",
+   "lod": "0.5 ppb",
+   "response_time_s": 20,
+   "notes": "iQ-series dual-cell UV absorption ozone analyzer; successor to 49i. LOD value not independently verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "17i",
+  "model_aliases": [
+   "Thermo 17i",
+   "Model 17i",
+   "TEI 17i",
+   "Thermo Scientific 17i",
+   "17i NH3",
+   "17i ammonia analyzer"
+  ],
+  "category": "NH3 analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-100 ppm (selectable)",
+   "lod": "1.0 ppb",
+   "response_time_s": 120,
+   "notes": "Ammonia analyzer measuring NH3 by converter (stainless steel/NH3 cartridge) plus chemiluminescence NO detection; reports NH3, NO, NOx (modes NO/NOx/Nt). Confirmed real i-series product."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/17I",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "55i",
+  "model_aliases": [
+   "Thermo 55i",
+   "Model 55i",
+   "55i Direct Methane",
+   "Thermo Scientific 55i",
+   "55i methane/NMHC analyzer"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (with back-flush gas chromatography separation)",
+  "specs": {
+   "ranges": "0-1 to 0-100 ppm (CH4/NMHC)",
+   "lod": null,
+   "response_time_s": 70,
+   "notes": "Confirmed real. Direct methane and non-methane hydrocarbon (NMHC) analyzer using flame ionization detection with a back-flush GC column (eight-port rotary valve) to separate methane from NMHC; ~70 s measurement cycle. Draft's 'catalytic' separation description corrected to GC back-flush. Used in ambient and CEMS applications."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/55I",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "410i",
+  "model_aliases": [
+   "Thermo 410i",
+   "Model 410i",
+   "TEI 410i",
+   "Thermo Scientific 410i",
+   "410i CO2 analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR (fixed optical bandpass filter)",
+  "specs": {
+   "ranges": "0-100 to 0-10000 ppm CO2 (standard); high-level to 25% v/v",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Confirmed real. NDIR CO2 analyzer using fixed optical bandpass interference filters plus quantum detection - NOT gas-filter-correlation (draft principle corrected). Measures CO2 only (not CH4) in ambient and source/stack emissions. iQ-series successor 410iQ also exists. Less common in ambient research than LI-COR/Picarro; more a source/stack CO2 monitor."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.thermofisher.com/order/catalog/product/410I",
+  "status": "current",
+  "confidence": 0.7
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "42C",
+  "model_aliases": [
+   "Thermo Environmental Instruments 42C",
+   "TEI Model 42C",
+   "TECO 42C",
+   "Thermo Electron Model 42C",
+   "42C-TL",
+   "Model 42C"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-100 ppm full-scale (selectable); trace-level 42C-TL configurable to sub-ppb",
+   "lod": "~0.40 ppb (42C, 60 s avg); ~0.05 ppb / 50 ppt (42C-TL trace-level)",
+   "response_time_s": 60,
+   "notes": "Legacy C-series chemiluminescence NO-NO2-NOx analyzer; NO2 measured after molybdenum converter. -TL = trace-level variant; 42C-Y is the NOy configuration. Direct predecessor to the 42i. EPA NO2 automated REFERENCE method RFNA-1289-074 (not 'equivalent' - RFNA is a reference-method designation) explicitly covers Models 42, 42C and 42i per the EPA AMTIC designated-methods list."
+  },
+  "epa_designation": "RFNA-1289-074",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "43C",
+  "model_aliases": [
+   "Thermo Environmental Instruments 43C",
+   "TEI Model 43C",
+   "TECO 43C",
+   "43C-TLE",
+   "Model 43C"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-100 ppm full-scale (selectable); trace-level 43C-TLE configurable to sub-ppb (0-50 ppb and up under EPA equivalent-method conditions)",
+   "lod": "~1 ppb (43C standard); ~0.05 ppb / 50 ppt (43C-TLE trace-level enhanced)",
+   "response_time_s": null,
+   "notes": "Legacy C-series pulsed UV fluorescence SO2 analyzer. The aromatic-hydrocarbon 'kicker'/cutter that removes aromatic-HC interference is standard across the pulsed-fluorescence 43 line (present even on the original Model 43); -TLE = trace-level enhanced (improved sensitivity/optics for sub-ppb), not the sole location of the kicker as the draft implied. Predecessor to 43i/43i-TLE. CORRECTED EPA designation: the EPA AMTIC list assigns the 43C (with 43A/43B/43C-TLE/43i/43i-TLE) to EQSA-0486-060; the draft's EQSA-0276-009 applies ONLY to the original plain 'Thermo Electron Model 43', not the 43C. Also removed the unattested '43C-TL' alias (the C-series SO2 trace variant is 43C-TLE per EPA)."
+  },
+  "epa_designation": "EQSA-0486-060",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "48C",
+  "model_aliases": [
+   "Thermo Environmental Instruments 48C",
+   "TEI Model 48C",
+   "TECO 48C",
+   "48C-TL",
+   "Model 48C"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 to 0-10,000 ppm full-scale (selectable); trace-level 48C-TL configurable to low-ppm/sub-ppm",
+   "lod": "~0.10 ppm / 100 ppb (48C standard); ~0.04 ppm / 40 ppb (48C-TL trace-level)",
+   "response_time_s": 60,
+   "notes": "Legacy C-series non-dispersive infrared gas-filter-correlation CO analyzer (4.6 um). -TL = trace-level variant (EPA index also lists an enhanced 48C-TLE). Predecessor to the 48i. EPA CO reference method RFCA-0981-054 (Sept 1981) explicitly covers Models 48, 48C, 48C-TLE, 48i, 48i-TLE per the EPA AMTIC list."
+  },
+  "epa_designation": "RFCA-0981-054",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "49C",
+  "model_aliases": [
+   "Thermo Environmental Instruments 49C",
+   "TEI Model 49C",
+   "TECO 49C",
+   "49C-PS",
+   "Model 49C"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-0.05 to 0-200 ppm full-scale (selectable); typical ambient range 0-1 ppm",
+   "lod": "~1.0 ppb (49C)",
+   "response_time_s": 20,
+   "notes": "Legacy C-series UV photometric (254 nm absorption) ozone analyzer. The 49C-PS is the ozone photometric primary/transfer-standard (calibrator) variant. Predecessor to the 49i. EPA O3 automated equivalent method EQOA-0880-047 (Aug 1980) explicitly covers Models 49, 49C, 49i per the EPA AMTIC list."
+  },
+  "epa_designation": "EQOA-0880-047",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "146i",
+  "model_aliases": [
+   "Thermo Model 146i",
+   "146C",
+   "Model 146",
+   "TEI Model 146",
+   "Thermo Environmental Instruments 146"
+  ],
+  "category": "calibrator",
+  "principle": "dynamic gas dilution / gas-phase titration (multi-gas calibrator)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Dynamic multi-gas dilution calibration system (verified real): mass-flow-controlled dilution of span gases, with Gas-Phase Titration (GPT), internal UV photometer, and permeation-oven offered as options for generating NO2/O3/SO2 standards. 146C = C-series, 146i = i-series (146i currently sold; 146C Dynamic Gas Calibrator documented). Used with a zero-air supply to produce calibration/audit gases for ambient analyzers. Not EPA method-designated (calibration equipment)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "1160",
+  "model_aliases": [
+   "Thermo Model 1160",
+   "TEI Model 1160",
+   "Model 1160 zero air supply",
+   "Thermo Environmental Instruments 1160"
+  ],
+  "category": "calibrator",
+  "principle": "zero air generation (catalytic/scrubber)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Zero air supply/generator (verified real Thermo catalog product) producing hydrocarbon-, NOx-, SO2-, O3- and CO-free reference air, up to ~20 L/min via self-contained compressor with optional catalytic converter and scrubbers. Commonly paired with the 146-series dynamic gas calibrator. Support equipment, not EPA method-designated."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "Thermo Fisher Scientific",
+  "model": "111",
+  "model_aliases": [
+   "Thermo Model 111",
+   "TEI Model 111",
+   "Model 111 zero air supply",
+   "Thermo Environmental Instruments 111"
+  ],
+  "category": "calibrator",
+  "principle": "zero air generation (catalytic/scrubber)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Zero air supply providing clean dilution/reference air for calibration systems - VERIFIED as a genuine Thermo product (external-compressor unit; Purafil/potassium-permanganate + activated-charcoal scrubbers + ~350 C catalytic reactor to remove NO/NO2/O3/SO2/CO/HC). Flows up to ~20 L/min. Discontinued legacy model, succeeded by the 111iQ. Support equipment, not EPA method-designated. (Initial low-confidence doubt about existence was refuted by manufacturer documentation.)"
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T200",
+  "model_aliases": [
+   "Teledyne API T200",
+   "TAPI T200",
+   "Teledyne T200",
+   "API T200",
+   "Teledyne Advanced Pollution Instrumentation T200",
+   "T200 NO/NO2/NOx analyzer"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-50 ppb to 0-20 ppm full scale (dual/auto range, user selectable)",
+   "lod": "0.4 ppb",
+   "response_time_s": null,
+   "notes": "NO/NO2/NOx by chemiluminescence; NO2 measured after reduction on a heated molybdenum converter. Current-generation successor to the Model 200E. EPA RFNA-1194-099 verified."
+  },
+  "epa_designation": "RFNA-1194-099",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t200",
+  "status": "current",
+  "confidence": 0.98
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T200U",
+  "model_aliases": [
+   "Teledyne API T200U",
+   "TAPI T200U",
+   "Teledyne T200U",
+   "API T200U",
+   "T200U trace-level NOx analyzer"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "trace-level ranges (low full-scale selectable); shares T200 platform",
+   "lod": "0.05 ppb (50 ppt)",
+   "response_time_s": null,
+   "notes": "Trace-level chemiluminescence NOx developed for the US NCore network; low-noise cooled PMT. LDL ~50 ppt while remaining EPA-compliant. Also sold in a T200U/NOy configuration. Confirmed real product."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t200u",
+  "status": "current",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T200P",
+  "model_aliases": [
+   "Teledyne API T200P",
+   "TAPI T200P",
+   "Teledyne T200P",
+   "T200P photolytic NO/NO2/NOx analyzer",
+   "API T200P Blue Light Converter"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-50 ppb to 0-20 ppm full scale (T200 platform)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "T200 fitted with a patented high-efficiency photolytic (Blue Light) Converter for specific true-NO2 conversion instead of molybdenum. Confirmed real (joint T200P/T200UP user manual PN 083730229B)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t200p",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T200UP",
+  "model_aliases": [
+   "Teledyne API T200UP",
+   "TAPI T200UP",
+   "Teledyne T200UP",
+   "T200UP photolytic NO/NO2 analyzer",
+   "T200U-P"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "trace-level (T200U platform)",
+   "lod": "0.05 ppb (50 ppt) or better",
+   "response_time_s": null,
+   "notes": "Ultra-sensitive T200U trace analyzer combined with the photolytic (Blue Light) Converter for direct low-level NO2; measures NO/NO2/NOx. Used at NCore research and roadside/near-road NO2 sites. Confirmed real; LDL 0.05 ppb confirmed."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t200up",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T500U",
+  "model_aliases": [
+   "Teledyne API T500U",
+   "TAPI T500U",
+   "Teledyne T500U",
+   "API T500U",
+   "T500U CAPS NO2 analyzer",
+   "Teledyne Advanced Pollution Instrumentation T500U"
+  ],
+  "category": "NO2 analyzer",
+  "principle": "CAPS (cavity attenuated phase shift)",
+  "specs": {
+   "ranges": "0-50 ppb to 0-1000 ppb full scale (selectable; higher ranges available)",
+   "lod": "0.04 ppb (40 ppt)",
+   "response_time_s": null,
+   "notes": "Direct NO2 measurement by Cavity Attenuated Phase Shift spectroscopy at 450 nm; measures NO2 only (does not measure NO), no converter needed. US EPA FEM EQNA-0514-212 verified."
+  },
+  "epa_designation": "EQNA-0514-212",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t500u",
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T100",
+  "model_aliases": [
+   "Teledyne API T100",
+   "TAPI T100",
+   "Teledyne T100",
+   "API T100",
+   "T100 UV fluorescence SO2 analyzer"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-50 ppb to 0-20 ppm full scale (dual/auto range)",
+   "lod": "0.4 ppb",
+   "response_time_s": null,
+   "notes": "SO2 by UV fluorescence. Current-generation successor to the Model 100E. US EPA FEM EQSA-0495-100 verified."
+  },
+  "epa_designation": "EQSA-0495-100",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t100",
+  "status": "current",
+  "confidence": 0.96
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T100U",
+  "model_aliases": [
+   "Teledyne API T100U",
+   "TAPI T100U",
+   "Teledyne T100U",
+   "API T100U",
+   "T100U trace-level SO2 analyzer"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "trace-level ranges (low full-scale selectable)",
+   "lod": "0.05 ppb (50 ppt)",
+   "response_time_s": null,
+   "notes": "Trace-level UV fluorescence SO2 for NCore/background monitoring; LDL ~50 ppt. Related to T100/T100H high-range variant. Confirmed real (T100U addendum to T100 manual)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t100u",
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T108",
+  "model_aliases": [
+   "Teledyne API T108",
+   "TAPI T108",
+   "Teledyne T108",
+   "T108 total sulfur analyzer",
+   "T108 total-sulfides-in-CO2 analyzer"
+  ],
+  "category": "H2S analyzer",
+  "principle": "UV fluorescence with high-temperature thermal converter",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Total sulfur / total-sulfides-in-CO2 analyzer: a modified T100 UV fluorescence SO2 analyzer plus a Model 501TS high-temperature (~1000 C) thermal oxidizer that converts reduced sulfur species (H2S, TRS) to SO2; reading is total oxidized sulfur as SO2. Confirmed real (manual PN 07268C). Category mapped to 'H2S analyzer' as the nearest enum for a reduced-sulfur instrument; note it is fundamentally an SO2-detection device, so this mapping is approximate."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t108",
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T300",
+  "model_aliases": [
+   "Teledyne API T300",
+   "TAPI T300",
+   "Teledyne T300",
+   "API T300",
+   "T300 CO analyzer"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 ppm to 0-1000 ppm full scale (selectable)",
+   "lod": "0.04 ppm (40 ppb)",
+   "response_time_s": null,
+   "notes": "CO by non-dispersive infrared gas filter correlation. Current-generation successor to the Model 300E. US EPA RFM RFCA-1093-093 verified (EPA lists T300/T300U jointly)."
+  },
+  "epa_designation": "RFCA-1093-093",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t300",
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T300U",
+  "model_aliases": [
+   "Teledyne API T300U",
+   "TAPI T300U",
+   "Teledyne T300U",
+   "API T300U",
+   "T300U trace-level CO analyzer"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "trace-level ranges (low full-scale selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Trace-level CO (GFC NDIR) with auto-reference feature, for NCore/low-background CO. EPA lists the T300/T300U jointly under Reference Method RFCA-1093-093, so the shared designation is legitimate."
+  },
+  "epa_designation": "RFCA-1093-093",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T400",
+  "model_aliases": [
+   "Teledyne API T400",
+   "TAPI T400",
+   "Teledyne T400",
+   "API T400",
+   "T400 photometric ozone analyzer"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-100 ppb to 0-10 ppm full scale (selectable)",
+   "lod": "0.4 ppb",
+   "response_time_s": null,
+   "notes": "O3 by UV absorption photometry at 254 nm. Current-generation successor to the Model 400E. US EPA EQM EQOA-0992-087 verified."
+  },
+  "epa_designation": "EQOA-0992-087",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.96
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T360",
+  "model_aliases": [
+   "Teledyne API T360",
+   "TAPI T360",
+   "Teledyne T360",
+   "API T360",
+   "T360 CO2 analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CO2 by non-dispersive infrared gas filter correlation (2.56 m folded-path sample cell), ambient to percent-level. Measures CO2 only (not CH4); mapped to 'CO2/CH4 analyzer' as the nearest enum. Confirmed real."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t360",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T360U",
+  "model_aliases": [
+   "Teledyne API T360U",
+   "TAPI T360U",
+   "Teledyne T360U",
+   "T360U trace CO2 analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Higher-sensitivity variant of the T360 CO2 NDIR-GFC analyzer. Confirmed real (T360U addendum manual PN 07273A). Measures CO2 only; 'CO2/CH4 analyzer' is the nearest enum mapping."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T204",
+  "model_aliases": [
+   "Teledyne API T204",
+   "TAPI T204",
+   "Teledyne T204",
+   "T204 NOx/O3 analyzer"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "chemiluminescence (NOx) + UV photometry (O3)",
+  "specs": {
+   "ranges": "NOx 0-50 ppb to 0-20 ppm; O3 0-50 ppb to 0-1000 ppb (independent ranges)",
+   "lod": "0.4 ppb (NOx); <2 ppb (O3)",
+   "response_time_s": null,
+   "notes": "Single-chassis analyzer pairing the T200 NO/NO2/NOx chemiluminescence module with a T400-type UV-photometric O3 bench for simultaneous NO/NO2/NOx/O3; compact ambient/roadside monitoring. Confirmed real; ranges/LOD from Teledyne T204 literature."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T700",
+  "model_aliases": [
+   "Teledyne API T700",
+   "TAPI T700",
+   "Teledyne T700",
+   "API T700",
+   "T700 dynamic dilution calibrator"
+  ],
+  "category": "calibrator",
+  "principle": "mass-flow dynamic dilution (with optional gas-phase titration)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Multipoint dynamic dilution calibrator using mass flow controllers with up to 4 compressed span-gas sources (SO2, H2S, NO, NO2, CO, etc.); optional internal UV O3 generator and gas-phase titration (GPT) chamber for NO2 generation. Calibration source, not an analyzer. Confirmed real."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t700",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T700U",
+  "model_aliases": [
+   "Teledyne API T700U",
+   "TAPI T700U",
+   "Teledyne T700U",
+   "T700U dynamic dilution calibrator"
+  ],
+  "category": "calibrator",
+  "principle": "mass-flow dynamic dilution (with optional gas-phase titration)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Ultra-sensitive dynamic dilution calibrator in the T700 series; verifies NO2 linearity below 5 ppb with a low-range 'fractional' O3 mode down to ~3 ppb. Calibration source, not an analyzer. Confirmed real (joint T700/T700U user manual)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t700u",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T701",
+  "model_aliases": [
+   "Teledyne API T701",
+   "TAPI T701",
+   "Teledyne T701",
+   "T701 zero air generator",
+   "T701 zero air system"
+  ],
+  "category": "calibrator",
+  "principle": "zero air generation (adsorbent/catalytic scrubbers)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Self-contained zero-air source with oil-free pump, drying/filtering and charcoal/purafil scrubbers that remove SO2, NO, NO2, O3, H2S and NH3; supplies dilution air for calibrators, permeation-oven purge air, and FID burner air. Support equipment; mapped to 'calibrator' as the nearest enum. Confirmed real."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "T703",
+  "model_aliases": [
+   "Teledyne API T703",
+   "TAPI T703",
+   "Teledyne T703",
+   "T703 photometric ozone calibrator",
+   "T703/T703U"
+  ],
+  "category": "calibrator",
+  "principle": "UV photometry (internal O3 generator + photometer)",
+  "specs": {
+   "ranges": "delivers O3 from 50 ppb to 5 ppm at 1-5 LPM",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Microprocessor-controlled photometric ozone calibrator/transfer standard combining a UV O3 generator with an internal UV photometer; range 50 ppb-5 ppm at 1-5 LPM confirmed. The T703 itself can be ordered as a Primary Ozone Standard (performance verified against a Standard Reference Photometer). The related T703U variant adds an ultra-low 'fractional' O3 mode down to ~3 ppb. Calibration source, not an ambient analyzer. (Corrected: earlier draft wrongly attributed the primary-standard role uniquely to the T703U.)"
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.teledyne-api.com/en-us/products/t703",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "100E",
+  "model_aliases": [
+   "Teledyne API 100E",
+   "TAPI 100E",
+   "API 100E",
+   "M100E",
+   "Teledyne 100E"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-50 ppb to 0-20 ppm (user-selectable full scale)",
+   "lod": "0.4 ppb",
+   "response_time_s": null,
+   "notes": "Pulsed UV-fluorescence SO2 analyzer; direct predecessor to Teledyne T100 (confirmed by a Teledyne 100E/T100 training manual). EPA-designated SO2 equivalent method (specific number not asserted). Trace-level variant (100EU/M100EU) exists."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "200E",
+  "model_aliases": [
+   "Teledyne API 200E",
+   "TAPI 200E",
+   "API 200E",
+   "M200E",
+   "Teledyne-API Model 200E"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-50 ppb to 0-20 ppm (selectable)",
+   "lod": "0.4 ppb",
+   "response_time_s": null,
+   "notes": "Chemiluminescence NO/NO2/NOx with heated molybdenum NO2->NO converter; predecessor to T200. Trace-level 200EU and photolytic-converter research variants exist."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "300E",
+  "model_aliases": [
+   "Teledyne API 300E",
+   "TAPI 300E",
+   "API 300E",
+   "M300E",
+   "Teledyne 300E"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 ppm to 0-1000 ppm (selectable)",
+   "lod": "0.04 ppm (40 ppb)",
+   "response_time_s": null,
+   "notes": "Gas-filter-correlation NDIR CO analyzer; predecessor to T300. Trace-level 300EU variant exists."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "400E",
+  "model_aliases": [
+   "Teledyne API 400E",
+   "TAPI 400E",
+   "API 400E",
+   "M400E",
+   "Teledyne 400E"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-100 ppb to 0-10 ppm (selectable)",
+   "lod": "0.4 ppb",
+   "response_time_s": null,
+   "notes": "UV absorption photometry (254 nm) O3 analyzer; predecessor to T400."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "700E",
+  "model_aliases": [
+   "Teledyne API 700E",
+   "TAPI 700E",
+   "API 700E",
+   "M700E",
+   "Teledyne 700E dynamic dilution calibrator"
+  ],
+  "category": "calibrator",
+  "principle": "mass-flow dynamic dilution (optional O3 generator/photometer, GPT)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Dynamic multipoint gas dilution calibrator; optional built-in O3 generator/photometer and gas-phase titration (GPT). Predecessor to T700/T700U. Not a gas analyzer."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "M100A",
+  "model_aliases": [
+   "API M100A",
+   "Advanced Pollution Instrumentation M100A",
+   "TAPI M100A",
+   "API 100A",
+   "Teledyne API M100A"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-50 ppb to 0-20 ppm (selectable)",
+   "lod": "~0.4 ppb",
+   "response_time_s": null,
+   "notes": "UV-fluorescence SO2 analyzer from Advanced Pollution Instrumentation (pre-Teledyne; API acquired by Teledyne 2005). Common in pre-2010 monitoring/literature."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "M200A",
+  "model_aliases": [
+   "API M200A",
+   "Advanced Pollution Instrumentation M200A",
+   "TAPI M200A",
+   "API 200A",
+   "Teledyne API M200A"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-50 ppb to 0-20 ppm (selectable)",
+   "lod": "~0.5 ppb",
+   "response_time_s": null,
+   "notes": "Chemiluminescence NO/NO2/NOx analyzer with molybdenum converter (API, pre-Teledyne). Widely cited in pre-2010 air-quality literature."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "M300",
+  "model_aliases": [
+   "API M300",
+   "Advanced Pollution Instrumentation M300",
+   "TAPI M300",
+   "API M300A",
+   "API 300"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 to 0-1000 ppm (selectable)",
+   "lod": "~0.05 ppm",
+   "response_time_s": null,
+   "notes": "Gas-filter-correlation NDIR CO analyzer (API, pre-Teledyne). Variants M300A/M300E in the literature."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Teledyne API",
+  "model": "M400",
+  "model_aliases": [
+   "API M400",
+   "Advanced Pollution Instrumentation M400",
+   "TAPI M400",
+   "API M400A",
+   "API 400"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-100 ppb to 0-10 ppm (selectable)",
+   "lod": "~1 ppb",
+   "response_time_s": null,
+   "notes": "UV photometric O3 analyzer (API, pre-Teledyne). Variants M400A/M400E in the literature."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Teledyne Monitor Labs",
+  "model": "ML9810",
+  "model_aliases": [
+   "Monitor Labs 9810",
+   "ML9810B",
+   "Teledyne ML9810",
+   "TML 9810"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-0.05 to 0-20 ppm (selectable)",
+   "lod": "~0.5 ppb",
+   "response_time_s": null,
+   "notes": "UV-absorption ozone analyzer, Monitor Labs / Teledyne Monitor Labs 9800 series; confirmed as the ozone model (OEM twins EC9810/CM2010). The coverage hint labeling 9810 as CO is incorrect (CO is ML9830). Removed 'ML9811' from aliases: it is a distinct ozone model number, not an alias of 9810."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne Monitor Labs",
+  "model": "ML9830",
+  "model_aliases": [
+   "Monitor Labs 9830",
+   "ML9830B",
+   "Teledyne ML9830",
+   "TML 9830"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-1 to 0-200 ppm (selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Gas-filter-correlation NDIR CO analyzer, TML 9800 series. CO assignment corroborated by the OEM-twin Ecotech EC9830 (GFC NDIR CO, ~0-50/200 ppm). This is the 9800-series CO model (the coverage hint mislabeled 9810 as CO)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Teledyne Monitor Labs",
+  "model": "ML9841",
+  "model_aliases": [
+   "Monitor Labs 9841",
+   "ML9841A",
+   "ML9841B",
+   "ML9841T",
+   "TML 9841"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-20 ppm (selectable)",
+   "lod": "~0.5 ppb",
+   "response_time_s": null,
+   "notes": "Chemiluminescence NO/NO2/NOx analyzer, TML 9800 series; confirmed in federal reference/equivalent-method lists. Variants ML9841A/ML9841B confirmed; ML9841T (trace) plausible."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Teledyne Monitor Labs",
+  "model": "ML9850",
+  "model_aliases": [
+   "Monitor Labs 9850",
+   "ML9850B",
+   "Teledyne ML9850",
+   "TML 9850",
+   "9850B"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-0.05 to 0-20 ppm (selectable)",
+   "lod": "~0.5 ppb",
+   "response_time_s": null,
+   "notes": "Pulsed UV-fluorescence SO2 analyzer, TML 9800 series; confirmed (ML9850/ML9850B SO2 UV-fluorescence units in circulation). TML 9850 branding confirmed."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Teledyne Monitor Labs",
+  "model": "ML8840",
+  "model_aliases": [
+   "Monitor Labs 8840",
+   "ML8840",
+   "Lear Siegler 8840"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Monitor Labs 8000-series analyzer; gas assignment VERIFIED as nitrogen oxides (chemiluminescence) via product listings ('Monitor Labs 8840 Nitrogen Oxides Analyzer'). 8000-series predecessor to the 9841. Predates the 2007 Teledyne acquisition (Monitor Labs / Lear Siegler era), so the anachronistic 'TML 8840' alias was removed; exact 'Lear Siegler' branding form not independently confirmed."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.6
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 10",
+  "model_aliases": [
+   "Ecotech Serinus 10",
+   "Serinus 10",
+   "Acoem Serinus 10",
+   "Serinus 10 O3 analyser",
+   "Met One GAS-1010"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-20 ppm full scale (selectable); U.S. EPA range 0-0.5 ppm",
+   "lod": "<0.5 ppb",
+   "response_time_s": null,
+   "notes": "UV absorption photometry at 254 nm. Successor to the ML9810. Rebadged by Met One Instruments as GAS-1010 (verified via Met One user manual)."
+  },
+  "epa_designation": "EQOA-0809-187",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.97
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 30",
+  "model_aliases": [
+   "Ecotech Serinus 30",
+   "Serinus 30",
+   "Acoem Serinus 30",
+   "Serinus 30 CO analyser",
+   "Met One GAS-1030"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-200 ppm full scale (selectable); EPA-designated 0-50 ppm",
+   "lod": "<40 ppb (0.04 ppm)",
+   "response_time_s": null,
+   "notes": "Gas filter correlation NDIR. Successor to the ML9830. Rebadged by Met One as GAS-1030 (verified)."
+  },
+  "epa_designation": "RFCA-0509-174",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.96
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 40",
+  "model_aliases": [
+   "Ecotech Serinus 40",
+   "Serinus 40",
+   "Acoem Serinus 40",
+   "Ecotech Serinus 40 oxides of nitrogen analyzer",
+   "Serinus 40 NOx analyser",
+   "Met One GAS-1040"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-20 ppm full scale (selectable); U.S. EPA range 0-0.5 ppm",
+   "lod": "<0.4 ppb",
+   "response_time_s": null,
+   "notes": "Chemiluminescence with molybdenum converter for NO2. Measures NO/NO2/NOx. A HIGH-concentration variant (Serinus 40H, NO 0-1000 ppm / NO2 0-150 ppm) also exists - the 'H' denotes high range, NOT trace/high-sensitivity (draft was wrong). Rebadged as Met One GAS-1040 (verified)."
+  },
+  "epa_designation": "RFNA-0809-186",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.97
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 44",
+  "model_aliases": [
+   "Ecotech Serinus 44",
+   "Serinus 44",
+   "Acoem Serinus 44",
+   "Serinus 44 NO/NO2/NOx/NH3 analyser",
+   "Ecotech Serinus 44 ammonia analyzer"
+  ],
+  "category": "NH3 analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-20 ppm full scale (selectable)",
+   "lod": "<0.4 ppb",
+   "response_time_s": null,
+   "notes": "Chemiluminescence NOx analyzer with an additional external thermal catalytic converter to measure NH3; reports NO/NO2/NOx/NH3. Genuinely shares the Serinus 40's EPA NOx designation (RFNA-0809-186) - verified; NH3 itself is not an EPA-designated method. Rebadged as Met One GAS-1044."
+  },
+  "epa_designation": "RFNA-0809-186",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.94
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 50",
+  "model_aliases": [
+   "Ecotech Serinus 50",
+   "Serinus 50",
+   "Acoem Serinus 50",
+   "Serinus 50 SO2 analyser",
+   "Ecotech Serinus 50 sulfur dioxide analyzer"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-20 ppm full scale (selectable); U.S. EPA range 0-0.5 ppm",
+   "lod": "<0.3 ppb",
+   "response_time_s": null,
+   "notes": "Pulsed UV fluorescence. Successor to the ML9850. Rebadged as Met One GAS-1050."
+  },
+  "epa_designation": "EQSA-0809-188",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.96
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 51",
+  "model_aliases": [
+   "Ecotech Serinus 51",
+   "Serinus 51",
+   "Acoem Serinus 51",
+   "Serinus 51 SO2/H2S analyser",
+   "Serinus 51 sulfur dioxide and hydrogen sulfide analyser"
+  ],
+  "category": "H2S analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "SO2 0-20 ppm; H2S 0-2 ppm",
+   "lod": "<0.3 ppb",
+   "response_time_s": null,
+   "notes": "Pulsed UV fluorescence with internal SO2 scrubber and thermal converter; sequentially measures SO2 and H2S (H2S converted to SO2 then detected). Combined SO2/H2S instrument; categorised under H2S as its distinguishing capability. Rebadged as Met One GAS-1051."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 55",
+  "model_aliases": [
+   "Ecotech Serinus 55",
+   "Serinus 55",
+   "Acoem Serinus 55",
+   "Serinus 55 H2S analyser",
+   "Serinus 55 hydrogen sulfide analyser"
+  ],
+  "category": "H2S analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-2 ppm",
+   "lod": "<0.3 ppb",
+   "response_time_s": null,
+   "notes": "Based on the Serinus 50 SO2 platform. H2S measured by removing ambient SO2 with an internal scrubber, converting H2S to SO2 with an external H2S1100 thermal catalytic converter, then detecting by pulsed UV fluorescence. Rebadged as Met One GAS-1055."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 57",
+  "model_aliases": [
+   "Ecotech Serinus 57",
+   "Serinus 57",
+   "Acoem Serinus 57",
+   "Serinus 57 TRS analyser",
+   "Serinus 57 total reduced sulfur analyser"
+  ],
+  "category": "H2S analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-2 ppm",
+   "lod": "<0.5 ppb",
+   "response_time_s": null,
+   "notes": "Total Reduced Sulfur (TRS) analyzer: total sulfur converted to SO2 in an external HTO-1000 thermal converter, then measured by pulsed UV fluorescence. LOD corrected to <0.5 ppb per Acoem spec (draft's <0.3 ppb was wrong). Categorised under sulfur/H2S as the schema has no dedicated TRS type. Rebadged as Met One GAS-1057."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus 60",
+  "model_aliases": [
+   "Ecotech Serinus 60",
+   "Serinus 60",
+   "Acoem Serinus 60",
+   "Serinus 60 NO2 analyser",
+   "Serinus 60 CAPS",
+   "Met One GAS-1060"
+  ],
+  "category": "NO2 analyzer",
+  "principle": "CAPS",
+  "specs": {
+   "ranges": "0-1 ppm (selectable); reliably measures well under 1 ppb up to ~1000 ppb",
+   "lod": null,
+   "response_time_s": 30,
+   "notes": "Direct NO2 measurement by Cavity Attenuated Phase Shift (CAPS) spectroscopy - no converter, so no NOy interference. EPA-designated when operated 20-45 C. Response time <30 s (verified). Rebadged as Met One GAS-1060 (verified)."
+  },
+  "epa_designation": "EQNA-0217-242",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Ecotech / Monitor Labs",
+  "model": "ML9810",
+  "model_aliases": [
+   "Ecotech ML9810",
+   "Monitor Labs ML9810",
+   "ML9810",
+   "ML9810B",
+   "EC9810",
+   "Teledyne Monitor Labs ML9810"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-20 ppm (selectable); common EPA range 0-0.5 ppm",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy Monitor Labs 9800-series ozone analyzer, UV photometry at 254 nm. Rebadged across Ecotech (EC9810), Casella (CM2010) and later AE-series (verified). Predecessor to the Serinus 10; common in pre-2010 literature."
+  },
+  "epa_designation": "EQOA-0193-091",
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Ecotech / Monitor Labs",
+  "model": "ML9830",
+  "model_aliases": [
+   "Ecotech ML9830",
+   "Monitor Labs ML9830",
+   "ML9830",
+   "ML9830B",
+   "EC9830",
+   "Teledyne Monitor Labs ML9830"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-200 ppm (selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy Monitor Labs 9800-series CO analyzer, gas filter correlation NDIR. Rebadged as Ecotech EC9830, Casella CM2030 (verified). Predecessor to the Serinus 30."
+  },
+  "epa_designation": "RFCA-0992-088",
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.94
+ },
+ {
+  "manufacturer": "Ecotech / Monitor Labs",
+  "model": "ML9841",
+  "model_aliases": [
+   "Ecotech ML9841",
+   "Monitor Labs ML9841",
+   "ML9841",
+   "ML9841A",
+   "ML9841B",
+   "EC9841"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-20 ppm (selectable); common EPA range 0-0.5 ppm",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy Monitor Labs 9800-series NO/NO2/NOx chemiluminescence analyzer with molybdenum converter. Variants ML9841A/B, EC9841A/EC9841T/EC9841B and Casella CM2041 series share EPA designation RFNA-1292-090 (verified). Predecessor to the Serinus 40."
+  },
+  "epa_designation": "RFNA-1292-090",
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Ecotech / Monitor Labs",
+  "model": "ML9850",
+  "model_aliases": [
+   "Ecotech ML9850",
+   "Monitor Labs ML9850",
+   "ML9850",
+   "ML9850B",
+   "EC9850",
+   "Teledyne Monitor Labs ML9850"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-20 ppm (selectable); common EPA range 0-0.5 ppm",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy Monitor Labs 9800-series SO2 analyzer, pulsed UV fluorescence. Rebadged as Ecotech EC9850, Casella CM2050 (verified). Predecessor to the Serinus 50."
+  },
+  "epa_designation": "EQSA-0193-092",
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus Cal 1000",
+  "model_aliases": [
+   "Ecotech Serinus Cal 1000",
+   "Serinus Cal 1000",
+   "Acoem Serinus Cal 1000",
+   "SerinusCal 1000"
+  ],
+  "category": "calibrator",
+  "principle": "gas dilution (mass flow controllers)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Stand-alone multi-gas dilution calibrator using precision mass flow controllers; single/multi-point calibration of ambient gas analyzers via zero air and cylinder gas dilution. No ozone generator (base model of the Serinus Cal range). Met One rebadge CAL-100 series."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus Cal 2000",
+  "model_aliases": [
+   "Ecotech Serinus Cal 2000",
+   "Serinus Cal 2000",
+   "Acoem Serinus Cal 2000",
+   "SerinusCal 2000"
+  ],
+  "category": "calibrator",
+  "principle": "gas dilution (mass flow controllers) with internal ozone generator",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Serinus Cal 1000 functionality plus an internal ozone generator, enabling O3 calibration/checks and gas-phase titration (GPT) for NOx analyzers. No internal ozone photometer (that is the Cal 3000)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "Serinus Cal 3000",
+  "model_aliases": [
+   "Ecotech Serinus Cal 3000",
+   "Serinus Cal 3000",
+   "Acoem Serinus Cal 3000",
+   "SerinusCal 3000"
+  ],
+  "category": "calibrator",
+  "principle": "gas dilution (mass flow controllers) with ozone generator and UV photometer",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Top of the Serinus Cal range: adds an internal UV ozone photometer (based on Serinus 10 technology) to control ozone generator output; usable as an ozone transfer standard. Verified against Acoem product literature."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Ecotech / Acoem",
+  "model": "GasCal-1100",
+  "model_aliases": [
+   "Ecotech GasCal-1100",
+   "GasCal 1100",
+   "Ecotech GasCal 1100",
+   "GasCal"
+  ],
+  "category": "calibrator",
+  "principle": "gas dilution (mass flow controllers)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy Ecotech gas dilution calibrator predating the Serinus Cal line; connects up to four external gas cylinders for precise dilution with zero/dilution air, ozone precision checks and gas-phase titration, for ambient and source-emission analyzer calibration. Removed unverified 'GasCal-1000' alias/portable-model claim from draft. 'Discontinued' status inferred, not confirmed."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.72
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APNA-370",
+  "model_aliases": [
+   "Horiba APNA-370",
+   "APNA-370",
+   "APNA 370",
+   "Horiba Ltd. APNA-370",
+   "Horiba APNA-370 NOx analyzer"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence (cross-flow modulation, reduced-pressure CLD)",
+  "specs": {
+   "ranges": "Standard 0-0.1/0.2/0.5/1.0 ppm (100-1000 ppb FS); optional ranges up to 0-10 ppm; auto/manual ranging",
+   "lod": "0.5 ppb (3σ)",
+   "response_time_s": 90,
+   "notes": "Measures NO/NO2/NOx. Dual cross-flow modulation chemiluminescence with referential calculation, internal dry-method sampling. EPA reference method at 0-0.5 ppm FS, 20-30 C (RFNA-0506-157 confirmed in Federal Register E6-6539, 2006-05-01). Response time is class-plausible, not source-verified."
+  },
+  "epa_designation": "RFNA-0506-157",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apna-370-451/",
+  "status": "current",
+  "confidence": 0.97
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APSA-370",
+  "model_aliases": [
+   "Horiba APSA-370",
+   "APSA-370",
+   "APSA 370",
+   "Horiba APSA-370 SO2 analyzer",
+   "Horiba Ltd. APSA-370"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence (UVF)",
+  "specs": {
+   "ranges": "Standard 0-0.05/0.1/0.2/0.5 ppm (50-500 ppb FS); optional up to 0-10 ppm; auto/manual ranging",
+   "lod": "0.5 ppb (3σ)",
+   "response_time_s": 120,
+   "notes": "UV fluorescence with internal dry-method sampling. EPA equivalent method EQSA-0506-159 (confirmed, Federal Register E6-6539) at 0-0.5 ppm FS, 20-30 C. Response time class-plausible, not source-verified."
+  },
+  "epa_designation": "EQSA-0506-159",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apsa-370-452/",
+  "status": "current",
+  "confidence": 0.97
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APOA-370",
+  "model_aliases": [
+   "Horiba APOA-370",
+   "APOA-370",
+   "APOA 370",
+   "Horiba APOA-370 ozone monitor",
+   "Horiba Ltd. APOA-370"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry (cross-flow modulation UV absorption at 254 nm)",
+  "specs": {
+   "ranges": "Standard 0-0.1/0.2/0.5/1.0 ppm (100-1000 ppb FS); optional up to 0-10 ppm; auto/manual ranging",
+   "lod": "0.5 ppb (3σ)",
+   "response_time_s": 75,
+   "notes": "Cross-flow modulation UV absorption (254 nm). EPA equivalent method EQOA-0506-160 (confirmed, Federal Register E6-6539) at 0-0.5 ppm FS. Response time class-plausible, not source-verified."
+  },
+  "epa_designation": "EQOA-0506-160",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apoa-370-450/",
+  "status": "current",
+  "confidence": 0.96
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APMA-370",
+  "model_aliases": [
+   "Horiba APMA-370",
+   "APMA-370",
+   "APMA 370",
+   "Horiba APMA-370 CO analyzer",
+   "Horiba Ltd. APMA-370"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR (cross-flow modulation, non-dispersive infrared)",
+  "specs": {
+   "ranges": "Standard ranges within 0-100 ppm (e.g. 0-5/10/20/50/100 ppm); auto/manual ranging",
+   "lod": "0.02 ppm (20 ppb, 3σ)",
+   "response_time_s": 50,
+   "notes": "Cross-flow modulation NDIR. EPA reference method RFCA-0506-158 (confirmed, Federal Register E6-6539) at 0-50 ppm FS, 20-30 C. Response time class-plausible, not source-verified."
+  },
+  "epa_designation": "RFCA-0506-158",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apma-370-453/",
+  "status": "current",
+  "confidence": 0.97
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APHA-370",
+  "model_aliases": [
+   "Horiba APHA-370",
+   "APHA-370",
+   "APHA 370",
+   "Horiba APHA-370 hydrocarbon analyzer",
+   "Horiba APHA-370 THC analyzer"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (flame ionization detection with selective combustion)",
+  "specs": {
+   "ranges": "Standard 0-5/10/20/50 ppmC; optional up to 0-100 ppmC; auto/manual ranging",
+   "lod": "0.022 ppmC (3σ)",
+   "response_time_s": 60,
+   "notes": "Simultaneous THC/NMHC/CH4 via FID with selective combustion. No EPA criteria-pollutant designation (HC not a NAAQS gas) — null is correct. LOD/response time class-plausible, not source-verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apha-370-449/",
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APCA-370",
+  "model_aliases": [
+   "Horiba APCA-370",
+   "APCA-370",
+   "APCA 370",
+   "Horiba APCA-370 CO2 analyzer",
+   "Horiba APCA-370 ambient carbon dioxide monitor"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR (cross-flow modulation, non-dispersive infrared)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CONFIRMED REAL: Horiba launched the APCA-370 ambient carbon dioxide monitor in 2019 as the newest AP-370 addition. Cross-modulation NDIR with self-regenerating CO2 absorption / internal reference-gas purifier. Measures CO2 only (not CH4); less common in air-quality literature (CO2 not a NAAQS pollutant). Exact ranges/LOD not verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apca-370-1992/",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APNA-380",
+  "model_aliases": [
+   "Horiba APNA-380",
+   "APNA-380",
+   "APNA 380",
+   "Horiba APNA-380 NOx monitor",
+   "Horiba APNA-380 nitrogen oxides monitor"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence (cross-modulation CLD)",
+  "specs": {
+   "ranges": "Selectable 0-0.1 ppm up to 0-20 ppm (up to 8 ranges), auto-ranging; EPA-designated configuration at 0-0.5 ppm FS",
+   "lod": "< 0.4 ppb (2σ, ranges < 2 ppm)",
+   "response_time_s": null,
+   "notes": "CONFIRMED: released Jan 2024 as part of the 5-model AP-380 platform (NOx/SO2/O3/CO/HC). Cross-modulation chemiluminescence. Horiba's own APNA-380 page lists US EPA RFNA-0506-157 — the AP-380 was amended into the existing AP-370 Part 53 designation, so the shared number is legitimate, not an error. Also carries TUV QAL1 (cert 0000087852) and MCERTS (CSA MC260464/00). 90 s rolling average, design flow ~0.7 LPM."
+  },
+  "epa_designation": "RFNA-0506-157",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apna-380-nitrogen-oxides-monitor-6229/",
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APSA-380",
+  "model_aliases": [
+   "Horiba APSA-380",
+   "APSA-380",
+   "APSA 380",
+   "Horiba APSA-380 SO2 monitor",
+   "Horiba APSA-380 sulfur dioxide monitor"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence (UVF)",
+  "specs": {
+   "ranges": "Standard 0-0.05/0.1/0.2/0.5 ppm (50-500 ppb FS); EPA-designated configuration at 0-0.5 ppm FS",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "AP-380 UV fluorescence (2024 release). EPA number EQSA-0506-159 assumed shared with APSA-370 by the same AP-380/AP-370 designation-amendment pattern confirmed for the APNA-380; not directly verified for this model. TUV QAL1 / MCERTS. Design flow ~0.6 LPM."
+  },
+  "epa_designation": "EQSA-0506-159",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/usa/process-and-environmental/products/detail/action/show/Product/apsa-380-sulfur-dioxide-monitor-6205/",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APOA-380",
+  "model_aliases": [
+   "Horiba APOA-380",
+   "APOA-380",
+   "APOA 380",
+   "Horiba APOA-380 ozone monitor"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry (UV absorption at 254 nm)",
+  "specs": {
+   "ranges": "Standard 0-0.1/0.2/0.5/1.0 ppm (100-1000 ppb FS); EPA-designated configuration at 0-0.5 ppm FS",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "AP-380 UV absorption ozone monitor (2024 release). EPA number EQOA-0506-160 assumed shared with APOA-370 by the AP-380/AP-370 designation-amendment pattern; not directly verified for this model. Design flow ~0.6 LPM. (Removed an unverified 'APOA-380WM wall-mount variant' claim from the draft.)"
+  },
+  "epa_designation": "EQOA-0506-160",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apoa-380-ozone-monitor-6204/",
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APMA-380",
+  "model_aliases": [
+   "Horiba APMA-380",
+   "APMA-380",
+   "APMA 380",
+   "Horiba APMA-380 CO monitor",
+   "Horiba APMA-380 carbon monoxide monitor"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR (cross-modulation, non-dispersive infrared)",
+  "specs": {
+   "ranges": "Standard ranges within 0-100 ppm (e.g. 0-5/10/20/50/100 ppm); EPA-designated configuration at 0-50 ppm FS",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "AP-380 NDIR cross-modulation CO monitor (2024 release). EPA number RFCA-0506-158 assumed shared with APMA-370 by the AP-380/AP-370 designation-amendment pattern; not directly verified for this model. Design flow ~1.5 LPM."
+  },
+  "epa_designation": "RFCA-0506-158",
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apma-380-carbon-monixide-monitor-6184/",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APHA-380",
+  "model_aliases": [
+   "Horiba APHA-380",
+   "APHA-380",
+   "APHA 380",
+   "Horiba APHA-380 hydrocarbon monitor"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (flame ionization detection with selective combustion)",
+  "specs": {
+   "ranges": "Standard 0-5/10/20/50 ppmC; optional up to 0-100 ppmC",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CONFIRMED: APHA-380 is the 5th model of the AP-380 series (2024). FID with selective combustion; measures THC, CH4, NMHC. ~10% lower power and ~15% lighter than the APHA-370. No US EPA criteria-pollutant designation (correct null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apha-380-hydrogcarbon-monitor-6228/",
+  "status": "current",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APNA-360",
+  "model_aliases": [
+   "Horiba APNA-360",
+   "APNA-360",
+   "APNA-360-CE",
+   "APNA 360",
+   "Horiba Instruments APNA-360",
+   "Horiba APNA-360 NO-NO2-NOx monitor"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence (cross-flow modulation CLD)",
+  "specs": {
+   "ranges": "EPA-designated at 0-0.5 ppm FS; lower selectable ranges available",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy AP-360 series (dominant in pre-2010 literature). Cross-flow modulation chemiluminescence. EPA reference method RFNA-0196-111 CONFIRMED (0-0.5 ppm FS, 10-40 C). Sold as APNA-360 / APNA-360-CE."
+  },
+  "epa_designation": "RFNA-0196-111",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APSA-360",
+  "model_aliases": [
+   "Horiba APSA-360",
+   "APSA-360",
+   "APSA-360-CE",
+   "APSA-360A-CE",
+   "Horiba APSA-360 SO2 monitor"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence (pulsed UVF)",
+  "specs": {
+   "ranges": "EPA-designated at 0-0.5 ppm FS; APSA-360A-CE selectable 0-0.05/0.1/0.2/0.5/1.0 ppm",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy AP-360 UV fluorescence. EPA equivalent method EQSA-0197-114 CONFIRMED (0-0.5 ppm FS, 5-40 C, pulsed UVF). Variants APSA-360-CE / APSA-360A-CE. An H2S variant (APSA-360/CU) is corroborated by an EPA ETV verification report."
+  },
+  "epa_designation": "EQSA-0197-114",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APOA-360",
+  "model_aliases": [
+   "Horiba APOA-360",
+   "APOA-360",
+   "APOA-360-CE",
+   "APOA 360",
+   "Horiba APOA-360 ozone monitor"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry (UV absorption at 254 nm)",
+  "specs": {
+   "ranges": "EPA-designated at 0-0.5 ppm FS; lower selectable ranges available",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy AP-360 UV absorption ozone monitor. EPA equivalent method EQOA-0196-112 CONFIRMED (0-0.5 ppm FS, 10-40 C). Sold as APOA-360 / APOA-360-CE."
+  },
+  "epa_designation": "EQOA-0196-112",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APMA-360",
+  "model_aliases": [
+   "Horiba APMA-360",
+   "APMA-360",
+   "APMA-360-CE",
+   "APMA 360",
+   "Horiba APMA-360 CO monitor"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR (cross-flow modulation, non-dispersive infrared)",
+  "specs": {
+   "ranges": "EPA-designated at 0-50 ppm FS; selectable ranges available",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy AP-360 NDIR CO monitor. EPA reference method RFCA-0895-106 CONFIRMED for 'APMA-360 or APMA-360-CE'. An earlier predecessor APMA-300E reportedly held RFCA-1180-048 (not independently verified here)."
+  },
+  "epa_designation": "RFCA-0895-106",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APHA-360",
+  "model_aliases": [
+   "Horiba APHA-360",
+   "APHA-360",
+   "APHA 360",
+   "Horiba APHA-360 hydrocarbon monitor",
+   "Horiba APHA-360 THC analyzer"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (flame ionization detection with selective combustion)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Legacy AP-360 FID hydrocarbon monitor (THC/CH4/NMHC), predecessor to APHA-370. No EPA criteria designation. Exact ranges/LOD not verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APNA-370/CU-2",
+  "model_aliases": [
+   "Horiba APNA-370/CU-2",
+   "APNA-370/CU-2",
+   "APNA-370 CU-2",
+   "Horiba APNA-370 ammonia monitor",
+   "Horiba ammonia monitor"
+  ],
+  "category": "NH3 analyzer",
+  "principle": "chemiluminescence (NH3-to-NO converter + CLD)",
+  "specs": {
+   "ranges": "NH3 measured via external CU-2 converter added to an APNA-370 base analyzer",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CONFIRMED: Horiba markets 'APNA-370 + external CU-2' as an ambient ammonia analyzer (NH3 catalytically converted to NO, measured by the APNA-370 chemiluminescence detector). Cited in Methods as 'APNA-370/CU-2'. Exact ranges/LOD not verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apna-370-cu-2-204/",
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "APSA-370/CU-1",
+  "model_aliases": [
+   "Horiba APSA-370/CU-1",
+   "APSA-370/CU-1",
+   "APSA-370 CU-1",
+   "Horiba APSA-370 hydrogen sulfide monitor",
+   "Horiba H2S monitor APSA-370"
+  ],
+  "category": "H2S analyzer",
+  "principle": "UV fluorescence (H2S-to-SO2 converter + UVF)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CONFIRMED: Horiba lists 'APSA-370/CU-1 Ambient Hydrogen Sulfide Monitor' — APSA-370 base plus CU-1 H2S-to-SO2 converter, measured by UV fluorescence. Cited as 'APSA-370/CU-1'. Exact ranges/LOD not verified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/apsa-370-cu-1-205/",
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "PG-250",
+  "model_aliases": [
+   "Horiba PG-250",
+   "PG-250",
+   "PG250",
+   "Horiba PG-250 portable gas analyzer",
+   "Horiba PG-250 emission analyzer"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "chemiluminescence (NOx) + NDIR (SO2/CO/CO2) + galvanic cell (O2)",
+  "specs": {
+   "ranges": "NOx 0-25/50/100/250/500/1000/2500 ppm; SO2 0-200/500/1000/3000 ppm; CO 0-200/500/1000/2000/5000 ppm; CO2 0-5/10/20 vol%; O2 0-5/10/25 vol%",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CONFIRMED: portable 5-gas stack/combustion emissions analyzer (NOx/SO2/CO/CO2/O2), NOT an ambient trace-level monitor. NOx cross-flow modulation CLD; SO2/CO NDIR (pneumatic); CO2 NDIR (pyrosensor); O2 galvanic cell. EPA ETV-verified. Superseded by PG-350."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/fileadmin/uploads/Process-Environmental/Documents/HRE2849G_-_PG250.pdf",
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Horiba",
+  "model": "PG-350",
+  "model_aliases": [
+   "Horiba PG-350",
+   "PG-350",
+   "PG350",
+   "Horiba PG-350 portable gas analyzer",
+   "PG-350E",
+   "PG-350EU"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "chemiluminescence (NOx) + NDIR (SO2/CO/CO2) + O2 sensor (galvanic/zirconia/paramagnetic, selectable)",
+  "specs": {
+   "ranges": "Five components NOx/SO2/CO/CO2/O2 with selectable ranges similar to PG-250 (NOx and CO up to several thousand ppm; CO2 and O2 in vol%)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CONFIRMED: portable 5-gas stack/combustion emissions analyzer; successor to PG-250 with faster warm-up (~30 min on PG-350EU). NOx cross-modulation CLD; SO2/CO/CO2 NDIR; O2 detector selectable among galvanic / zirconia / paramagnetic (draft implied galvanic only). Part of PG-300 series; variants PG-350E / PG-350EU / PG-350P. Not an ambient trace-gas monitor."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.horiba.com/int/process-and-environmental/products/detail/action/show/Product/pg-300-series-257/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "AC31M",
+  "model_aliases": [
+   "Environnement S.A. AC31M",
+   "Environnement SA AC31M",
+   "ENVEA AC31M",
+   "AC31 M"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Pre-AC32M generation chemiluminescence NO/NO2/NOx monitor (NO + O3 reaction, PMT detection). Confirmed predecessor lineage AC30M -> AC31M -> AC32M -> AC32e. Common in 1990s-2000s European air-quality networks. Exact selectable ranges/LOD not asserted."
+  },
+  "epa_designation": "RFNA-0795-104",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "AC32M",
+  "model_aliases": [
+   "Environnement S.A. AC32M",
+   "Environnement SA AC32M",
+   "ENVEA AC32M",
+   "AC32 M"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "selectable up to 0-20 ppm (min range ~0-100 ppb)",
+   "lod": "0.4 ppb",
+   "response_time_s": null,
+   "notes": "Single-chamber, single-PMT chemiluminescence NO/NO2/NOx analyzer; measuring span quoted 0.4 ppb-20 ppm. 19-inch rack module. Very common workhorse in 2005-2020 AQ literature. EPA reference designation confirmed."
+  },
+  "epa_designation": "RFNA-0202-146",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "AC32e",
+  "model_aliases": [
+   "Environnement S.A. AC32e",
+   "ENVEA AC32e",
+   "Envea AC32e",
+   "AC32 e",
+   "AC32-e"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0-500 ppb up to 0-20 ppm",
+   "lod": "~0.35 ppb",
+   "response_time_s": null,
+   "notes": "Eco-designed e-series chemiluminescence NO/NO2/NOx analyzer; very low power consumption with 24 V option; TUV QAL1 certified. US-EPA approved (announced Feb 2018) but exact reference-method number not pinned here, so left null. Current generation."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://envea.global/product/ac32e-2/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "AF21M",
+  "model_aliases": [
+   "Environnement S.A. AF21M",
+   "Environnement SA AF21M",
+   "ENVEA AF21M",
+   "AF21 M"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-0.1 to 0-10 ppm (selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Older-generation UV-fluorescence SO2 monitor; response time selectable. Predecessor of AF22M; common in pre-2005 networks. EPA equivalent-method designation confirmed (FR 02/14/1992)."
+  },
+  "epa_designation": "EQSA-0292-084",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "AF22M",
+  "model_aliases": [
+   "Environnement S.A. AF22M",
+   "Environnement SA AF22M",
+   "ENVEA AF22M",
+   "AF22 M"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "selectable up to 0-10 ppm; EPA-designated range 0-500 ppb",
+   "lod": "~1 ppb",
+   "response_time_s": null,
+   "notes": "UV-fluorescence (~214 nm) SO2 analyzer, 19-inch rack; can be configured for H2S / total reduced sulfur with a thermal converter (marketed as AF22M SO2-H2S). Common 2003-2020. EPA equivalent-method designation confirmed."
+  },
+  "epa_designation": "EQSA-0802-149",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "AF22e",
+  "model_aliases": [
+   "Environnement S.A. AF22e",
+   "ENVEA AF22e",
+   "Envea AF22e",
+   "AF22 e",
+   "AF22-e"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "up to 0-10 ppm",
+   "lod": "~1 ppb",
+   "response_time_s": null,
+   "notes": "Eco-designed e-series UV-fluorescence SO2 analyzer; QAL1 certified, US-EPA approved. Current generation. Exact US-EPA number not independently confirmed, left null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://envea.global/product/af22e/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "O341M",
+  "model_aliases": [
+   "Environnement S.A. O341M",
+   "Environnement SA O341M",
+   "ENVEA O341M",
+   "O341 M"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-0.1 to 0-10 ppm (selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Older-generation UV-absorption (mercury-lamp) ozone monitor; predecessor of O342M; listed in EIONET measurement-equipment vocabulary. Model existence confirmed. Any US-EPA designation number not confirmed here, left null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "O342M",
+  "model_aliases": [
+   "Environnement S.A. O342M",
+   "Environnement SA O342M",
+   "ENVEA O342M",
+   "O342 M"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "selectable up to 0-10 ppm; EPA-designated range 0-500 ppb",
+   "lod": "~0.4 ppb",
+   "response_time_s": null,
+   "notes": "UV-photometric (253.7 nm mercury lamp) ozone analyzer, 19-inch rack module. Widely used in 2006-2020 AQ networks. EPA equivalent-method designation confirmed."
+  },
+  "epa_designation": "EQOA-0206-148",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "O342e",
+  "model_aliases": [
+   "Environnement S.A. O342e",
+   "ENVEA O342e",
+   "Envea O342e",
+   "O342 e",
+   "O342-e"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-500 ppb or 0-10 ppm",
+   "lod": "~0.4 ppb",
+   "response_time_s": null,
+   "notes": "Eco-designed e-series ozone analyzer using patented LED-based UV photometry at 253.7 nm (replaces the mercury lamp) - claim independently confirmed on ENVEA product materials; ultra-low power, 24 V option. QAL1 certified, US-EPA approved. Exact US-EPA number not confidently pinned, left null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://envea.global/product/o342e/",
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "CO11M",
+  "model_aliases": [
+   "Environnement S.A. CO11M",
+   "Environnement SA CO11M",
+   "ENVEA CO11M",
+   "CO11 M"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-10 to 0-200 ppm (selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Older-generation infrared gas-filter-correlation CO monitor; predecessor of CO12M. EPA reference-method designation confirmed (1995)."
+  },
+  "epa_designation": "RFCA-0995-108",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "CO12M",
+  "model_aliases": [
+   "Environnement S.A. CO12M",
+   "Environnement SA CO12M",
+   "ENVEA CO12M",
+   "CO12 M"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-50 ppm (EPA-designated); selectable to higher ranges",
+   "lod": "~0.05 ppm (50 ppb)",
+   "response_time_s": null,
+   "notes": "Non-dispersive infrared gas-filter-correlation CO analyzer, 19-inch rack; optional CO2 channel. Common 2006-2020. EPA reference-method designation confirmed."
+  },
+  "epa_designation": "RFCA-0206-147",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "CO12e",
+  "model_aliases": [
+   "Environnement S.A. CO12e",
+   "ENVEA CO12e",
+   "Envea CO12e",
+   "CO12 e",
+   "CO12-e"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0-50 ppm (optional 0-300 ppm; optional CO2 channel)",
+   "lod": "0.05 ppm",
+   "response_time_s": null,
+   "notes": "Eco-designed e-series NDIR CO analyzer, ISO 4224 compliant; optional CO2 measurement; QAL1 certified. Current generation. EPA reference-method designation RFCA-0915-228 confirmed (Federal Register 11/19/2015; stated verbatim on ENVEA/distributor datasheets)."
+  },
+  "epa_designation": "RFCA-0915-228",
+  "ccep_designation": null,
+  "datasheet_url": "https://envea.global/product/co12e/",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "MIR 9000",
+  "model_aliases": [
+   "MIR 9000",
+   "MIR-9000",
+   "Environnement S.A. MIR 9000",
+   "ENVEA MIR 9000",
+   "MIR9000 CEMS"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Extractive multi-gas NDIR gas-filter-correlation CEMS measuring up to ~10 gases simultaneously (NO, NO2, SO2, CO, CO2, N2O, CH4, TOC, HCl, HF) plus O2. Variants: MIR 9000 CLD (adds chemiluminescence NOx), MIR 9000e, MIR 9000H, MIR 9000P. Over 4,000 installed. QAL1 certified; compliant with 40 CFR 60/75 and EU IED. Stack-emissions/CEMS instrument, not ambient - correctly not on EPA ambient NAAQS list."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://envea.global/product/mir-9000/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "VOC72M",
+  "model_aliases": [
+   "Environnement S.A. VOC72M",
+   "Environnement SA VOC72M",
+   "ENVEA VOC72M",
+   "VOC 72M",
+   "VOC72-M"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "gas chromatography / PID (GC-PID)",
+  "specs": {
+   "ranges": "benzene 0-90 ug/m3, user-selectable to 0-180 ug/m3",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Automated on-line gas chromatograph with photo-ionization detector for BTEX; measures benzene, toluene, ethylbenzene, m+p-xylene, o-xylene, 1,3-butadiene; ~15-min cycle. EN 14662-3 and EN 15267 (MCERTS/QAL1) compliant. Newer variant: VOC72e (confirmed to exist)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://envea.global/product/voc72m/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Envea (Environnement S.A.)",
+  "model": "MGC101",
+  "model_aliases": [
+   "MGC 101",
+   "MGC-101",
+   "Environnement S.A. MGC101",
+   "ENVEA MGC101",
+   "MGC101 multi-gas calibrator"
+  ],
+  "category": "calibrator",
+  "principle": "dynamic dilution / gas-phase titration / UV ozone generation",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Multi-gas dynamic-dilution calibrator with two thermal mass-flow controllers, internal UV ozone generator (NIST-traceable, photo-optical feedback for lamp aging) and a gas-phase titration (GPT) chamber. Performs zero/span/precision/multi-point calibration of NO/NO2/NOx, SO2, CO, O3 and hydrocarbon analyzers; meets US-EPA calibration requirements. Description confirmed against ENVEA materials."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://envea.global/product/mgc101/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "202",
+  "model_aliases": [
+   "2B Technologies Model 202",
+   "2B Tech Model 202",
+   "Model 202 Ozone Monitor",
+   "2B 202",
+   "Model 202 UV ozone monitor"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-250,000 ppb (0-250 ppm) selectable; typical use 0-250 ppb",
+   "lod": "Precision greater of 1.5 ppb or 2% of reading",
+   "response_time_s": 10,
+   "notes": "Single-cell UV absorption at 254 nm. Lightweight (~2 kg), low power; widely used for portable and network ambient ozone monitoring. Averaging times selectable 10 s to hours. EPA FEM designation EQOA-0410-190 confirmed."
+  },
+  "epa_designation": "EQOA-0410-190",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "205",
+  "model_aliases": [
+   "2B Technologies Model 205",
+   "2B Tech Model 205",
+   "Model 205 Dual Beam Ozone Monitor",
+   "2B 205",
+   "Model 205 dual-beam ozone monitor"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry (dual-beam)",
+  "specs": {
+   "ranges": "0-250,000 ppb (0-250 ppm) selectable; typical 0-250 ppb / 0-2000 ppb",
+   "lod": "2.0 ppb; precision greater of 1.0 ppb or 2% of reading (10-s avg)",
+   "response_time_s": 4,
+   "notes": "Dual-beam design measures reference and sample cells simultaneously for improved precision (~1 ppb) and faster response (~4 s, 2-s measurement frequency) than single-beam Model 202. 254 nm UV absorption. Shares EPA FEM designation EQOA-0410-190 with the Model 202 (approved as a modification of the 202). CORRECTED: draft's EQOA-0815-227 is actually the POM's designation, not the 205's."
+  },
+  "epa_designation": "EQOA-0410-190",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "211",
+  "model_aliases": [
+   "2B Technologies Model 211",
+   "2B Tech Model 211",
+   "Model 211 Scrubberless Ozone Monitor",
+   "2B 211",
+   "Model 211 scrubberless"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry with gas-phase (NO titration) scrubber",
+  "specs": {
+   "ranges": "0-10,000 ppb (0-10 ppm); typical 0-1000 ppb",
+   "lod": "Precision better than ~0.5-1.0 ppb (10-s avg)",
+   "response_time_s": 4,
+   "notes": "Scrubberless design: instead of a solid-phase (e.g. MnO2) scrubber, ~5 ppm NO is pulsed into the sample every ~2 s to titrate ozone (NO + O3 -> NO2 + O2) as the reference, removing interference from UV-absorbing species. ~30 cm path. Best suited to heavily polluted air where VOC/mercury/particulate interferences are likely. Principle confirmed on manufacturer datasheet."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "106-L",
+  "model_aliases": [
+   "2B Technologies Model 106-L",
+   "2B Tech 106-L",
+   "Model 106L Ozone Monitor",
+   "2B 106-L",
+   "Model 106-L low range"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-100 ppm (Low range of the 106 industrial/ambient series)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "106 series 'ozone monitor on a board' for elevated/process ozone. -L = Low range (0-100 ppm), the lowest of the L/M/MH/H family. Range confirmed on manufacturer/distributor listings. Draft's 1.5 ppb LOD and 2 s response nulled as implausible/unverified for a 0-100 ppm instrument."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "106-M",
+  "model_aliases": [
+   "2B Technologies Model 106-M",
+   "2B Tech 106-M",
+   "Model 106M Ozone Monitor",
+   "2B 106-M",
+   "Model 106-M medium range"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-1,000 ppm (Medium range of the 106 series)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "-M = Medium range (0-1,000 ppm) variant of the 106 ozone monitor series, for higher-concentration ozone (ozone generation/disinfection). Range confirmed on manufacturer/distributor listings; draft's 2 s response nulled as unverified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.72
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "106-MH",
+  "model_aliases": [
+   "2B Technologies Model 106-MH",
+   "2B Tech 106-MH",
+   "Model 106MH Ozone Monitor",
+   "2B 106-MH",
+   "Model 106-MH medium-high range"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-10,000 ppm (Medium-High range of the 106 series)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "-MH = Medium-High range (0-10,000 ppm) variant of the 106 series for high-concentration ozone (ozone generators, industrial). Distinct from the 106-H (High, 0-20 wt%). Not used for ambient air. Range confirmed on manufacturer/distributor listings; draft's 2 s response nulled as unverified."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.68
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "POM",
+  "model_aliases": [
+   "2B Technologies POM",
+   "Personal Ozone Monitor",
+   "2B Tech POM",
+   "POM ozone monitor",
+   "2B POM personal ozone monitor"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry (dual-beam) with GPS",
+  "specs": {
+   "ranges": "LOD ~4 ppb up to 0-10 ppm; typical 0-1000 ppb",
+   "lod": "4 ppb (precision greater of ~1.5 ppb or 2% of reading)",
+   "response_time_s": 10,
+   "notes": "Miniature (~340 g / 0.75 lb) wearable ozone monitor with built-in GPS; based on the dual-beam UV technology of the Model 205. Used for personal exposure and mobile/spatial ozone mapping. EPA FEM designation EQOA-0815-227 confirmed. Draft's LOD of 1.5 ppb is actually the precision; manufacturer LOD is ~4 ppb."
+  },
+  "epa_designation": "EQOA-0815-227",
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "405 nm",
+  "model_aliases": [
+   "2B Technologies Model 405 nm",
+   "Model 405nm NO2/NO/NOx Monitor",
+   "2B Tech 405 nm",
+   "Model 405 nm NO2 monitor",
+   "2B 405 nm"
+  ],
+  "category": "NOx analyzer",
+  "principle": "Direct optical absorption at 405 nm for NO2; NO by O3 conversion of NO to NO2 (by difference); NOx = NO + NO2",
+  "specs": {
+   "ranges": "0-2,000 ppb standard (expandable to ~0-10,000 ppb) NO2/NO/NOx",
+   "lod": "~2 ppb (NO2 and NO)",
+   "response_time_s": 10,
+   "notes": "NO2 measured directly by absorbance at 405 nm (~2 m folded optical path); NO measured by adding ozone to convert NO to NO2 and taking the difference; NOx = NO + NO2. Avoids molybdenum/photolytic-converter efficiency issues of chemiluminescence NOx monitors. Principle confirmed on manufacturer datasheet."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "2B Technologies",
+  "model": "410",
+  "model_aliases": [
+   "2B Technologies Model 410",
+   "2B Tech Model 410",
+   "Model 410 NO Monitor",
+   "2B 410",
+   "Model 410 nitric oxide monitor"
+  ],
+  "category": "NOx analyzer",
+  "principle": "Ozone-based measurement (NO + O3 -> NO2 + O2; resulting ozone depletion measured by UV absorption at 254 nm)",
+  "specs": {
+   "ranges": "0-2,000 ppb (0-2 ppm) NO",
+   "lod": "Precision ~1.5 ppb",
+   "response_time_s": 10,
+   "notes": "CORRECTED PRINCIPLE: Model 410 NO monitor measures NO by reacting it with added ozone and detecting the resulting ozone depletion by UV absorbance at 254 nm (same UV/ozone-monitor platform, an absolute method requiring infrequent calibration) - it is NOT the 405 nm NO2-detection platform as the draft stated. Replaces the Model 400 (~2x better precision). With the Model 401 NO2 Converter, measures NOx and NO2 (by difference). Model confirmed to exist via manufacturer brochure/manual; draft under-confidence corrected upward."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "CLD 780 TR",
+  "model_aliases": [
+   "Eco Physics CLD 780 TR",
+   "EcoPhysics CLD 780 TR",
+   "CLD 780TR",
+   "Eco Physics CLD780TR"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": "~0.05 ppb (50 ppt) at 3 s; down to ~5 ppt at 60 s in high-sensitivity config",
+   "response_time_s": null,
+   "notes": "Scientific-line ('Tropospheric Research') fast-response NO chemiluminescence analyzer for free-troposphere / aircraft / vertical-flux work. Manufacturer-stated sensitivity 50 ppt in 3 s and 10 ppt in 60 s (25 ppt/3 s or 5 ppt/60 s enhanced). Used with molybdenum or PLC photolytic converters for NO2. Response time not published as a discrete time-constant, so left null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "CLD 770 AL ppt",
+  "model_aliases": [
+   "Eco Physics CLD 770 AL ppt",
+   "EcoPhysics CLD 770 AL ppt",
+   "CLD 770AL ppt",
+   "Eco Physics CLD 770 AL",
+   "CLD770"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": "low-ppt (order of a few ppt) in ppt configuration; exact value config-dependent",
+   "response_time_s": null,
+   "notes": "High-sensitivity ppt-level NO chemiluminescence analyzer widely cited in pre-2010 atmospheric field/aircraft campaigns; frequently paired with the Eco Physics PLC 760 photolytic converter (and heated-molybdenum converters) for NO2. LOD softened to an order-of-magnitude claim rather than a single fixed figure since it depends on integration time and configuration."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "CLD 700 AL",
+  "model_aliases": [
+   "Eco Physics CLD 700 AL",
+   "EcoPhysics CLD 700 AL",
+   "CLD 700AL",
+   "CLD700"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Classic Eco Physics NO chemiluminescence detector (700-series; documented via 'Brochure CLD 700 AL' and secondary-market listings). Used with molybdenum/photolytic NO2 converters. Note: a distinct 'CLD 700 AL ppt' designation could not be confirmed and was removed from aliases (the ppt-grade model in the literature is the CLD 770 AL ppt); do not conflate with the source-emissions CLD 700 EL."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.7
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "CLD 88 p",
+  "model_aliases": [
+   "Eco Physics CLD 88 p",
+   "EcoPhysics CLD 88 p",
+   "CLD 88p",
+   "Eco Physics CLD 88 Y",
+   "CLD 88Y",
+   "CLD 88"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Compact chemiluminescence NO/NOx analyzer; CLD 88 p (paired with photolytic converter PLC 860) and CLD 88 Y variants documented (e.g. 'CLD 88 Y p' brochure; CLD 88Y in institutional equipment lists). Now largely superseded by the modular nCLD 88 p. Range/LOD withheld pending confident datasheet values."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "discontinued",
+  "confidence": 0.7
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "CLD 844",
+  "model_aliases": [
+   "Eco Physics CLD 844",
+   "EcoPhysics CLD 844",
+   "CLD844",
+   "Eco Physics CLD 844 CM hr"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Chemiluminescence NO/NO2/NOx analyzer in the 800 Series; documented variants include CLD 844 CM hr (adds NH3/amines via dual converters) and the modular nCLD 844 Mh. Used in ambient/combustion and ammonia-slip monitoring. Removed unverified alias 'CLD 844 S'. Specs vary by configuration and are withheld."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "unknown",
+  "confidence": 0.7
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "nCLD 855 Y",
+  "model_aliases": [
+   "Eco Physics nCLD 855 Y",
+   "EcoPhysics nCLD 855",
+   "nCLD855"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": "~0.4 ppb (manufacturer min. detectable concentration, ambient config)",
+   "response_time_s": null,
+   "notes": "Two-channel modular ('n'-series) chemiluminescence NO/NO2/NOx analyzer conforming to EN 14211 for ambient NOx; manufacturer states min. detectable ~0.4 ppb (ambient-level, not a ppt flux instrument). Targets ambient/indoor/clean-room/atmospheric-research use; can be combined with a PLC 860 photolytic converter for interference-free NO2 in clean air. Removed unverified aliases 'nCLD 855 AL' and 'nCLD 855 Y hr'."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "nCLD 899",
+  "model_aliases": [
+   "Eco Physics nCLD 899",
+   "EcoPhysics nCLD 899",
+   "nCLD899",
+   "Eco Physics nCLD 899 Y",
+   "nCLD 899 CY"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Supreme-line modular chemiluminescence NO/NO2/NOx analyzer for ppt-level research; documented variants nCLD 899 Y and nCLD 899 CY (CY additionally handles NOx-amines/NH3). 'nCLD 899' used here as the series label. Datasheet numeric specs withheld pending confident values."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "Eco Physics",
+  "model": "PLC 860",
+  "model_aliases": [
+   "Eco Physics PLC 860",
+   "EcoPhysics PLC 860",
+   "Photolytic Converter PLC 860",
+   "PLC 760",
+   "Eco Physics PLC 760"
+  ],
+  "category": "NO2 analyzer",
+  "principle": "photolytic conversion (blue-light / metal-halide-lamp converter) + chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CAUTION: this is a photolytic NO2-to-NO converter ACCESSORY, not a standalone analyzer; categorized as 'NO2 analyzer' only because that is the closest enum option. Confirmed current auxiliary product (PLC 860); can convert NO2 down to a few ppt and avoids the HONO/NOy interference of molybdenum converters. Placed ahead of Eco Physics CLD/nCLD detectors to give interference-free true NO2. Older PLC 760 form appears in atmospheric literature (e.g. paired with CLD 770 AL ppt)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.55
+ },
+ {
+  "manufacturer": "Picarro",
+  "model": "G2401",
+  "model_aliases": [
+   "Picarro G2401",
+   "G2401 CRDS",
+   "Picarro Inc. G2401 CRDS analyzer",
+   "G2401-m"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "cavity ring-down spectroscopy (WS-CRDS)",
+  "specs": {
+   "ranges": "CO2 0-1000 ppm; CH4 0-20 ppm; CO 0-5000 ppb (0-5 ppm); H2O 0-7% (standard datasheet ranges)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Simultaneous CO, CO2, CH4, H2O. Guaranteed 1-sigma precision (5 s / 5 min) per datasheet: CO <15 / <1.5 ppb; CO2 <50 / <20 ppb; CH4 <1 / <0.5 ppb; H2O <30 / <5 ppm. Automatic H2O correction reports dry-gas mole fractions. Meets WMO/ICOS ambient GHG requirements. Airborne variant sold as G2401-m. Confirmed against manufacturer datasheet."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.picarro.com/environmental/products/g2401_gas_concentration_analyzer",
+  "status": "current",
+  "confidence": 0.97
+ },
+ {
+  "manufacturer": "Picarro",
+  "model": "G2301",
+  "model_aliases": [
+   "Picarro G2301",
+   "G2301 CRDS",
+   "Picarro Inc. G2301",
+   "G2301-m"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "cavity ring-down spectroscopy (WS-CRDS)",
+  "specs": {
+   "ranges": "CO2 0-1000 ppm; CH4 0-20 ppm; H2O 0-7% (standard datasheet ranges)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Simultaneous CO2, CH4, H2O (no CO). WMO/ICOS-grade; automatic H2O correction reports dry mole fractions. Flight/mobile variant G2301-m. NOTE: the fast eddy-covariance flux analyzer is the separate G2311-f, not a 'G2301-f' (drafted 'G2301-f fast/flux variant' removed as unverified). Precision figures vary by datasheet revision; not treated as guaranteed here."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.picarro.com/environmental/products/g2301_gas_concentration_analyzer",
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Picarro",
+  "model": "G2302",
+  "model_aliases": [
+   "Picarro G2302",
+   "G2302 CRDS",
+   "Picarro Inc. G2302"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "cavity ring-down spectroscopy (WS-CRDS)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Confirmed real Picarro model (CO2/CO/H2O analyzer; user guide and datasheet exist). Simultaneous CO2, CO, H2O (adds CO and drops CH4 relative to the G2301). H2O correction reports dry-gas mole fractions. Marketed as meeting WMO CO2/CO precision objectives. Now a legacy line, largely superseded by the G2401 (which adds CH4); commercial status uncertain. Numeric datasheet ranges/precision not confidently recalled, left null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "unknown",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Picarro",
+  "model": "G2508",
+  "model_aliases": [
+   "Picarro G2508",
+   "G2508 CRDS",
+   "Picarro Inc. G2508 analyzer"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "cavity ring-down spectroscopy (CRDS)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Simultaneous N2O, CH4, CO2, NH3, H2O. Precision (1 min / 5 min) per datasheet: N2O <10 / <5 ppb; CH4 <7 / <5 ppb; CO2 <300 / <200 ppb; NH3 <3 / <1 ppb (confirmed against manufacturer datasheet). Designed for soil/agriculture flux and chamber (open or closed) systems; automatic water correction reports dry mole fractions. Numeric measurement ranges not confidently recalled, left null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.picarro.com/environmental/products/g2508_gas_concentration_analyzer",
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Picarro",
+  "model": "G2103",
+  "model_aliases": [
+   "Picarro G2103",
+   "G2103 CRDS",
+   "Picarro G2103 ammonia analyzer",
+   "Picarro Inc. G2103"
+  ],
+  "category": "NH3 analyzer",
+  "principle": "cavity ring-down spectroscopy (CRDS)",
+  "specs": {
+   "ranges": null,
+   "lod": "Lower detectable limit <0.07 ppb (0.05 ug/m3) best case per datasheet; 5-min precision ~30 ppt (the ~30/~170 ppt figures are precision, not detection limits)",
+   "response_time_s": null,
+   "notes": "Ambient ammonia (NH3) analyzer. Precision 1 s / 10 s / 5 min = 500 / 170 / 30 ppt (confirmed against datasheet). Zero drift +/-0.15 ppb over 72 h at STP; rise/fall time <2 min for a 20 ppb NH3 challenge. Measures/corrects H2O to report dry-basis NH3; no drying required. Earlier draft framed precision values as the LOD; corrected to distinguish precision from the datasheet's stated lower detectable limit."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.picarro.com/environmental/products/g2103_gas_concentration_analyzer",
+  "status": "current",
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "Picarro",
+  "model": "G5310",
+  "model_aliases": [
+   "Picarro G5310",
+   "G5310 CRDS",
+   "Picarro PI5310",
+   "PI5310"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "mid-IR cavity ring-down spectroscopy (CRDS)",
+  "specs": {
+   "ranges": "N2O 1-1500 ppb; CO 1-1500 ppb; H2O 0-3%",
+   "lod": "sub-ppb (5 min precision <40 ppt for N2O and CO)",
+   "response_time_s": null,
+   "notes": "Simultaneous N2O, CO, H2O. Precision (5 s / 5 min) per datasheet: N2O <200 / <40 ppt; CO <200 / <40 ppt; drift <100 ppt over 24 h. Meets WMO/ICOS requirements for N2O and CO; static installations. Succeeded by the upgraded PI5310 (built on the G5310 with newer mid-IR CRDS; 1-1500 ppb range, <5 s), which is the current catalog model rather than a pure rename."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.picarro.com/g5310_gas_concentration_analyzer",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Picarro",
+  "model": "G1301",
+  "model_aliases": [
+   "Picarro G1301",
+   "G1301 CRDS",
+   "Picarro EnviroSense 3000i",
+   "EnviroSense 3000i",
+   "G1301-c"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "wavelength-scanned cavity ring-down spectroscopy (WS-CRDS)",
+  "specs": {
+   "ranges": "CO2 0-1000 ppmv; CH4 0-10 ppmv; H2O reported (per G1301 user manual)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "First-generation field GHG analyzer (~2008-2011), simultaneous CO2, CH4, H2O; formerly branded EnviroSense 3000i. WS-CRDS at ~5 Hz; reports dry mole fractions without drying. Airborne variant G1301-c flown on NASA aircraft; mobile/flux variants also produced. CORRECTION: G1301 manual specifies CH4 0-10 ppmv (draft's 0-20 ppm was too high). Discontinued (superseded by G2301) but dominant in pre-2012 GHG and eddy-covariance literature."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Los Gatos Research / ABB",
+  "model": "FGGA",
+  "model_aliases": [
+   "Fast Greenhouse Gas Analyzer",
+   "LGR Greenhouse Gas Analyzer (CH4, CO2, H2O)",
+   "LGR GGA",
+   "907-0010",
+   "911-0010",
+   "GGA-24EP"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "off-axis ICOS",
+  "specs": {
+   "ranges": "CH4 0.01-100 ppm (Extended Range to ~10%); CO2 200-20000 ppm; H2O to ~7% (upper H2O range varies by source, some cite ~30000 ppm)",
+   "lod": "1-sigma precision (5 s): CH4 ~1 ppb, CO2 ~150 ppb, H2O ~100 ppm",
+   "response_time_s": 0.1,
+   "notes": "Rackmount/benchtop CH4/CO2/H2O analyzer, measurement rates up to 10 Hz; heavily used for eddy-covariance and airborne flux. Reports dry mole fractions via measured H2O. Ordering numbers (fast flow 907-0010 / benchtop 908-0010, EP 911-0010/911-0011) are commonly cited but not individually verified here. Removed a datasheet URL on a Russian reseller mirror (lgrinc.ru) that could not be confirmed."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Los Gatos Research / ABB",
+  "model": "UGGA",
+  "model_aliases": [
+   "Ultraportable Greenhouse Gas Analyzer",
+   "Ultra-Portable Greenhouse Gas Analyzer",
+   "LGR UGGA",
+   "915-0011",
+   "GLA132-GGA"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "off-axis ICOS",
+  "specs": {
+   "ranges": "CH4 0.01-100 ppm; CO2 200-20000 ppm; H2O up to ~70000 ppm",
+   "lod": "1-sigma precision (1 s) ~ CH4 2 ppb, CO2 0.3 ppm (approx; datasheet-dependent)",
+   "response_time_s": 1,
+   "notes": "Compact, crushproof field-portable version of the GGA (CH4/CO2/H2O), ~70 W, TSA-carry-on size; measurement rate up to 1 Hz. Model 915-0011 (ABB LGR user manual confirmed); rebranded by ABB as GLA132-GGA (verified). Removed dubious alias 'UPGA 915-0011' (non-standard abbreviation, not a verified literature form). Precision figures approximate."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.et.co.uk/wp-content/uploads/2024/03/GLA132-GGA-Ultraportable-Greenhouse-Gas-Analyser.pdf",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Los Gatos Research / ABB",
+  "model": "N2O/CO analyzer",
+  "model_aliases": [
+   "CO/N2O/H2O analyzer",
+   "LGR ICOS CO/H2O/N2O analyzer",
+   "GLA151-N2OCM",
+   "LGR N2O/CO analyzer"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "off-axis ICOS",
+  "specs": {
+   "ranges": "N2O and CO each linear/tested to ~2 ppm (per ABB GLA151-N2OCM datasheet); typical ambient N2O ~330 ppb, ambient CO tens-hundreds of ppb; H2O to saturation",
+   "lod": "1-sigma precision (ABB GLA151-N2OCM): N2O 0.3 ppb / CO 0.3 ppb at 1 s; N2O 0.04 ppb / CO 0.05 ppb at 100 s",
+   "response_time_s": 8,
+   "notes": "Simultaneous N2O, CO (and H2O); reports dry mole fractions. Current ABB rebrand GLA151-N2OCM is a QC-Portable OA-ICOS analyzer (verified). CORRECTED: draft's 1 s precision (CO ~0.05 ppb, N2O ~0.08 ppb) were actually the ~100 s figures mislabeled as 1 s; true 1 s precision is ~0.3 ppb each per datasheet. Removed fabricated accuracy spec (+/-2 ppb or +/-2%), the >5 ppm CO range (datasheet linear tested to ~2 ppm), unverified legacy order numbers 907-0015/908-0014, and an unverifiable ARM report number. Response time set to datasheet gas-flow 1/e (8 s, standard pump). Categorized multi-gas because N2O has no dedicated category."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://new.abb.com/products/measurement-products/analytical/laser-gas-analyzers/laser-analyzers/lgr-icos-portable-analyzers/lgr-icos-qc-portable-gas-analyzers-gla151-series/lgr-icos-portable-analyzers-gla151-n2ocm",
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Los Gatos Research / ABB",
+  "model": "EAA",
+  "model_aliases": [
+   "Economical Ammonia Analyzer",
+   "LGR Ammonia Analyzer",
+   "Ammonia Analyzer - Economical",
+   "EAA-22",
+   "GLA331-EAA",
+   "Los Gatos Research NH3 analyzer"
+  ],
+  "category": "NH3 analyzer",
+  "principle": "off-axis ICOS",
+  "specs": {
+   "ranges": "NH3 ~0.5 ppb to 10 ppm",
+   "lod": "~0.2 ppb (1 s) for the trace/standard configuration; economical variant is less sensitive",
+   "response_time_s": null,
+   "notes": "Off-axis ICOS ammonia (and H2O) analyzer for atmospheric NH3 monitoring; up to ~10 Hz nominal (inlet adsorption lengthens effective NH3 response, so response_time left null). Model EAA-22 (Economical Ammonia Analyser) VERIFIED via CEDA/MAQS instrument record; ABB rebrand GLA331-EAA (Enhanced-Performance rackmount) VERIFIED. Range/precision figures apply to the general LGR NH3 analyzer and may differ between economical and EP units."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://library.e.abb.com/public/f04177630e69417483826db0f7999962/3KXG163011R1001_C_GLA331-EAA%20Datasheet_EN.pdf",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Los Gatos Research / ABB",
+  "model": "DLT-100",
+  "model_aliases": [
+   "LGR DLT-100",
+   "Fast Methane Analyzer",
+   "FMA",
+   "Los Gatos Research methane analyzer (CH4, H2O)"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "off-axis ICOS",
+  "specs": {
+   "ranges": "CH4 ~0.01-100 ppm (higher in landfill/flux configs, to ~1000 ppm); H2O optional",
+   "lod": "CH4 ~1-2 ppb (1-sigma, ~1 s); FMA fast variant cited at ~0.1 ppb-class precision at up to 10-20 Hz; exact figure configuration-dependent",
+   "response_time_s": 1,
+   "notes": "Early LGR off-axis ICOS platform measuring CH4 (H2O optional); the fast-flow variant (Fast Methane Analyzer, FMA) with scroll pump reaches ~0.10 s cell response and 10 Hz, widely used for eddy-covariance CH4 flux pre-2012. DLT-100 = FMA VERIFIED via CEDA record and multiple EC papers. Standard unit measures CH4 only (categorized CO2/CH4 as nearest fit). Removed unverified order number 908-0001. Historically important; largely superseded by FGGA/UGGA."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Los Gatos Research / ABB",
+  "model": "M-GGA-918",
+  "model_aliases": [
+   "MicroGGA",
+   "Micro-portable Greenhouse Gas Analyzer",
+   "Microportable Greenhouse Gas Analyzer",
+   "GLA131-GGA",
+   "ABB MicroGGA"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "off-axis ICOS",
+  "specs": {
+   "ranges": "CH4 0.01-100 ppm (Extended Range option to % level); CO2 200-20000 ppm; H2O",
+   "lod": null,
+   "response_time_s": 1,
+   "notes": "Smallest/lightest of the GGA family (~5.4 kg, <35 W), measures CH4, CO2 (and H2O on newer units); battery-portable for mobile/survey and leak detection. Model M-GGA-918 VERIFIED (LGR datasheet) and ABB rebrand GLA131-GGA VERIFIED (Microportable). Precision figures not confidently known (LOD left null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.et.co.uk/products/gla131-gga-microportable-greenhouse-gas-analyser/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "CAPS NO2 monitor",
+  "model_aliases": [
+   "Aerodyne CAPS NO2",
+   "CAPS NO2",
+   "Aerodyne CAPS NO2 monitor",
+   "ARI CAPS NO2",
+   "Cavity Attenuated Phase Shift NO2 monitor"
+  ],
+  "category": "NO2 analyzer",
+  "principle": "CAPS",
+  "specs": {
+   "ranges": "0-3000 ppbv (0-3 ppm), configurable; fast-response version available",
+   "lod": "<0.1 ppb (<100 ppt at 10 s; ~1 ppb on 1 s fast version)",
+   "response_time_s": 1,
+   "notes": "Cavity Attenuated Phase Shift spectroscopy, blue LED ~450 nm (20 nm bandpass ~440 nm); direct NO2 absorption, no converter needed. Widely used for direct NO2 in field campaigns. Precision (2-sigma, 1 s) <0.5 ppb; LOD/response depend on averaging. Confirmed dedicated Aerodyne product with published datasheet."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "CAPS NOx monitor",
+  "model_aliases": [
+   "Aerodyne CAPS NOx",
+   "CAPS NOx-NO2 monitor",
+   "CAPS NOx",
+   "ARI CAPS NOx",
+   "CAPS NO/NOx"
+  ],
+  "category": "NOx analyzer",
+  "principle": "CAPS",
+  "specs": {
+   "ranges": "0-3000 ppbv (NO2 channel), configurable",
+   "lod": "sub-ppb (NO2 channel ~0.1 ppb / <100 ppt at 10 s)",
+   "response_time_s": 1,
+   "notes": "CAPS-based NOx variant: measures NO2 directly by CAPS; total NOx via ozone conversion of NO to NO2 then CAPS detection, toggling conversion on/off to separate NO and NO2. Confirmed by Aerodyne 'CAPS NOx-NO2 Monitor' datasheet. Less common in literature than the pure NO2 CAPS."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "TILDAS",
+  "model_aliases": [
+   "Aerodyne TILDAS",
+   "Tunable Infrared Laser Direct Absorption Spectrometer",
+   "Aerodyne QCL-TILDAS",
+   "TILDAS-QCL",
+   "Aerodyne mini-TILDAS",
+   "Aerodyne dual-TILDAS"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "tunable IR laser direct absorption spectroscopy (QCL/ICL)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": 1,
+   "notes": "Platform family (Mini single-laser, Dual-laser, Compact) using astigmatic Herriott/AMAC multipass cell with QC or IC lasers. Aerodyne lists configurable species: NO, N2O, NO2, NH3, CO, CO2, CH4, C2H6, COS, HCHO, O3, EtO and others. LOD/range species-dependent; ~1-10 Hz, eddy-covariance capable. Generic platform row; see species-specific rows."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "TILDAS NH3",
+  "model_aliases": [
+   "Aerodyne NH3 TILDAS",
+   "QCL-TILDAS NH3",
+   "Aerodyne compact NH3 analyzer",
+   "TILDAS ammonia",
+   "Aerodyne mini-TILDAS NH3"
+  ],
+  "category": "NH3 analyzer",
+  "principle": "tunable IR laser direct absorption spectroscopy (QCL)",
+  "specs": {
+   "ranges": null,
+   "lod": "sub-ppb (~0.1 ppb; ~60-100 ppt at 1 s reported)",
+   "response_time_s": 1,
+   "notes": "QCL-based direct-absorption NH3 monitor, noted for fast response and low inlet adsorption; used for ammonia flux (eddy covariance) and ambient monitoring. NH3 is a confirmed TILDAS species. 'TILDAS NH3' is a functional config label rather than a catalog SKU (sold as TILDAS Mini/Compact configured for NH3). LOD depends on configuration/averaging."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "TILDAS N2O",
+  "model_aliases": [
+   "Aerodyne N2O TILDAS",
+   "QCL-TILDAS N2O",
+   "Aerodyne N2O/CO monitor",
+   "TILDAS nitrous oxide",
+   "Aerodyne CW-QC-TILDAS N2O"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "tunable IR laser direct absorption spectroscopy (QCL)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": 1,
+   "notes": "QCL direct-absorption N2O analyzer, often combined with CO or CO2; widely used for soil/agricultural N2O flux by eddy covariance. N2O is a confirmed TILDAS species. Some configurations also measure N2O isotopologues (site preference). Species-tagged config label, not an official SKU. (No dedicated N2O category in schema; classed as multi-gas.)"
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "TILDAS CH4",
+  "model_aliases": [
+   "Aerodyne CH4 TILDAS",
+   "QCL-TILDAS CH4",
+   "Aerodyne methane monitor",
+   "TILDAS methane",
+   "Aerodyne dual CH4/C2H6 TILDAS"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "tunable IR laser direct absorption spectroscopy (QCL/ICL)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": 1,
+   "notes": "Direct-absorption CH4 analyzer; dual-laser versions co-measure ethane (C2H6) for source attribution (natural gas leaks) - Aerodyne markets a TILDAS Compact single-laser ethane analyzer and CH4/C2H6 dual. Used for methane flux and mobile surveys. Config label, not an official SKU."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.83
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "TILDAS HCHO",
+  "model_aliases": [
+   "Aerodyne HCHO TILDAS",
+   "QCL-TILDAS formaldehyde",
+   "Aerodyne formaldehyde monitor",
+   "TILDAS HCHO",
+   "Aerodyne mini-TILDAS formaldehyde"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "tunable IR laser direct absorption spectroscopy (QCL)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": 1,
+   "notes": "QCL direct-absorption formaldehyde monitor; used in aircraft and ground campaigns as a fast HCHO reference. HCHO is a confirmed TILDAS species. LOD typically sub-ppb depending on averaging. Config label, not an official SKU. (No dedicated formaldehyde-analyzer category in schema; classed as multi-gas.)"
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Aerodyne Research",
+  "model": "TILDAS CO",
+  "model_aliases": [
+   "Aerodyne CO TILDAS",
+   "QCL-TILDAS CO",
+   "Aerodyne CO/N2O monitor",
+   "TILDAS carbon monoxide",
+   "Aerodyne dual CO/CO2 TILDAS"
+  ],
+  "category": "CO analyzer",
+  "principle": "tunable IR laser direct absorption spectroscopy (QCL)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": 1,
+   "notes": "Direct-absorption CO analyzer, frequently in dual configurations with N2O or CO2; used as combustion tracer and for flux measurements. CO is a confirmed TILDAS species. Config label, not an official SKU."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-500",
+  "model_aliases": [
+   "FPI AQMS-500",
+   "Focused Photonics AQMS-500",
+   "聚光科技 AQMS-500",
+   "AQMS-500 SO2 analyzer",
+   "FPI Model AQMS-500"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0–0.05 to 0–20 ppm (selectable/auto)",
+   "lod": "0.4 ppb",
+   "response_time_s": 60,
+   "notes": "Pulsed-UV fluorescence with PMT. Confirmed FPI product (directindustry / en.fpi-inc.com). Principle is the US-EPA-recommended reference method for trace SO2; note the instrument itself carries Chinese certification, not a US EPA designation. Widely deployed in China's national ambient network."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-600",
+  "model_aliases": [
+   "FPI AQMS-600",
+   "Focused Photonics AQMS-600",
+   "聚光科技 AQMS-600",
+   "AQMS-600 NO-NO2-NOx analyzer",
+   "FPI Model AQMS-600"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": "0–0.05 to 0–20 ppm (selectable/auto)",
+   "lod": "0.4 ppb",
+   "response_time_s": 60,
+   "notes": "NO/NO2/NOx by chemiluminescence with catalytic/molybdenum NO2-to-NO converter. Confirmed FPI product (directindustry). Chemiluminescence is the US EPA reference method for NO2/NOx (describes the principle, not a US EPA designation for this model). Range/LOD identical to AQMS-500 in the draft — plausible trace-ambient values but not independently cross-checked against the datasheet."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-300",
+  "model_aliases": [
+   "FPI AQMS-300",
+   "Focused Photonics AQMS-300",
+   "聚光科技 AQMS-300",
+   "AQMS-300 ozone analyzer",
+   "AQMS-300臭氧分析仪"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0–0.1 to 0–10 ppm (selectable)",
+   "lod": null,
+   "response_time_s": 60,
+   "notes": "UV photometric absorption at 254 nm with reference measurement via ozone scrubber; ppb-level O3. Confirmed FPI product (聚光科技 AQMS-300臭氧分析仪). Draft datasheet URL removed — it 302-redirects to a 404 page and does not resolve to a live product page."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.87
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-400",
+  "model_aliases": [
+   "FPI AQMS-400",
+   "Focused Photonics AQMS-400",
+   "聚光科技 AQMS-400",
+   "AQMS-400 CO analyzer",
+   "FPI Model AQMS-400"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0–1 to 0–1000 ppm (selectable); typ. 0–50/0–100 ppm",
+   "lod": "~40 ppb (0.04 ppm)",
+   "response_time_s": 60,
+   "notes": "Non-dispersive infrared with gas filter correlation (GFC wheel), long-path cell (~14 m). Confirmed FPI product (environmental-expert / directindustry). LOD is an approximate datasheet-class value typical of GFC CO analyzers."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-700",
+  "model_aliases": [
+   "FPI AQMS-700",
+   "Focused Photonics AQMS-700",
+   "聚光科技 AQMS-700",
+   "AQMS-700 CAPS NO2 analyzer",
+   "FPI Model AQMS-700"
+  ],
+  "category": "NO2 analyzer",
+  "principle": "CAPS",
+  "specs": {
+   "ranges": "0–0.5 / 0–1 ppm (approx.)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Direct NO2 measurement by cavity attenuated phase shift (CAPS), avoiding the converter artefact of chemiluminescence NOx analyzers. Confirmed as a real FPI product. Range values are approximate/unverified against the datasheet."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-200",
+  "model_aliases": [
+   "FPI AQMS-200",
+   "Focused Photonics AQMS-200",
+   "聚光科技 AQMS-200",
+   "AQMS-200 dynamic dilution calibrator",
+   "AQMS-200 multi-point calibrator"
+  ],
+  "category": "calibrator",
+  "principle": "dynamic dilution / gas-phase titration",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Dynamic dilution multi-point calibrator confirmed on en.fpi-inc.com: two mass flow controllers (dilution 0–10 SLPM, standard 0–100 sccm), up to 4 calibration gas inputs, optional internal ozone generator (0.1–6 ppm output) and UV photometer for GPT/O3 calibration. QA/QC device, not a gas analyzer."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://en.fpi-inc.com/product/aqms-200-multi-point-calibrator/",
+  "status": "current",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-650",
+  "model_aliases": [
+   "FPI AQMS-650",
+   "Focused Photonics AQMS-650",
+   "聚光科技 AQMS-650",
+   "AQMS-650 ammonia analyzer",
+   "AQMS-650 NH3 analyzer"
+  ],
+  "category": "NH3 analyzer",
+  "principle": "chemiluminescence (with NH3 converter)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Ambient NH3 analyzer confirmed as an FPI product; NH3 oxidatively converted to NO via an external converter and detected by chemiluminescence, designed to pair with the AQMS-600 NOx analyzer."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-450",
+  "model_aliases": [
+   "FPI AQMS-450",
+   "Focused Photonics AQMS-450",
+   "聚光科技 AQMS-450",
+   "AQMS-450 CO2 analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Confirmed FPI product, but it is a CO2-ONLY analyzer (non-dispersive infrared, ppm level) — it does NOT measure CH4. Category label 'CO2/CH4 analyzer' is retained only as the closest available bucket; do not read it as methane capability."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.55
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-550",
+  "model_aliases": [
+   "FPI AQMS-550",
+   "Focused Photonics AQMS-550",
+   "聚光科技 AQMS-550",
+   "AQMS-550 H2S analyzer"
+  ],
+  "category": "H2S analyzer",
+  "principle": "UV fluorescence (with H2S-to-SO2 converter)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Ambient H2S analyzer confirmed as an FPI product (datasheet available). H2S catalytically converted to SO2 (internal converter ~315 °C) after an SO2 scrubber, then detected by pulsed UV fluorescence."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "EXPEC-2000",
+  "model_aliases": [
+   "FPI EXPEC-2000",
+   "EXPEC 2000",
+   "Focused Photonics EXPEC-2000",
+   "聚光科技 EXPEC-2000",
+   "EXPEC-2000 VOC analyzer"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (GC-FID, three-valve four-column)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Online VOC/hydrocarbon analyzer confirmed as an FPI product (environmental-expert / directindustry). Three-valve four-column GC-FID measuring methane, non-methane hydrocarbons (NMHC) and BTEX simultaneously; applied in both industrial-emission and ambient/urban VOC networks."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "EXPEC-3200",
+  "model_aliases": [
+   "FPI EXPEC 3200",
+   "EXPEC 3200",
+   "聚光科技 EXPEC 3200",
+   "EXPEC 3200 portable THC/NMHC analyzer"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Portable FID methane / non-methane total hydrocarbon (THC/CH4/NMHC) analyzer confirmed as an FPI product; heated sampling line (up to ~180 °C) for stationary-source exhaust gas and fugitive/unorganized emissions. Draft claims of BTEX capability and specific 'HJ 1012-2018' compliance are unverified and removed; the invented 'EXPEC 3200-120' alias was dropped."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.55
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "CEMS-2000",
+  "model_aliases": [
+   "FPI CEMS-2000",
+   "Focused Photonics CEMS-2000",
+   "聚光科技 CEMS-2000",
+   "CEMS-2000 continuous emission monitoring system",
+   "CEMS-2000 series"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "UV-DOAS (SO2/NOx/NO2) + NDIR (CO/CO2) + zirconia O2",
+  "specs": {
+   "ranges": null,
+   "lod": "~1 ppm (critical species, stack level; per datasheet)",
+   "response_time_s": null,
+   "notes": "Stack/flue-gas continuous emission monitoring system confirmed on en.fpi-inc.com (SO2, NOx, NO2, CO, CO2, O2; expandable to HCl, HF, H2S, dust). Hot-wet extractive sampling. Regulatory EMISSION monitoring, not ambient — included for completeness; not typically cited in ambient-air Methods sections. LOD ~1 ppm is stated on the datasheet for critical species."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://en.fpi-inc.com/cems-2000-continuous-emission-monitoring-system/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Focused Photonics (FPI) 聚光科技",
+  "model": "AQMS-3000",
+  "model_aliases": [
+   "FPI AQMS-3000",
+   "Focused Photonics AQMS-3000",
+   "聚光科技 AQMS-3000",
+   "AQMS-3000 micro air quality station",
+   "AQMS-3000 mini station"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "compact multi-sensor (miniature UV/NDIR/electrochemical + laser-scattering PM)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Micro/mini air-quality station confirmed as an FPI product (environmental-expert 'AQMS-3000 Micro Air Quality Monitoring System') measuring SO2, NO, NOx, CO, O3, PM2.5, PM10 in a compact grid-monitoring enclosure. This is a gridded-network micro-station, NOT a single reference analyzer; sensor principles vary by channel and 'multi-gas analyzer' is only the closest available category."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.65
+ },
+ {
+  "manufacturer": "Hebei Sailhero (先河环保 / Sailhero)",
+  "model": "XHAQMS-3000",
+  "model_aliases": [
+   "XHAQMS3000",
+   "XHAQMS-3000型",
+   "XHAQMS3000型小型化空气质量连续监测系统",
+   "Sailhero XHAQMS-3000",
+   "先河 XHAQMS-3000"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "Compact continuous ambient station housing UV-fluorescence SO2, chemiluminescence NO/NO2/NOx, UV-photometric O3 and GFC-NDIR CO analyzer modules (miniaturized standard-method configuration)",
+  "specs": {
+   "ranges": "Multi-gas system; module-dependent (SO2/NO2/O3 sub-ppb to ~ppm, CO ~ppm)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED model: appears in Hebei Province首台(套) major-equipment catalog as 'XHAQMS3000型小型化空气质量连续监测系统' (compact/miniaturized continuous air-quality monitoring system). This is a station/system designation, not a single analyzer — Chinese station Methods sometimes cite the whole station as 'Sailhero/先河 XHAQMS'. Module principles listed are typical for a compact standard-method station but are inferred, not individually verified. XHAQMS-4000 is referenced as a mobile monitoring/calibration vehicle; 1000/2000 variants unverified. CORRECTED: the specific CCEP designation number in the draft could not be verified and was nulled — CCEP certification is plausible but the '质(认)字 No. 2018-233' string is unconfirmed."
+  },
+  "status": "current",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": null,
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "Hebei Sailhero (先河环保 / Sailhero)",
+  "model": "XHAQSN-801",
+  "model_aliases": [
+   "XHAQSN-801",
+   "XHAQSN-801 TVOC微型站",
+   "先河 XHAQSN-801",
+   "Sailhero XHAQSN-801",
+   "先河环保 网格化微型站"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "Sensor-based TVOC micro-station using photoionization detector (PID) plus metal-oxide semiconductor sensor",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED model but CORRECTED scope: vendor product page describes XHAQSN-801 specifically as the 'TVOC微型站' measuring TVOC (plus temp/humidity) via PID + metal-oxide, NOT a multi-gas SO2/NO2/O3/CO station. The draft's electrochemical SO2/NO2/O3/CO description conflated it with sibling models — the six-parameter unit is XHAQSN-808 and XHAQSN-804 is the particulate variant. Low-cost gridded ('网格化') micro station, NOT a reference-grade analyzer; appears in Chinese gridded/low-cost-sensor studies. Category changed from 'multi-gas analyzer' to THC/VOC analyzer accordingly."
+  },
+  "status": "current",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": null,
+  "confidence": 0.6
+ },
+ {
+  "manufacturer": "Hebei Sailhero (先河环保); OEM Ecotech (Australia)",
+  "model": "EC9850",
+  "model_aliases": [
+   "EC9850",
+   "EC9850B",
+   "Ecotech EC9850",
+   "Sailhero EC9850",
+   "先河 EC9850"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "pulsed UV fluorescence",
+  "specs": {
+   "ranges": "0–50 ppb to 0–20 ppm (selectable)",
+   "lod": "0.5 ppb",
+   "response_time_s": null,
+   "notes": "Ecotech EC9800-series SO2 analyzer. Sailhero–Ecotech link VERIFIED: Ecotech partnered with Hebei Sailhero in 2008 to manufacture gas analysers in China, so it is cited as both 'Sailhero/先河 EC9850' and 'Ecotech EC9850'. EC9850H (0–400 ppm) and EC9850T (200 ppt, 0–2000 ppb) high/trace variants exist. Discontinued; superseded by Serinus 50."
+  },
+  "status": "discontinued",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": null,
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Hebei Sailhero (先河环保); OEM Ecotech (Australia)",
+  "model": "EC9841",
+  "model_aliases": [
+   "EC9841",
+   "EC9841B",
+   "EC9841T",
+   "Ecotech EC9841",
+   "Sailhero EC9841",
+   "先河 EC9841"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence (heated molybdenum NO2→NO converter)",
+  "specs": {
+   "ranges": "0–50 ppb to 0–20 ppm (selectable)",
+   "lod": "0.4 ppb (~0.5 ppb typical)",
+   "response_time_s": null,
+   "notes": "Ecotech EC9800-series NOx analyzer; EC9841B marketed on Hebei Sailhero product pages (Sailhero–Ecotech 2008 partnership). US EPA reference method RFNA-1292-090 CONFIRMED (Teledyne Monitor Labs/Ecotech ML9841/EC9841 family). A separate EC9841T trace variant covers 0–2000 ppb with ~50 ppt LDL. Discontinued; superseded by Serinus 40."
+  },
+  "status": "discontinued",
+  "ccep_designation": null,
+  "epa_designation": "RFNA-1292-090",
+  "datasheet_url": null,
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Hebei Sailhero (先河环保); OEM Ecotech (Australia)",
+  "model": "EC9830",
+  "model_aliases": [
+   "EC9830",
+   "EC9830B",
+   "Ecotech EC9830",
+   "Sailhero EC9830",
+   "先河 EC9830"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0–200 ppm (autoranging; selectable)",
+   "lod": "~0.04 ppm (40 ppb)",
+   "response_time_s": null,
+   "notes": "Ecotech EC9800-series CO analyzer integrated in Chinese stations via the Sailhero–Ecotech partnership (verified 2008). Nondispersive IR photometer using gas-filter-correlation. Discontinued; superseded by Serinus 30. LOD figure is typical datasheet value."
+  },
+  "status": "discontinued",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": null,
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "Hebei Sailhero (先河环保); OEM Ecotech (Australia)",
+  "model": "EC9810",
+  "model_aliases": [
+   "EC9810",
+   "EC9810A",
+   "EC9810B",
+   "Ecotech EC9810",
+   "Sailhero EC9810"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry (254 nm)",
+  "specs": {
+   "ranges": "0–50 ppb to 0–20 ppm (selectable)",
+   "lod": "0.5 ppb",
+   "response_time_s": null,
+   "notes": "Ecotech EC9800-series ozone analyzer integrated in Chinese stations via the Sailhero–Ecotech partnership; lineage from Monitor Labs/ML9810. Discontinued; superseded by Serinus 10. CORRECTED: draft datasheet_url (ecotech.com/.../EC9810-Operation-Manual.pdf) returns HTTP 404 and was nulled."
+  },
+  "status": "discontinued",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": null,
+  "confidence": 0.76
+ },
+ {
+  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
+  "model": "Serinus 50",
+  "model_aliases": [
+   "Serinus 50",
+   "Serinus 50 SO2",
+   "Ecotech Serinus 50",
+   "Acoem Serinus 50",
+   "Sailhero Serinus 50"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "pulsed UV fluorescence",
+  "specs": {
+   "ranges": "0–20 ppm",
+   "lod": "<0.3 ppb",
+   "response_time_s": null,
+   "notes": "Ecotech/Acoem Serinus-series SO2 analyzer; successor to EC9850. Datasheet/manual URL VERIFIED (valid Serinus 50 SO2 user manual). Listed on Sailhero product pages and integrated into Sailhero Chinese stations, but in literature it is usually attributed to Ecotech/Acoem rather than Sailhero. Serinus 51 is a combined SO2/H2S variant; Serinus 50T is a trace (ppt) variant."
+  },
+  "status": "current",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": "https://old.ecotech.com/wp-content/uploads/2015/01/M010029-Serinus-50-SO2-User-Manual-2.2.pdf",
+  "confidence": 0.62
+ },
+ {
+  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
+  "model": "Serinus 40",
+  "model_aliases": [
+   "Serinus 40",
+   "Serinus 40 NOx",
+   "Ecotech Serinus 40",
+   "Acoem Serinus 40",
+   "Sailhero Serinus 40"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence (molybdenum converter)",
+  "specs": {
+   "ranges": "0–20 ppm",
+   "lod": "<0.4 ppb",
+   "response_time_s": 15,
+   "notes": "Ecotech/Acoem Serinus NOx analyzer; successor to EC9841. Spec sheet VERIFIED: chemiluminescence, LDL <0.4 ppb, 0–20 ppm, response 15 s to 95%; US EPA designation RFNA-0809-186 CONFIRMED (added). Distributed in China by Sailhero; literature usually cites Ecotech/Acoem. CORRECTED: draft datasheet_url (digitalkiosk.ecotech.com) returned HTTP 403 and could not be confirmed, so it was nulled."
+  },
+  "status": "current",
+  "ccep_designation": null,
+  "epa_designation": "RFNA-0809-186",
+  "datasheet_url": null,
+  "confidence": 0.7
+ },
+ {
+  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
+  "model": "Serinus 30",
+  "model_aliases": [
+   "Serinus 30",
+   "Serinus 30 CO",
+   "Ecotech Serinus 30",
+   "Acoem Serinus 30",
+   "Sailhero Serinus 30"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": "0–200 ppm",
+   "lod": "<40 ppb (0.04 ppm)",
+   "response_time_s": 60,
+   "notes": "Ecotech/Acoem Serinus CO analyzer; successor to EC9830. Gas-filter-correlation IR; response time ~60 s to 95% (plausible, not independently re-verified). Distributed in China by Sailhero; literature usually cites Ecotech/Acoem."
+  },
+  "status": "current",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": null,
+  "confidence": 0.55
+ },
+ {
+  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
+  "model": "Serinus 10",
+  "model_aliases": [
+   "Serinus 10",
+   "Serinus 10 O3",
+   "Ecotech Serinus 10",
+   "Acoem Serinus 10",
+   "Sailhero Serinus 10"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry (254 nm)",
+  "specs": {
+   "ranges": "0–20 ppm",
+   "lod": "0.5 ppb",
+   "response_time_s": null,
+   "notes": "Ecotech/Acoem Serinus ozone analyzer; successor to EC9810. VERIFIED via Acoem product page: non-dispersive UV absorption at 254 nm, 0–20 ppm, LOD 0.5 ppb, US EPA equivalent-method designated (exact EQOA number not captured, left null). Distributed in China by Sailhero; literature usually cites Ecotech/Acoem."
+  },
+  "status": "current",
+  "ccep_designation": null,
+  "epa_designation": null,
+  "datasheet_url": "https://www.acoem.com/en/products/air-quality-monitoring/air-quality-gas-monitors/serinus-10/",
+  "confidence": 0.65
+ },
+ {
+  "manufacturer": "Beijing SDL Technology (雪迪龙 / SDL)",
+  "model": "T1100",
+  "model_aliases": [
+   "SDL T1100",
+   "雪迪龙 T1100",
+   "Beijing SDL T1100",
+   "T1100-紫外荧光法二氧化硫分析仪",
+   "SDL Model T1100"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL. Ambient UV-fluorescence SO2 analyzer (Zn lamp, ~214 nm excitation) in SDL's ambient air-quality monitoring line; also usable for dilution-method source monitoring. Model, category and measurement principle confirmed on chsdl.com and instrument.com.cn product listings. The earlier 'possible-hallucination / uncertain T-series naming' caveat is withdrawn — T1100 through T1400 are a genuine SDL ambient product family. Numeric ranges/LOD not drawn from a datasheet, so left null. SDL's T-series carries Chinese CCEP certification and MEE (环境监测仪器质量监督检验中心) suitability-test reports, but the specific certificate number is unknown, so ccep_designation is null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "Beijing SDL Technology (雪迪龙 / SDL)",
+  "model": "T1200",
+  "model_aliases": [
+   "SDL T1200",
+   "雪迪龙 T1200",
+   "Beijing SDL T1200",
+   "T1200-化学发光法氮氧化物分析仪",
+   "SDL Model T1200"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL. Ambient chemiluminescence NO/NO2/NOx analyzer in SDL's ambient air-quality line; confirmed on chsdl.com. Related variants T1200-NH3 (chemiluminescence NH3) and T1200-NOy exist. Category and principle correct. Numeric specs not verified from a datasheet (null). CCEP/MEE-certified series; certificate number unknown, so ccep_designation null."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "Beijing SDL Technology (雪迪龙 / SDL)",
+  "model": "T1300",
+  "model_aliases": [
+   "SDL T1300",
+   "雪迪龙 T1300",
+   "Beijing SDL T1300",
+   "T1300-气体滤波相关红外吸收法一氧化碳分析仪",
+   "SDL Model T1300"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL. Ambient gas-filter-correlation NDIR CO analyzer in SDL's ambient air-quality line; confirmed on chsdl.com / instrument.com.cn. Category and principle correct. Numeric specs not verified (null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Beijing SDL Technology (雪迪龙 / SDL)",
+  "model": "T1400",
+  "model_aliases": [
+   "SDL T1400",
+   "雪迪龙 T1400",
+   "Beijing SDL T1400",
+   "T1400-紫外吸收法臭氧分析仪",
+   "SDL Model T1400"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL. Ambient UV-photometric O3 analyzer (254 nm characteristic absorption, Beer-Lambert) in SDL's ambient air-quality line; confirmed on chsdl.com. Category and principle correct. Numeric specs not verified (null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "Beijing SDL Technology (雪迪龙 / SDL)",
+  "model": "MODEL 1080",
+  "model_aliases": [
+   "SDL MODEL 1080",
+   "雪迪龙 MODEL 1080",
+   "Model 1080 IR",
+   "MODEL 1080红外线气体分析仪",
+   "SDL 1080 NDIR"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "NDIR (non-dispersive infrared)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL on chsdl.com. Process/CEMS multi-component NDIR analyzer (measures CO, CO2, CH4, SO2, NO). SDL's stack-emission/process-gas platform, NOT an ambient monitor — in scope only as a CEMS analyzer. Explosion-proof and non-explosion-proof versions exist; oxygen variants (1080EO trace-O2, 1080PO magneto-pneumatic/paramagnetic O2) exist but are out of pollutant scope. Numeric specs not verified (null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "Beijing SDL Technology (雪迪龙 / SDL)",
+  "model": "MODEL 1080-UV",
+  "model_aliases": [
+   "SDL MODEL 1080-UV",
+   "雪迪龙 MODEL 1080-UV",
+   "Model 1080 UV",
+   "MODEL 1080UV",
+   "1080-UV 紫外分析仪",
+   "SDL 1080 UV"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "UV absorption (DOAS)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL on chsdl.com and instrument.com.cn. CEMS/process UV differential-absorption (DOAS-type; deuterium lamp + high-resolution spectrometer) analyzer for SO2, NO and O2; moisture/dust-tolerant relative to NDIR. Stack/process use, not ambient. Also appears in listings as 'MODEL 1080UV' (no hyphen). Numeric specs not verified (null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.72
+ },
+ {
+  "manufacturer": "Qingdao Laoying (崂应 / Qingdao Laoying Hina Optoelectronics)",
+  "model": "3012H",
+  "model_aliases": [
+   "崂应3012H",
+   "Laoying 3012H",
+   "Qingdao Laoying 3012H",
+   "3012H-C",
+   "3012H-D",
+   "崂应自动烟尘(气)测试仪"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "electrochemical (constant-potential electrolysis) gas sensors + isokinetic particulate sampling",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL and widely used. Chinese portable automatic smoke/dust(气) tester for stationary-source STACK testing (GB/T 16157). Combines Pitot isokinetic gravimetric particulate sampling with constant-potential-electrolysis (定电位电解) electrochemical sensors for real-time O2, SO2, NO, NO2, CO, CO2 (H2S on some configurations). Primary function is source/stack emission testing, not ambient monitoring. Confirmed variants: 3012H-C (ultra-small/compact) and 3012H-D (large-flow, low-concentration). Confirmed on manufacturer and distributor listings. Numeric specs not verified (null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Qingdao Laoying (崂应 / Qingdao Laoying Hina Optoelectronics)",
+  "model": "3022",
+  "model_aliases": [
+   "崂应3022",
+   "Laoying 3022",
+   "Qingdao Laoying 3022",
+   "崂应3022型烟气综合分析仪",
+   "崂应3022型烟气分析仪"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "electrochemical (constant-potential electrolysis)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "VERIFIED REAL as '崂应3022型 烟气综合分析仪' (flue-gas comprehensive analyzer). Portable stationary-source instrument using constant-potential-electrolysis electrochemical sensors for real-time O2, SO2, NO, NO2, H2S, CO, CO2, plus flue-gas dynamic/static pressure, temperature, and computed velocity/flow. Stack/source use, not ambient. Confirmed on instrument.com.cn and cnpowder.com.cn. Gas list is broader than the original draft (which listed only SO2/NOx/CO/O2). Numeric specs not verified (null)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "Sabio Instruments",
+  "model": "4010",
+  "model_aliases": [
+   "Sabio 4010",
+   "Sabio Model 4010",
+   "Sabio 4010M",
+   "Sabio 4010T",
+   "Sabio 4010 dilution calibrator",
+   "Model 4010 (Sabio)"
+  ],
+  "category": "calibrator",
+  "principle": "mass-flow-controlled dynamic dilution with ozone generation and gas-phase titration (GPT)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Confirmed: intelligent multi-gas dilution calibrator (variants 4010M, 4010T); performs gas dilution, multi-source blending, ozone generation, and gas-phase titration (NO + O3 => NO2) for ambient/point-source calibration. Now sold under Sabio Environmental, LLC (formerly Sabio Instruments). Numeric flow/dilution specs not asserted."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Sabio Instruments",
+  "model": "2010",
+  "model_aliases": [
+   "Sabio 2010",
+   "Sabio Model 2010",
+   "Sabio 2010D",
+   "Sabio Model 2010D",
+   "Sabio 2010 dilution calibrator"
+  ],
+  "category": "calibrator",
+  "principle": "mass-flow-controlled dynamic dilution (portable) with optional ozone generator and gas-phase titration (GPT)",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CORRECTED: the 2010 (and 2010D) is a portable/rack multi-gas DILUTION CALIBRATOR, essentially a portable sibling of the 4010 - not a standalone ozone generator or ozone transfer/primary standard (Sabio markets a separate ozone-transfer product, e.g. Model 2030). It contains a built-in ozone generator for GPT/O3 span, but its primary function is MFC dilution. Draft's 'ozone primary standard' characterization and the ozone-standard aliases were removed as confused/invented. Numeric specs not asserted."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.65
+ },
+ {
+  "manufacturer": "Environics",
+  "model": "Series 6100",
+  "model_aliases": [
+   "Environics 6100",
+   "Environics Series 6100",
+   "Environics Inc. Series 6100",
+   "Series 6100 multi-gas calibrator",
+   "Environics S6100"
+  ],
+  "category": "calibrator",
+  "principle": "computerized mass-flow-controlled dynamic gas dilution with gas-phase titration and optional internal ozone generator",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Confirmed: Environics, Inc. Series 6100 Computerized Multi-Gas Calibration/Dilution System; single chassis with up to 3 NIST-traceable thermal mass flow controllers, inline mixer, GPT and optional ozone generator for calibrating ambient NO/NO2/SO2/CO/O3/HC analyzers. Widely used in US ambient monitoring networks. Numeric specs not asserted."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.88
+ },
+ {
+  "manufacturer": "Environics",
+  "model": "Series 9100",
+  "model_aliases": [
+   "Environics 9100",
+   "Environics Series 9100",
+   "Environics Inc. Series 9100",
+   "Series 9100 ambient monitoring calibration system"
+  ],
+  "category": "calibrator",
+  "principle": "computerized mass-flow-controlled gas dilution with ozone generation and gas-phase titration",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CORRECTED (status was 'unknown', now confirmed current): Environics Series 9100 Computerized Ambient Monitoring Calibration System - single chassis with up to 3 MFCs, ozone generation module, mixing zone, and a reaction chamber for gas-phase titration; performs zero/precision/span/multi-point cal of NO/NO2/SO2/CO/O3/HC. A fuller-featured sibling of the 6100, not merely a dilution/blending box. Numeric specs not asserted."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "LNI Schmidlin",
+  "model": "Sonimix 6000",
+  "model_aliases": [
+   "Sonimix 6000",
+   "Sonimix 6000 C1",
+   "Sonimix 6000 C2",
+   "LNI Schmidlin Sonimix 6000",
+   "LNI Swissgas Sonimix 6000",
+   "Sonimix 6000 gas calibrator"
+  ],
+  "category": "calibrator",
+  "principle": "mass-flow-controlled dynamic dilution with internal ozone generator and gas-phase titration",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Confirmed: Sonimix 6000 multigas calibrator (variants C1, C2) from LNI Swissgas (formerly LNI Schmidlin), Geneva; calibrates up to ~6 station monitors for SO2/HC/BTX/CO/NOx/O3. Includes MFCs (binary dilutor ~1/100 to 1/1000), UV-feedback ozone generator, GPT, and self-regenerating zero-air generator. Some 6000 configurations also incorporate permeation. Numeric specs not asserted."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "KIN-TEK Analytical",
+  "model": "FlexStream",
+  "model_aliases": [
+   "KIN-TEK FlexStream",
+   "Kintek FlexStream",
+   "FlexStream",
+   "KIN-TEK FlexStream gas standards generator",
+   "FlexStream permeation system"
+  ],
+  "category": "calibrator",
+  "principle": "permeation-tube-based trace gas generation with dynamic dilution",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Confirmed: KIN-TEK's flagship automated, modular gas standards generator; dilutes emission from Trace Source permeation/diffusion tubes with N2 or zero air to produce ppm/ppb/pptr trace-gas standards (500+ supported chemicals, incl. reactive species like NH3, H2S, SO2). Modular options (PM, GF/PM, SD, HG, IM). Numeric specs not asserted."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "KIN-TEK Analytical",
+  "model": "491M",
+  "model_aliases": [
+   "KIN-TEK 491M",
+   "Kintek 491M",
+   "KIN-TEK Model 491M",
+   "491M gas standard generator",
+   "KIN-TEK 491"
+  ],
+  "category": "calibrator",
+  "principle": "permeation-tube-based trace gas generation with dynamic dilution",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "CORRECTED (status was 'current', now discontinued): legacy manually-operated permeation-tube gas standard generator introduced 1991 (originally KIN-TEK Laboratories); modular (e.g. 491MB base module) producing ppm/ppb/pptr trace-gas standards. KIN-TEK ended service support of the 491M as of 1 June 2021; its direct replacement is the 491Flex line (not the FlexStream, which is a separate automated line). Numeric specs not asserted."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "Dasibi Environmental",
+  "model": "1003-AH",
+  "model_aliases": [
+   "Dasibi 1003",
+   "Dasibi 1003-AH",
+   "Dasibi 1003-PC",
+   "Dasibi 1003-RS",
+   "Dasibi Environmental 1003AH"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0-0.5 ppm and 0-1.0 ppm (0-500 / 0-1000 ppb), selectable",
+   "lod": "~1 ppb (0.001 ppm minimum reading)",
+   "response_time_s": null,
+   "notes": "First-generation commercial UV photometric (254 nm absorption) ozone monitor; dominant in 1980s-1990s ambient O3 literature. EPA equivalent method EQOA-0577-019 covers variants 1003-AH/-PC/-RS (verified against EPA designated-methods list)."
+  },
+  "epa_designation": "EQOA-0577-019",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Dasibi Environmental",
+  "model": "1008-AH",
+  "model_aliases": [
+   "Dasibi 1008",
+   "Dasibi 1008-AH",
+   "Dasibi 1008-PC",
+   "Dasibi 1008-RS"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0.001-1.000 ppm (1-1000 ppb); selectable 0-0.5 and 0-1.0 ppm ranges",
+   "lod": "~1 ppb (0.001 ppm minimum reading)",
+   "response_time_s": null,
+   "notes": "Successor to the 1003 series; UV photometric (254 nm) ozone analyzer widely cited in 1990s-2000s. EPA equivalent method EQOA-0383-056 covers variants 1008-AH/-PC/-RS; successor/replacement units sold by Tanabyte Engineering. Draft alias '1008-HC' was unconfirmed and removed (EPA lists only -AH/-PC/-RS)."
+  },
+  "epa_designation": "EQOA-0383-056",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Dasibi Environmental",
+  "model": "2108",
+  "model_aliases": [
+   "Dasibi 2108",
+   "Dasibi Environmental 2108",
+   "Dasibi Model 2108",
+   "Dasibi 2108 NOx"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": "~2 ppb (2 ppb lower detectable limit)",
+   "response_time_s": null,
+   "notes": "Gas-phase chemiluminescence oxides-of-nitrogen analyzer (NO/NO2/NOx via converter). EPA automated reference method RFNA-1192-089 (Federal Register 57 FR 55530, 25 Nov 1992), verified against EPA/CARB NOx analyzer lists."
+  },
+  "epa_designation": "RFNA-1192-089",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Dasibi Environmental",
+  "model": "3008",
+  "model_aliases": [
+   "Dasibi 3008",
+   "Dasibi Environmental 3008",
+   "Dasibi Model 3008 CO",
+   "Dasibi 3008 GFC"
+  ],
+  "category": "CO analyzer",
+  "principle": "NDIR / gas filter correlation",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Gas filter correlation nondispersive infrared (~4.6 um) CO analyzer. EPA automated reference method RFCA-0488-067 (verified against EPA designated-methods list). Draft range/LOD (0.1 ppm), response time (120 s) and linearity/drift figures were unverified for this exact model and nulled rather than guessed."
+  },
+  "epa_designation": "RFCA-0488-067",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.86
+ },
+ {
+  "manufacturer": "Dasibi Environmental",
+  "model": "4108",
+  "model_aliases": [
+   "Dasibi 4108",
+   "Dasibi Environmental 4108",
+   "Dasibi Model 4108",
+   "Dasibi 4108 SO2"
+  ],
+  "category": "SO2 analyzer",
+  "principle": "UV fluorescence",
+  "specs": {
+   "ranges": "0-100 / 0-200 / 0-500 / 0-1000 ppb (selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "UV fluorescence SO2 analyzer with Teflon-coated particulate filter and continuous hydrocarbon-removal system. EPA-designated equivalent method EQSA-1086-061 (Oct 1986); confirmed real Dasibi SO2 model (range and features verified against EPA list; a used unit is also listed on the resale market)."
+  },
+  "epa_designation": "EQSA-1086-061",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "Columbia Scientific Industries",
+  "model": "1600",
+  "model_aliases": [
+   "CSI 1600",
+   "Columbia Scientific Industries 1600",
+   "Columbia Scientific 1600",
+   "CSI Model 1600",
+   "Columbia Scientific Industries Model 1600"
+  ],
+  "category": "NOx analyzer",
+  "principle": "chemiluminescence",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Chemiluminescence oxides-of-nitrogen analyzer; among the earliest EPA-designated NOx reference methods. RFNA-0977-025 (Federal Register 42 FR 46574, 16 Sep 1977); designation also covers the related CSI Model 5600. CSI = Columbia Scientific Industries, Austin TX."
+  },
+  "epa_designation": "RFNA-0977-025",
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "discontinued",
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Siemens",
+  "model": "Ultramat 23",
+  "model_aliases": [
+   "Siemens Ultramat 23",
+   "Ultramat 23",
+   "ULTRAMAT 23",
+   "Siemens Ultramat23"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "NDIR (multi-layer/opto-pneumatic detector) with electrochemical O2 cell; UV (LED) measurement of SO2/NO2 on current versions",
+  "specs": {
+   "ranges": "Configurable NDIR channels for CO, CO2, SO2, NO; smallest ranges typically CO 0-25 ppm, NO 0-100 ppm, SO2 0-100 ppm (application-dependent)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Measures up to 3 IR-active components (CO, CO2, SO2, NO, CH4 combinations) plus optional electrochemical O2 (and optional H2S) sensor. Current versions add a UV LED path for low-level SO2/NO2. Widely used in CEMS/stack monitoring and combustion research; auto-calibration with ambient air. Ranges are order-selectable so a single fixed spec cannot be given."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.siemens.com/global/en/products/automation/process-analytics/extraktive-continuous-process-gas-analytics/ultramat-23.html",
+  "status": "current",
+  "confidence": 0.86
+ },
+ {
+  "manufacturer": "Siemens",
+  "model": "Ultramat 6",
+  "model_aliases": [
+   "Siemens Ultramat 6",
+   "Ultramat 6",
+   "ULTRAMAT 6",
+   "Ultramat 6E",
+   "Ultramat 6F"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "NDIR (two-layer opto-pneumatic microflow detector)",
+  "specs": {
+   "ranges": "Single/dual IR component (e.g. CO, CO2, NO, SO2, CH4); smallest spans down to a few ppm depending on component and cell length",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "High-sensitivity NDIR bench in rack (6E, up to 4 IR components) and field (6F, up to 2 IR components) housings. Common in emissions/process measurement; often paired with Oxymat 6 for O2. Ranges depend on configured component and optical path so no universal fixed value."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.siemens.com/en-us/products/process-analytics/series-6/",
+  "status": "current",
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Siemens",
+  "model": "Fidamat 6",
+  "model_aliases": [
+   "Siemens Fidamat 6",
+   "Fidamat 6",
+   "FIDAMAT 6",
+   "Siemens Fidamat"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (flame ionization detection), heated",
+  "specs": {
+   "ranges": "Total hydrocarbon, typical spans from ~0-10 ppm up to 0-100000 ppm (as CH4/C); heated FID",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Heated total hydrocarbon (THC) FID analyzer for hot/wet sample gas. Part of Siemens Series 6. Used in emission monitoring of organic carbon (VOC/TOC) from stacks and process streams; also trace HC in high-purity gases."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": null,
+  "status": "current",
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "ABB",
+  "model": "Uras26",
+  "model_aliases": [
+   "ABB Uras26",
+   "Uras 26",
+   "ABB Uras 26",
+   "URAS26",
+   "Uras26 (AO2000)"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "NDIR (opto-pneumatic / Uras detector)",
+  "specs": {
+   "ranges": "NDIR for CO, CO2, NO, SO2, CH4, N2O etc.; up to 4 components, smallest ranges e.g. CO 0-10 ppm, NO 0-30 ppm (configuration-dependent)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "IR photometer module of the ABB Advance Optima AO2000 platform. Widely used in CEMS and combustion/atmospheric-chamber studies. Multiple components configurable so ranges vary by build."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://library.e.abb.com/public/91c2fed949e443d8a6883f7edd77d41d/10-24-120-08-EN.pdf",
+  "status": "current",
+  "confidence": 0.86
+ },
+ {
+  "manufacturer": "ABB",
+  "model": "Limas11",
+  "model_aliases": [
+   "ABB Limas11",
+   "Limas 11",
+   "Limas11 UV",
+   "ABB Limas 11 UV",
+   "Limas11 (AO2000)"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "UV resonance absorption spectroscopy (UV-RAS) / differential UV photometry",
+  "specs": {
+   "ranges": "UV photometer for NO, NO2, SO2; low ranges e.g. NO 0-15 ppm, NO2 0-10 ppm, SO2 0-15 ppm (configuration-dependent)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "UV analyzer module of the AO2000 platform, used for NO/NO2/SO2 in emission monitoring. Successor generations include Limas21/Limas23; the exact designation used in Methods varies by era."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://library.e.abb.com/public/91c2fed949e443d8a6883f7edd77d41d/10-24-120-08-EN.pdf",
+  "status": "current",
+  "confidence": 0.79
+ },
+ {
+  "manufacturer": "ABB",
+  "model": "EL3020",
+  "model_aliases": [
+   "ABB EL3020",
+   "EL3020",
+   "Easyline EL3020",
+   "ABB Easyline EL3020",
+   "EL3000 series"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "NDIR (Uras26 module) with optional electrochemical/paramagnetic O2",
+  "specs": {
+   "ranges": "NDIR for CO, CO2, NO, SO2, CH4 etc.; up to 5 components; ranges configuration-dependent",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "EasyLine EL3020 is the compact continuous gas analyzer of the ABB EL3000 series carrying Uras26/Caldos/Magnos modules. Used in combustion and stack/ambient measurement setups. EL3020 is the 19-inch rack unit; EL3040 is the wall-mount field version (IP65)."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://library.e.abb.com/public/efd7afc56879d6b5c1257b0c0054673c/10-24-410-02-EN.pdf",
+  "status": "current",
+  "confidence": 0.83
+ },
+ {
+  "manufacturer": "Fuji Electric",
+  "model": "ZRE",
+  "model_aliases": [
+   "Fuji Electric ZRE",
+   "Fuji ZRE",
+   "ZRE infrared gas analyzer",
+   "Single-Beam NDIR Gas Analyzer ZRE",
+   "Type ZRE"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "NDIR (single-beam, mass-flow/microflow detector)",
+  "specs": {
+   "ranges": "NDIR for CO, CO2, SO2, CH4, NO (measured directly); multi-component up to 5 gases plus O2 (fuel cell/zirconia); low ranges e.g. CO 0-50/200 ppm, SO2 0-200 ppm",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Fuji Electric single-beam infrared gas analyzer Type ZRE, often combined with fuel-cell/zirconia O2. Common in Asian CEMS/stack and combustion studies (incinerators, boilers, furnaces). Exact ranges are order-configured. Note: ZRJ is a separate Fuji model, not an alias of ZRE."
+  },
+  "epa_designation": null,
+  "ccep_designation": null,
+  "datasheet_url": "https://www.fujielectric.com/products/sensors_measurements/instruments/product_detail/anlz_gas_zre.html",
+  "status": "current",
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Thermo Environmental Instruments",
+  "model": "55C",
+  "model_aliases": [
+   "TECO 55C",
+   "Thermo 55C",
+   "Model 55C",
+   "TEI Model 55C NMHC Analyzer",
+   "Model 55CLT"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID",
+  "specs": {
+   "ranges": "0-100 ppm CH4/NMHC (selectable)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Older analog-era direct CH4/NMHC FID analyzer (Thermo Environmental Instruments / TECO); predecessor of the 55i. Existence confirmed via secondary listings; a low-range 55CLT variant also existed. Dominant in pre-2010 hydrocarbon monitoring literature."
+  },
+  "status": "discontinued",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "J.U.M. Engineering",
+  "model": "VE 7",
+  "model_aliases": [
+   "JUM VE7",
+   "J.U.M. VE 7",
+   "J.U.M. Engineering Model VE 7",
+   "VE7 heated FID THC analyzer",
+   "HFID VE7"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (heated)",
+  "specs": {
+   "ranges": "0-10 ppm up to high percent-level (selectable, as CH4/propane)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Heated flame ionization detector total hydrocarbon analyzer (heated oven/sample filter) by J.U.M. Engineering GmbH, Germany; in production since 1974, rack-mount reference HFID for stack testing. Complies with EPA Method 25A and EN 12619/13526 (these are test methods, not instrument EPA designations). Confirmed on manufacturer pages."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "Baseline-Mocon",
+  "model": "Series 9000",
+  "model_aliases": [
+   "Baseline 9000",
+   "Baseline-Mocon Series 9000",
+   "Baseline Series 9000 THC analyzer",
+   "AMETEK MOCON Baseline 9000 FID"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID",
+  "specs": {
+   "ranges": "<10 ppb (low-range version) up to 100% as methane (high-range version)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Flame ionization detector hydrocarbon analyzer (Baseline / Baseline-Mocon, now AMETEK MOCON) for continuous ambient or process hydrocarbon measurement. Confirmed on AMETEK MOCON pages. A heated variant (9000 HTHA) and related Baseline models also exist."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.75
+ },
+ {
+  "manufacturer": "Synspec",
+  "model": "GC955",
+  "model_aliases": [
+   "Synspec GC955",
+   "GC 955",
+   "GC955-601",
+   "Synspec GC955 BTEX analyser",
+   "GC955 600/800 series"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "PID (GC; FID optional/dual depending on configuration)",
+  "specs": {
+   "ranges": "sub-ppb to ppb BTEX / hydrocarbons",
+   "lod": "~0.03-0.1 ppb (benzene/BTEX, series dependent)",
+   "response_time_s": null,
+   "notes": "Automated gas chromatograph (Synspec, Netherlands) for ambient BTEX and ozone-precursor hydrocarbons with built-in pre-concentration. Standard BTEX 600-series uses PID detection (corrected from the draft's FID); FID and dual PID/FID configurations are available. 800-series covers light hydrocarbons. Benzene LOD ~0.1 ug/m3 (~0.03 ppbV) confirmed."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.7
+ },
+ {
+  "manufacturer": "Chromatotec",
+  "model": "airmoVOC C6-C12",
+  "model_aliases": [
+   "Chromatotec airmoVOC C6-C12",
+   "airmoVOC C6-C12",
+   "Chromatotec airmoVOC C6C12",
+   "airmoVOC C6-C12 GC-FID"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (thermal-desorption GC)",
+  "specs": {
+   "ranges": "ppt to ppb VOC (C6-C12); e.g. 0-100 ppb benzene",
+   "lod": "~0.01-0.05 ppb (compound dependent)",
+   "response_time_s": null,
+   "notes": "Automated trap/thermal-desorption GC-FID for heavier ambient VOCs (up to ~53 compounds C6-C12, incl. BTEX/aromatics, TO14 halogenated), part of Chromatotec airmoVOC line for EU ozone-precursor/PAMS networks. EN 14662-3 / EN 15267 QAL1 certified for benzene. Companion airmoVOC C2-C6 covers light hydrocarbons. Confirmed on Chromatotec pages."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.82
+ },
+ {
+  "manufacturer": "Chromatotec",
+  "model": "airmoVOC C2-C6",
+  "model_aliases": [
+   "Chromatotec airmoVOC C2-C6",
+   "airmoVOC C2C6",
+   "Chromatotec airmoVOC C2-C6 GC-FID",
+   "airmoVOC light hydrocarbons analyzer"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "FID (preconcentration GC)",
+  "specs": {
+   "ranges": "ppt to ppb light VOC (C2-C6)",
+   "lod": "~0.02-0.1 ppb (compound dependent)",
+   "response_time_s": null,
+   "notes": "Automated GC-FID with cryogen-free preconcentration for light ambient hydrocarbons (ethane through hexane), used for ozone-precursor monitoring in European air-quality networks; pairs with airmoVOC C6-C12. Confirmed on Chromatotec pages."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.78
+ },
+ {
+  "manufacturer": "RAE Systems",
+  "model": "ppbRAE 3000",
+  "model_aliases": [
+   "RAE Systems ppbRAE 3000",
+   "ppbRAE 3000 PGM-7340",
+   "ppbRAE 3000",
+   "Honeywell ppbRAE 3000",
+   "ppbRAE3000 PID"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "PID",
+  "specs": {
+   "ranges": "1 ppb - 10000 ppm isobutylene-equivalent VOC (linear response ~10 ppb-200 ppm)",
+   "lod": "~1 ppb (isobutylene equivalent resolution)",
+   "response_time_s": null,
+   "notes": "Portable photoionization detector (10.6 eV lamp) total-VOC monitor, isobutylene-referenced. Range corrected: full range is 1 ppb to 10,000 ppm (draft's '0-10 ppm' was a 1000x error). Used for field VOC surveys and fenceline/mobile measurements; later marketed under Honeywell RAE Systems."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.85
+ },
+ {
+  "manufacturer": "RAE Systems",
+  "model": "MiniRAE 3000",
+  "model_aliases": [
+   "RAE Systems MiniRAE 3000",
+   "MiniRAE 3000 PGM-7320",
+   "MiniRAE 3000 PID",
+   "Honeywell MiniRAE 3000"
+  ],
+  "category": "THC/VOC analyzer",
+  "principle": "PID",
+  "specs": {
+   "ranges": "0-15000 ppm total VOC (isobutylene equivalent)",
+   "lod": "~0.1 ppm (100 ppb)",
+   "response_time_s": null,
+   "notes": "Portable 10.6 eV photoionization detector total-VOC monitor (ppm range, 0.1 ppm resolution), isobutylene-referenced; widely used for industrial and ambient VOC screening and leak surveys. Later marketed under Honeywell RAE Systems."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-7500",
+  "model_aliases": [
+   "LI-7500A",
+   "LI-7500RS",
+   "LI-7500DS",
+   "LI-COR LI-7500",
+   "Li-Cor 7500",
+   "open-path IRGA (LI-7500)"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "open-path NDIR (non-dispersive infrared, differential absorption)",
+  "specs": {
+   "ranges": "CO2 0-3000 umol/mol (ppm); H2O 0-60 mmol/mol",
+   "lod": "CO2 RMS noise ~0.11 ppm; H2O ~0.0047 mmol/mol (370 ppm, 10 Hz)",
+   "response_time_s": null,
+   "notes": "Open-path 12.5 cm path; eddy-covariance standard; high-frequency 5-20 Hz output (no conventional T90). Base LI-7500/LI-7500A now superseded; LI-7500DS/RS current."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.96
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-7200",
+  "model_aliases": [
+   "LI-7200RS",
+   "LI-COR LI-7200",
+   "Li-Cor 7200",
+   "enclosed-path IRGA LI-7200",
+   "LI-7200 closed-path analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "enclosed/closed-path NDIR (differential absorption)",
+  "specs": {
+   "ranges": "CO2 0-3000 ppm; H2O 0-60 mmol/mol",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Enclosed-path IRGA for eddy covariance; high-frequency output. RS variant current."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-7000",
+  "model_aliases": [
+   "LI-COR LI-7000",
+   "Li-Cor 7000",
+   "LI-7000 closed-path analyzer",
+   "LI-7000 CO2/H2O analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "closed-path differential NDIR",
+  "specs": {
+   "ranges": "CO2 0-3000 ppm; H2O 0-60 mmol/mol",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Differential (sample/reference cell) closed-path NDIR; used in eddy covariance and gas-exchange systems. Discontinued."
+  },
+  "status": "discontinued",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-6262",
+  "model_aliases": [
+   "LI-COR LI-6262",
+   "Li-Cor 6262",
+   "LI-6262 IRGA",
+   "LI-6262 CO2/H2O analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "closed-path differential NDIR",
+  "specs": {
+   "ranges": "CO2 0-3000 ppm; H2O 0-60 mmol/mol",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Closed-path differential NDIR; prominent in 1990s eddy-covariance and leaf/canopy gas-exchange literature. Discontinued (predecessor of LI-7000)."
+  },
+  "status": "discontinued",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.92
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-820",
+  "model_aliases": [
+   "LI-COR LI-820",
+   "Li-Cor LI-820",
+   "LI-820 CO2 analyzer",
+   "LI-820 gas analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "single-path NDIR",
+  "specs": {
+   "ranges": "CO2 selectable, up to 0-20000 ppm",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Single 14 cm optical bench NDIR; common in soil-respiration, chamber and low-cost ambient CO2 setups."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-840A",
+  "model_aliases": [
+   "LI-840",
+   "LI-COR LI-840A",
+   "Li-Cor LI-840",
+   "LI-840 CO2/H2O analyzer",
+   "LI-840A gas analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "single-path NDIR (CO2 + H2O)",
+  "specs": {
+   "ranges": "CO2 0-20000 ppm; H2O 0-60 mmol/mol",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "NDIR CO2/H2O analyzer; original LI-840 discontinued, LI-840A current. Used in flux chambers and ambient CO2 monitoring."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.93
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-7700",
+  "model_aliases": [
+   "LI-COR LI-7700",
+   "Li-Cor 7700",
+   "open-path CH4 analyzer LI-7700",
+   "LI-7700 open-path methane analyzer"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "open-path laser, wavelength-modulation spectroscopy",
+  "specs": {
+   "ranges": "CH4 ~0-40 ppm (umol/mol)",
+   "lod": "RMS noise ~5 ppb at 10 Hz",
+   "response_time_s": null,
+   "notes": "Open-path methane analyzer (47 cm path) for eddy-covariance CH4 flux; high-frequency output."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.94
+ },
+ {
+  "manufacturer": "LI-COR",
+  "model": "LI-800",
+  "model_aliases": [
+   "GasHound",
+   "LI-800 GasHound",
+   "LI-COR GasHound",
+   "Li-Cor LI-800"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "single-path NDIR",
+  "specs": {
+   "ranges": "CO2 0-2000 ppm",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Compact NDIR CO2 analyzer (GasHound); predecessor to LI-820. Discontinued."
+  },
+  "status": "discontinued",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.8
+ },
+ {
+  "manufacturer": "Vaisala",
+  "model": "GMP343",
+  "model_aliases": [
+   "Vaisala GMP343",
+   "Vaisala CARBOCAP GMP343",
+   "CARBOCAP GMP343",
+   "GMP343 CO2 probe"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR (CARBOCAP silicon Fabry-Perot, single-beam dual-wavelength)",
+  "specs": {
+   "ranges": "CO2 0-1000 ppm (options to 2000/3000/5000 ppm)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Diffusion or flow-through CO2 probe; widely used in soil/canopy CO2 profiles and ambient monitoring. Accuracy roughly +/-(3 ppm + 1% of reading)."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.94
+ },
+ {
+  "manufacturer": "Vaisala",
+  "model": "GMP252",
+  "model_aliases": [
+   "Vaisala GMP252",
+   "Vaisala CARBOCAP GMP252",
+   "CARBOCAP GMP252",
+   "GMP252 CO2 probe"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR (CARBOCAP silicon Fabry-Perot)",
+  "specs": {
+   "ranges": "CO2 0-10000 ppm (up to 30000 ppm with reduced accuracy)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Digital ppm-level CARBOCAP CO2 probe; used in environmental/soil chamber and ambient CO2 measurements. Range corrected: single 0-10000 ppm range (draft's '0-1000/0-10000 ppm' was inaccurate)."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Vaisala",
+  "model": "GMP251",
+  "model_aliases": [
+   "Vaisala GMP251",
+   "Vaisala CARBOCAP GMP251",
+   "CARBOCAP GMP251",
+   "GMP251 CO2 probe"
+  ],
+  "category": "CO2/CH4 analyzer",
+  "principle": "NDIR (CARBOCAP silicon Fabry-Perot)",
+  "specs": {
+   "ranges": "CO2 0-20 %vol (0-200000 ppm)",
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Percent-level CARBOCAP CO2 probe (0-20 %CO2) for high concentrations: incubators, chambers, biogas. Range corrected from draft's erroneous '0-10000/0-20000 ppm' — GMP251 is a %-level, not ppm-level, probe (GMP252 is the ppm-level version)."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Aeroqual",
+  "model": "Series 500",
+  "model_aliases": [
+   "Aeroqual Series 500",
+   "Aeroqual S500",
+   "Aeroqual portable monitor Series 500",
+   "Aeroqual Ltd Series 500",
+   "S500 with O3 head"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "gas-sensitive semiconductor (O3) / electrochemical (NO2, CO)",
+  "specs": {
+   "ranges": "O3 head 0-0.15 / 0-0.5 ppm; NO2 head 0-1 ppm; CO head 0-25 / 0-100 ppm (varies by head)",
+   "lod": "~1 ppb (0.001 ppm) low-range O3 head",
+   "response_time_s": 60,
+   "notes": "Portable base unit with interchangeable single-gas sensor heads (measures one gas at a time); very common in low-cost ozone studies. O3 via GSS metal-oxide, NO2/CO via electrochemical."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.95
+ },
+ {
+  "manufacturer": "Aeroqual",
+  "model": "AQM 65",
+  "model_aliases": [
+   "Aeroqual AQM 65",
+   "Aeroqual AQM65",
+   "AQM 65 monitoring station",
+   "Aeroqual AQM 65 air quality station"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "electrochemical / gas-sensitive semiconductor / NDIR sensor modules",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Compact ambient air-quality station with swappable gas modules (O3 GSS; NO2/CO/SO2/H2S electrochemical; CO2 NDIR) plus PM. Ranges are module-dependent."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.9
+ },
+ {
+  "manufacturer": "Aeroqual",
+  "model": "Series 930",
+  "model_aliases": [
+   "Aeroqual Series 930",
+   "Aeroqual S930",
+   "Series 930 fixed monitor",
+   "Aeroqual Series 930 air quality monitor"
+  ],
+  "category": "multi-gas analyzer",
+  "principle": "gas-sensitive semiconductor / electrochemical",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Fixed online gas monitor using interchangeable Aeroqual sensor heads (O3 GSS; NO2/CO/SO2/H2S electrochemical); configurable single or multi-gas. Part of Aeroqual's current fixed-monitor line (Series 900 base unit / Series 930 enclosed). Status corrected to current; draft's claimed '910/920/940' sub-models could not be verified and were removed as likely invented."
+  },
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null,
+  "confidence": 0.85
+ }
+]

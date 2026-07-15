@@ -5,17 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LabScope — 仪器采购情报</title>
 <style>
-  /* ---- validated dataviz palette (chrome/ink + series-1 blue) ---- */
   :root {
     color-scheme: light;
     --plane:#f9f9f7; --surface:#fcfcfb; --surface-2:#ffffff;
     --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
     --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,0.10);
     --accent:#2a78d6; --accent-soft:#eaf2fc;
-    --good:#0ca30c; --good-ink:#006300; --warn:#b8791a; --crit:#d03b3b;
-    --series:#2a78d6;
-    --radius:12px;
-    --shadow:0 1px 2px rgba(11,11,11,.04), 0 2px 8px rgba(11,11,11,.04);
+    --good:#0ca30c; --good-ink:#006300; --series:#2a78d6;
+    --radius:12px; --shadow:0 1px 2px rgba(11,11,11,.04), 0 2px 8px rgba(11,11,11,.04);
   }
   @media (prefers-color-scheme: dark) {
     :root:where(:not([data-theme="light"])) {
@@ -24,8 +21,7 @@
       --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
       --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,0.10);
       --accent:#3987e5; --accent-soft:#182a3f;
-      --good:#0ca30c; --good-ink:#0ca30c; --warn:#fab219; --crit:#e66767;
-      --series:#3987e5;
+      --good:#0ca30c; --good-ink:#0ca30c; --series:#3987e5;
       --shadow:0 1px 2px rgba(0,0,0,.3), 0 2px 10px rgba(0,0,0,.35);
     }
   }
@@ -35,140 +31,118 @@
     --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
     --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,0.10);
     --accent:#3987e5; --accent-soft:#182a3f;
-    --good:#0ca30c; --good-ink:#0ca30c; --warn:#fab219; --crit:#e66767;
-    --series:#3987e5;
+    --good:#0ca30c; --good-ink:#0ca30c; --series:#3987e5;
     --shadow:0 1px 2px rgba(0,0,0,.3), 0 2px 10px rgba(0,0,0,.35);
   }
-
   * { box-sizing:border-box; }
   html,body { overflow-x:hidden; }
-  body {
-    margin:0; background:var(--plane); color:var(--ink);
-    font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  a { color:var(--accent); text-decoration:none; }
+  body { margin:0; background:var(--plane); color:var(--ink);
+    font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:var(--accent); text-decoration:none; cursor:pointer; }
   a:hover { text-decoration:underline; }
   .tnum { font-variant-numeric:tabular-nums; }
 
-  /* ---- top bar ---- */
-  header {
-    position:sticky; top:0; z-index:20; background:var(--surface);
-    border-bottom:1px solid var(--border); backdrop-filter:blur(8px);
-  }
-  .bar { max-width:1180px; margin:0 auto; padding:.7rem 1.25rem;
-    display:flex; align-items:center; gap:1rem; }
+  header { position:sticky; top:0; z-index:20; background:var(--surface); border-bottom:1px solid var(--border); backdrop-filter:blur(8px); }
+  .bar { max-width:1180px; margin:0 auto; padding:.7rem 1.25rem; display:flex; align-items:center; gap:1rem; }
   .brand { display:flex; align-items:baseline; gap:.55rem; cursor:pointer; flex-shrink:0; }
   .brand b { font-size:1.15rem; letter-spacing:-.02em; }
   .brand span { color:var(--muted); font-size:.78rem; }
   .search { flex:1; position:relative; min-width:0; }
-  .search input {
-    width:100%; padding:.6rem .9rem .6rem 2.2rem; font-size:.95rem;
-    border:1px solid var(--axis); border-radius:99px; background:var(--surface-2);
-    color:var(--ink);
-  }
+  .search input { width:100%; padding:.6rem .9rem .6rem 2.2rem; font-size:.95rem; border:1px solid var(--axis); border-radius:99px; background:var(--surface-2); color:var(--ink); }
   .search input:focus { outline:2px solid var(--accent); outline-offset:-1px; border-color:transparent; }
   .search svg { position:absolute; left:.8rem; top:50%; transform:translateY(-50%); color:var(--muted); }
-  .theme { flex-shrink:0; border:1px solid var(--axis); background:var(--surface-2);
-    color:var(--ink-2); width:36px; height:36px; border-radius:9px; cursor:pointer; font-size:1rem; }
+  .theme { flex-shrink:0; border:1px solid var(--axis); background:var(--surface-2); color:var(--ink-2); width:36px; height:36px; border-radius:9px; cursor:pointer; font-size:1rem; }
   .theme:hover { border-color:var(--accent); color:var(--accent); }
-
   main { max-width:1180px; margin:0 auto; padding:1.5rem 1.25rem 4rem; }
 
-  /* ---- breadcrumb ---- */
-  .crumbs { display:flex; gap:.4rem; align-items:center; font-size:.82rem; color:var(--muted); margin-bottom:1rem; }
+  .crumbs { display:flex; gap:.4rem; align-items:center; font-size:.82rem; color:var(--muted); margin-bottom:1rem; flex-wrap:wrap; }
   .crumbs a { color:var(--muted); }
   .crumbs a:hover { color:var(--accent); }
-
-  /* ---- generic card ---- */
-  .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
-    box-shadow:var(--shadow); padding:1.15rem 1.3rem; margin-bottom:1rem; }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:1.15rem 1.3rem; margin-bottom:1rem; }
   .card h2 { margin:0 0 .1rem; font-size:1.05rem; }
   .card h3 { margin:0 0 .7rem; font-size:.82rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:600; }
   .sub { color:var(--muted); font-size:.85rem; }
 
-  /* ---- hero / landing ---- */
+  .live { display:inline-flex; align-items:center; gap:.3rem; color:var(--accent); font-size:.72rem; font-weight:600; vertical-align:middle; }
+  .live-dot { width:6px; height:6px; border-radius:50%; background:var(--accent); animation:pulse 1.5s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
   .hero { text-align:center; padding:2rem 1rem 1rem; }
   .hero h1 { font-size:1.9rem; letter-spacing:-.02em; margin:0 0 .4rem; }
-  .hero p { color:var(--ink-2); max-width:640px; margin:0 auto 1.3rem; }
-  .flow { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; color:var(--muted); font-size:.85rem; margin-bottom:.5rem; }
+  .hero p { color:var(--ink-2); max-width:660px; margin:0 auto 1.3rem; }
+  .flow { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; color:var(--muted); font-size:.85rem; }
   .flow b { color:var(--accent); font-weight:600; }
-
   .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.8rem; margin:1.2rem 0; }
   .tile { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1rem 1.1rem; box-shadow:var(--shadow); }
   .tile .n { font-size:1.7rem; font-weight:650; letter-spacing:-.02em; }
   .tile .l { color:var(--muted); font-size:.8rem; }
-
   .chips { display:flex; gap:.5rem; flex-wrap:wrap; }
-  .chip { border:1px solid var(--axis); background:var(--surface-2); color:var(--ink-2);
-    padding:.45rem .85rem; border-radius:99px; cursor:pointer; font-size:.88rem; display:inline-flex; gap:.4rem; align-items:center; }
+  .chip { border:1px solid var(--axis); background:var(--surface-2); color:var(--ink-2); padding:.45rem .85rem; border-radius:99px; cursor:pointer; font-size:.88rem; display:inline-flex; gap:.4rem; align-items:center; }
   .chip:hover { border-color:var(--accent); color:var(--accent); }
   .chip .c { color:var(--muted); font-size:.78rem; }
 
-  /* ---- pills / badges ---- */
-  .pill { display:inline-block; border:1px solid var(--border); border-radius:99px;
-    padding:.05rem .55rem; font-size:.76rem; color:var(--ink-2); background:var(--surface-2); }
+  .pill { display:inline-block; border:1px solid var(--border); border-radius:99px; padding:.05rem .55rem; font-size:.76rem; color:var(--ink-2); background:var(--surface-2); }
   .badge { display:inline-flex; align-items:center; gap:.3rem; border-radius:99px; padding:.1rem .55rem; font-size:.74rem; font-weight:600; white-space:nowrap; }
   .badge.good { color:var(--good-ink); background:color-mix(in srgb, var(--good) 14%, transparent); }
   .badge.mut  { color:var(--muted); background:color-mix(in srgb, var(--muted) 14%, transparent); }
   .badge.epa  { color:var(--accent); background:var(--accent-soft); }
   .dot { width:6px; height:6px; border-radius:50%; background:currentColor; }
 
-  /* ---- detail layout ---- */
   .detail-head { display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; flex-wrap:wrap; }
   .detail-head .title { font-size:1.5rem; letter-spacing:-.02em; margin:0; }
   .detail-head .meta { display:flex; gap:.4rem; flex-wrap:wrap; margin-top:.5rem; }
-  /* minmax(0,…) so wide table content scrolls inside its cell instead of
-     forcing the grid track wider than the viewport */
   .cols { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1.5fr); gap:1rem; align-items:start; }
   .cols > * { min-width:0; }
   @media (max-width:820px){ .cols { grid-template-columns:minmax(0,1fr); } }
 
   table { border-collapse:collapse; width:100%; font-size:.88rem; }
-  table.matrix { min-width:680px; }     /* wide comparison table scrolls on narrow screens */
+  table.matrix { min-width:680px; }
   .tablewrap { overflow-x:auto; max-width:100%; -webkit-overflow-scrolling:touch; }
   th,td { text-align:left; padding:.5rem .65rem; border-bottom:1px solid var(--grid); vertical-align:top; }
   th { color:var(--muted); font-weight:600; font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; }
   tr:last-child td { border-bottom:none; }
   .kv th { width:38%; text-transform:none; letter-spacing:0; font-size:.85rem; color:var(--muted); }
   .kv td { color:var(--ink); }
-
   .stat-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:.7rem; }
   .stat { border:1px solid var(--border); border-radius:10px; padding:.7rem .8rem; background:var(--surface-2); }
   .stat .n { font-size:1.35rem; font-weight:650; }
   .stat .l { color:var(--muted); font-size:.76rem; line-height:1.3; }
-
   .ev { font-style:italic; color:var(--ink-2); }
   .ev-src { font-style:normal; color:var(--muted); font-size:.78rem; }
+  .papers { display:flex; flex-direction:column; }
+  .paper { padding:.85rem 0; border-bottom:1px solid var(--grid); }
+  .paper:first-child { padding-top:.2rem; }
+  .paper:last-child { border-bottom:none; padding-bottom:.2rem; }
+  .paper-head { display:flex; gap:.6rem; align-items:baseline; flex-wrap:wrap; }
+  .paper-head .year { color:var(--muted); font-size:.85rem; flex-shrink:0; }
+  .paper-title { font-weight:550; flex:1 1 12rem; min-width:0; line-height:1.4; overflow-wrap:anywhere; }
+  .conf-badge { color:var(--muted); font-size:.78rem; flex-shrink:0; }
+  .paper-meta { color:var(--muted); font-size:.8rem; margin:.25rem 0 .45rem; overflow-wrap:anywhere; }
+  .paper .ev { display:block; font-size:.9rem; overflow-wrap:anywhere; }
+  td, .ev, .sub { overflow-wrap:anywhere; }
   .conf { display:inline-block; min-width:2.6em; text-align:right; color:var(--muted); }
   .taglist .pill { margin:0 .3rem .3rem 0; }
 
-  /* ---- trend chart ---- */
   .chart svg { width:100%; height:auto; display:block; }
   .chart .bar { fill:var(--series); }
   .chart .bar:hover { fill:var(--accent); }
   .chart text { fill:var(--muted); font-size:10px; }
-  .tt { position:fixed; pointer-events:none; background:var(--ink); color:var(--surface);
-    padding:.25rem .5rem; border-radius:6px; font-size:.76rem; z-index:50; opacity:0; transition:opacity .1s; white-space:nowrap; }
+  .tt { position:fixed; pointer-events:none; background:var(--ink); color:var(--surface); padding:.25rem .5rem; border-radius:6px; font-size:.76rem; z-index:50; opacity:0; transition:opacity .1s; white-space:nowrap; }
 
-  /* ---- rec cards ---- */
   .rec { border:1px solid var(--border); border-radius:10px; padding:.9rem 1rem; margin-bottom:.7rem; background:var(--surface-2); }
-  .rec .rank { display:inline-flex; width:1.6rem; height:1.6rem; border-radius:50%; background:var(--accent); color:#fff;
-    align-items:center; justify-content:center; font-size:.8rem; font-weight:650; margin-right:.5rem; }
+  .rec .rank { display:inline-flex; width:1.6rem; height:1.6rem; border-radius:50%; background:var(--accent); color:#fff; align-items:center; justify-content:center; font-size:.8rem; font-weight:650; margin-right:.5rem; }
   .rec .name { font-weight:650; }
-  .rec .metrics { display:flex; gap:1.2rem; flex-wrap:wrap; margin:.5rem 0; font-size:.85rem; color:var(--ink-2); }
+  .rec .metrics { display:flex; gap:1.2rem; flex-wrap:wrap; margin:.5rem 0 0; font-size:.85rem; color:var(--ink-2); }
   .rec .metrics b { color:var(--ink); }
 
-  .empty { color:var(--muted); text-align:center; padding:2rem 1rem; }
+  .empty { color:var(--muted); text-align:center; padding:2.5rem 1rem; }
   .note { color:var(--muted); font-size:.82rem; margin-top:.6rem; display:flex; gap:.4rem; align-items:flex-start; }
   .note svg { flex-shrink:0; margin-top:.15rem; }
-  .btn { display:inline-flex; align-items:center; gap:.4rem; border:1px solid var(--axis); background:var(--surface-2);
-    color:var(--ink); padding:.45rem .85rem; border-radius:9px; cursor:pointer; font-size:.88rem; }
+  .btn { display:inline-flex; align-items:center; gap:.4rem; border:1px solid var(--axis); background:var(--surface-2); color:var(--ink); padding:.45rem .85rem; border-radius:9px; cursor:pointer; font-size:.88rem; text-decoration:none; }
   .btn:hover { border-color:var(--accent); color:var(--accent); }
   .btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
   .btn.primary:hover { color:#fff; opacity:.92; }
-  .spin { display:inline-block; width:1rem; height:1rem; border:2px solid var(--grid); border-top-color:var(--accent);
-    border-radius:50%; animation:sp .7s linear infinite; vertical-align:-2px; }
+  .spin { display:inline-block; width:1rem; height:1rem; border:2px solid var(--grid); border-top-color:var(--accent); border-radius:50%; animation:sp .7s linear infinite; vertical-align:-2px; }
   @keyframes sp { to { transform:rotate(360deg); } }
   .cat-tag { font-size:.78rem; color:var(--muted); }
 </style>
@@ -176,9 +150,7 @@
 <body>
 <header>
   <div class="bar">
-    <div class="brand" onclick="goHome()">
-      <b>LabScope</b><span>仪器采购情报</span>
-    </div>
+    <div class="brand" onclick="goHome()"><b>LabScope</b><span>仪器采购情报</span></div>
     <div class="search">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
       <input id="q" placeholder="搜索型号（42i、T200、Serinus 40）或品类（NOx 分析仪）…" autocomplete="off">
@@ -188,294 +160,6 @@
 </header>
 <main id="app"></main>
 <div class="tt" id="tt"></div>
-
-<script>
-const $ = s => document.querySelector(s);
-const app = $("#app");
-const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const api = async (name, args={}) => (await fetch(`/api/${name}?args=${encodeURIComponent(JSON.stringify(args))}`)).json();
-
-const CATEGORIES = ["NOx analyzer","NO2 analyzer","SO2 analyzer","O3 analyzer","CO analyzer","NH3 analyzer","multi-gas analyzer","calibrator"];
-const CAT_ZH = {"NOx analyzer":"NOx 分析仪","NO2 analyzer":"NO₂ 分析仪","SO2 analyzer":"SO₂ 分析仪","O3 analyzer":"O₃ 分析仪","CO analyzer":"CO 分析仪","NH3 analyzer":"NH₃ 分析仪","multi-gas analyzer":"多组分分析仪","calibrator":"校准仪"};
-const catLabel = c => CAT_ZH[c] || c;
-
-function resolveCategory(q) {
-  const t = q.toLowerCase().replace("analyser","analyzer");
-  for (const c of CATEGORIES) if (t === c.toLowerCase()) return c;
-  const map = [["nox","NOx analyzer"],["no2","NO2 analyzer"],["so2","SO2 analyzer"],
-    ["o3","O3 analyzer"],["ozone","O3 analyzer"],["co ","CO analyzer"],["carbon monoxide","CO analyzer"],
-    ["nh3","NH3 analyzer"],["ammonia","NH3 analyzer"],["multi","multi-gas analyzer"],["calibrat","calibrator"],
-    ["校准","calibrator"]];
-  const looksCat = /analy[sz]er|分析仪|校准/.test(t);
-  if (looksCat) for (const [k,c] of map) if (t.includes(k)) return c;
-  return null;
-}
-
-/* ---------------- router ---------------- */
-function goHome(){ location.hash = ""; }
-function go(view, arg){ location.hash = view + (arg ? "/" + encodeURIComponent(arg) : ""); }
-window.addEventListener("hashchange", route);
-
-function route(){
-  const h = decodeURIComponent(location.hash.replace(/^#/,""));
-  const [view, ...rest] = h.split("/");
-  const arg = rest.join("/");
-  if (view === "model") return renderModel(arg);
-  if (view === "category") return renderCategory(arg);
-  return renderHome();
-}
-
-/* search box */
-$("#q").addEventListener("keydown", e => {
-  if (e.key !== "Enter") return;
-  const q = e.target.value.trim();
-  if (!q) return;
-  const cat = resolveCategory(q);
-  if (cat) go("category", cat); else go("model", q);
-});
-
-/* theme toggle */
-const themeBtn = $("#themeBtn");
-themeBtn.onclick = () => {
-  const cur = document.documentElement.getAttribute("data-theme");
-  const dark = cur ? cur === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
-  document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
-};
-
-/* ---------------- helpers ---------------- */
-const loading = () => app.innerHTML = `<div class="empty"><span class="spin"></span> 加载中…</div>`;
-function crumbs(parts){
-  return `<div class="crumbs">` + parts.map((p,i)=>
-    i < parts.length-1
-      ? `<a onclick="${p.go}">${esc(p.label)}</a><span>›</span>`
-      : `<span style="color:var(--ink-2)">${esc(p.label)}</span>`
-  ).join("") + `</div>`;
-}
-function statusBadge(s){
-  if (s === "current") return `<span class="badge good"><span class="dot"></span>在产</span>`;
-  if (s === "discontinued") return `<span class="badge mut"><span class="dot"></span>停产</span>`;
-  return `<span class="badge mut">状态未知</span>`;
-}
-const INFO = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>`;
-const coverage = t => `<div class="note">${INFO}<span>${esc(t)}</span></div>`;
-
-/* year trend bar chart (validated series-1 blue) */
-function trendChart(byYear){
-  const years = Object.keys(byYear).sort();
-  if (!years.length) return "";
-  const W = 520, H = 130, padB = 22, padL = 4, padT = 8;
-  const max = Math.max(...years.map(y=>byYear[y]));
-  const bw = (W - padL*2) / years.length;
-  const barW = Math.max(6, Math.min(38, bw - 8));
-  const bars = years.map((y,i)=>{
-    const v = byYear[y];
-    const bh = Math.max(2, (H-padB-padT) * v / max);
-    const x = padL + i*bw + (bw-barW)/2;
-    const yy = H - padB - bh;
-    const showYear = years.length <= 12 || i % 2 === 0;
-    return `<rect class="bar" x="${x.toFixed(1)}" y="${yy.toFixed(1)}" width="${barW.toFixed(1)}" height="${bh.toFixed(1)}" rx="3"
-              data-y="${y}" data-v="${v}"></rect>`
-      + (showYear ? `<text x="${(x+barW/2).toFixed(1)}" y="${H-8}" text-anchor="middle">${y.slice(2)}</text>` : "");
-  }).join("");
-  return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet"
-      onmousemove="barHover(event)" onmouseleave="hideTip()">${bars}</svg></div>`;
-}
-function barHover(e){
-  const r = e.target.closest(".bar");
-  const tt = $("#tt");
-  if (!r) { tt.style.opacity = 0; return; }
-  tt.textContent = `${r.dataset.y}：${r.dataset.v} 篇`;
-  tt.style.left = (e.clientX + 12) + "px";
-  tt.style.top = (e.clientY - 12) + "px";
-  tt.style.opacity = 1;
-}
-const hideTip = () => $("#tt").style.opacity = 0;
-
-/* ---------------- home ---------------- */
-async function renderHome(){
-  loading();
-  const d = await api("overview");
-  const t = d.totals || {};
-  app.innerHTML = `
-    <div class="hero">
-      <h1>从「哪台仪器」到「有据可依」</h1>
-      <p>把气体分析仪的规格、<b>真正用过它的已发表论文</b>（含方法节证据句），以及二手行情汇到一处，支撑可辩护的采购决策。</p>
-      <div class="flow"><b>选型号</b> → <span>看文献证据</span> → <span>比同类</span> → <b>过采购论证</b></div>
-    </div>
-    <div class="tiles">
-      <div class="tile"><div class="n tnum">${t.instruments??0}</div><div class="l">已收录型号</div></div>
-      <div class="tile"><div class="n tnum">${t.papers??0}</div><div class="l">关联论文</div></div>
-      <div class="tile"><div class="n tnum">${t.links??0}</div><div class="l">高置信仪器-论文链接</div></div>
-      <div class="tile"><div class="n tnum">${(d.categories||[]).length}</div><div class="l">仪器品类</div></div>
-    </div>
-    <div class="card">
-      <h3>按品类浏览</h3>
-      <div class="chips">${(d.categories||[]).map(c=>
-        `<span class="chip" onclick="go('category','${esc(c.category)}')">${esc(catLabel(c.category))}<span class="c tnum">${c.models}</span></span>`).join("")}</div>
-    </div>
-    <div class="card">
-      <h3>文献引用最多的型号</h3>
-      <div class="tablewrap"><table>
-        <tr><th>型号</th><th>品类</th><th>状态</th><th>认证</th><th style="text-align:right">高置信论文</th></tr>
-        ${(d.top_models||[]).map(m=>`<tr>
-          <td><a onclick="go('model','${esc(m.model)}')"><b>${esc(m.manufacturer)} ${esc(m.model)}</b></a></td>
-          <td class="cat-tag">${esc(catLabel(m.category))}</td>
-          <td>${statusBadge(m.status)}</td>
-          <td>${m.epa_designation?`<span class="pill">EPA</span>`:""}</td>
-          <td style="text-align:right" class="tnum">${m.linked_papers}</td></tr>`).join("")}
-      </table></div>
-    </div>`;
-}
-
-/* ---------------- model detail ---------------- */
-async function renderModel(q){
-  loading();
-  const spec = await api("spec_lookup", {model:q});
-  if (!spec.found){
-    app.innerHTML = crumbs([{label:"首页",go:"goHome()"},{label:esc(q)}])
-      + `<div class="card empty">未找到匹配型号「${esc(q)}」。<br><span class="sub">当前索引覆盖气体分析仪（NOx / SO₂ / O₃ / CO / NH₃）。</span></div>`;
-    return;
-  }
-  const inst = spec.instrument;
-  const name = `${inst.manufacturer} ${inst.model}`;
-  // fire the three data calls in parallel
-  const [papers, usage, market] = await Promise.all([
-    api("paper_search", {model:inst.model, limit:20}),
-    api("usage_profile", {model:inst.model}),
-    api("market_search", {model:inst.model}),
-  ]);
-
-  const s = inst.specs || {};
-  const specRows = Object.entries(s).filter(([,v])=>v!=null)
-    .map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("");
-
-  const up = usage.found ? usage : {papers_per_year:{},top_fields:[],top_institutions:[],total_linked_papers:0};
-
-  app.innerHTML =
-    crumbs([{label:"首页",go:"goHome()"},
-            {label:catLabel(inst.category),go:`go('category','${esc(inst.category)}')`},
-            {label:name}])
-    + `<div class="card">
-        <div class="detail-head">
-          <div>
-            <h1 class="title">${esc(name)}</h1>
-            <div class="meta">
-              ${statusBadge(inst.status)}
-              <span class="pill">${esc(inst.category||"")}</span>
-              <span class="pill">${esc(inst.principle||"")}</span>
-              ${inst.epa_designation?`<span class="badge epa">EPA ${esc(inst.epa_designation)}</span>`:""}
-              ${spec.fuzzy?`<span class="badge mut">模糊匹配 ${spec.match_score}</span>`:""}
-            </div>
-          </div>
-          <button class="btn primary" onclick="go('category','${esc(inst.category)}')">比较同类 →</button>
-        </div>
-      </div>
-
-      <div class="cols">
-        <div>
-          <div class="card">
-            <h3>规格 <span class="sub" style="text-transform:none;letter-spacing:0">· 来源：${inst.specs_provenance==='datasheet'?'数据表抽取':'人工整理'}</span></h3>
-            <div class="tablewrap"><table class="kv">${specRows || '<tr><td class="sub">暂无规格数据</td></tr>'}</table></div>
-            ${inst.datasheet_url?`<div style="margin-top:.7rem"><a href="${esc(inst.datasheet_url)}" target="_blank" rel="noopener">厂商数据表 →</a></div>`:""}
-            ${inst.aliases&&inst.aliases.length?`<div class="sub" style="margin-top:.7rem">文献别名：${inst.aliases.map(esc).join("、")}</div>`:""}
-          </div>
-          ${market.found && market.n_listings ? `
-          <div class="card">
-            <h3>二手行情</h3>
-            ${market.price_range_usd?`<div style="font-size:1.2rem;font-weight:650" class="tnum">$${market.price_range_usd.min} – $${market.price_range_usd.max}</div>`:""}
-            <div class="tablewrap"><table>
-              <tr><th>来源</th><th>标题</th><th>价格</th><th>成色</th></tr>
-              ${market.listings.map(l=>`<tr><td>${esc(l.source)}</td>
-                <td>${l.listing_url?`<a href="${esc(l.listing_url)}" target="_blank" rel="noopener">${esc(l.title)}</a>`:esc(l.title)}</td>
-                <td class="tnum">${l.price?esc(l.currency+" "+l.price):"—"}</td><td>${esc(l.condition??"")}</td></tr>`).join("")}
-            </table></div>
-            ${coverage(market.note)}
-          </div>`:`
-          <div class="card"><h3>二手行情</h3><div class="sub">暂无该型号的行情快照。可通过 <code>labscope market-import</code> 手动导入。</div></div>`}
-        </div>
-
-        <div>
-          <div class="card">
-            <h3>使用画像</h3>
-            <div class="stat-row">
-              <div class="stat"><div class="n tnum">${up.total_linked_papers}</div><div class="l">已确认论文<br>（置信 ≥ 0.7）</div></div>
-              <div class="stat"><div class="n tnum">${(papers.papers||[]).filter(p=>p.evidence_section==='methods').length || Object.values(up.papers_per_year).reduce((a,b)=>a+b,0)}</div><div class="l">方法节确认</div></div>
-              <div class="stat"><div class="n tnum">${(up.top_institutions||[]).length}</div><div class="l">使用机构</div></div>
-            </div>
-            ${Object.keys(up.papers_per_year||{}).length ? `<div style="margin-top:1rem"><div class="sub" style="margin-bottom:.3rem">逐年论文数</div>${trendChart(up.papers_per_year)}</div>`:""}
-            ${(up.top_fields||[]).length?`<div style="margin-top:1rem"><div class="sub" style="margin-bottom:.4rem">主要领域</div><div class="taglist">${up.top_fields.map(f=>`<span class="pill">${esc(f.name)} · ${f.papers}</span>`).join("")}</div></div>`:""}
-            ${(up.top_institutions||[]).length?`<div style="margin-top:.9rem"><div class="sub" style="margin-bottom:.4rem">主要机构</div><div class="taglist">${up.top_institutions.slice(0,8).map(f=>`<span class="pill">${esc(f.name)} · ${f.papers}</span>`).join("")}</div></div>`:""}
-          </div>
-
-          <div class="card">
-            <h3>文献证据 <span class="sub" style="text-transform:none;letter-spacing:0">· ${papers.total_linked_papers||0} 篇，展示 ${papers.shown||0}</span></h3>
-            <div class="tablewrap"><table>
-              <tr><th>年份</th><th>论文</th><th>期刊 / 领域</th><th>证据句（原文）</th><th style="text-align:right">置信</th></tr>
-              ${(papers.papers||[]).map(p=>`<tr>
-                <td class="tnum">${p.year??""}</td>
-                <td>${p.doi?`<a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>`:esc(p.title)}</td>
-                <td>${esc(p.venue??"")}<div class="sub">${(p.fields||[]).slice(0,2).map(esc).join("、")}</div></td>
-                <td class="ev">${p.evidence_snippet?("“"+esc(p.evidence_snippet)+"”"):`<span class="ev-src">${esc(p.evidence_section||p.link_source)} 匹配（无摘句）</span>`}</td>
-                <td style="text-align:right"><span class="conf tnum">${p.link_confidence}</span></td></tr>`).join("") || `<tr><td colspan="5" class="sub">暂无关联论文（可运行 literature 管线补齐）</td></tr>`}
-            </table></div>
-            ${coverage(papers.coverage_note || "文献覆盖仅限开放获取，计数为真实使用量的下限。")}
-          </div>
-        </div>
-      </div>`;
-}
-
-/* ---------------- category view ---------------- */
-async function renderCategory(cat){
-  loading();
-  const [rec, cmp] = await Promise.all([
-    api("recommend", {category:cat, top_n:5}),
-    api("compare_models", {category:cat}),
-  ]);
-  const recs = rec.recommendations || [];
-  const matrix = cmp.matrix || [];
-
-  const recCards = recs.map((r,i)=>`
-    <div class="rec">
-      <div><span class="rank">${i+1}</span><span class="name"><a onclick="go('model','${esc(r.model)}')">${esc(r.manufacturer)} ${esc(r.model)}</a></span>
-        ${statusBadge(r.status)} ${r.epa_designation?`<span class="badge epa">EPA ${esc(r.epa_designation)}</span>`:""}</div>
-      <div class="metrics">
-        <span>原理 <b>${esc(r.principle||"—")}</b></span>
-        <span>检出限 <b>${esc(r.lod||"—")}</b></span>
-        <span>论文 <b class="tnum">${r.linked_papers}</b></span>
-        <span>近 5 年 <b class="tnum">${r.papers_since_2019}</b></span>
-      </div>
-      ${r.example_evidence?`<div class="ev">“${esc(r.example_evidence.evidence_snippet)}” <span class="ev-src">— ${esc(r.example_evidence.title)} (${r.example_evidence.year})</span></div>`:""}
-    </div>`).join("");
-
-  app.innerHTML =
-    crumbs([{label:"首页",go:"goHome()"},{label:catLabel(cat)}])
-    + `<div class="card">
-        <div class="detail-head"><div><h1 class="title">${esc(catLabel(cat))}</h1>
-          <div class="sub">${matrix.length} 个型号 · 排序依据：文献使用量（总量+近年）、在产状态、合规认证</div></div></div>
-      </div>
-      <div class="card">
-        <h3>采购推荐（有据可依）</h3>
-        ${recCards || `<div class="empty">该品类暂无足够文献数据用于排序。</div>`}
-        ${coverage(rec.coverage_note || "使用量为开放获取下限。")}
-      </div>
-      <div class="card">
-        <h3>规格对比矩阵 <span class="sub" style="text-transform:none;letter-spacing:0">· 窄屏可左右滑动</span></h3>
-        <div class="tablewrap"><table class="matrix">
-          <tr><th>型号</th><th>状态</th><th>原理</th><th>量程</th><th>检出限</th><th>响应</th><th>EPA</th><th style="text-align:right">论文</th></tr>
-          ${matrix.map(m=>{const s=m.specs||{};return `<tr>
-            <td><a onclick="go('model','${esc(m.model)}')"><b>${esc(m.manufacturer)} ${esc(m.model)}</b></a></td>
-            <td>${statusBadge(m.status)}</td>
-            <td>${esc(m.principle||"—")}</td>
-            <td>${esc(s.ranges||"—")}</td>
-            <td>${esc(s.lod||"—")}</td>
-            <td class="tnum">${s.response_time_s!=null?s.response_time_s+" s":"—"}</td>
-            <td>${m.epa_designation?`<span class="pill" title="${esc(m.epa_designation)}">EPA</span>`:"—"}</td>
-            <td style="text-align:right" class="tnum">${m.linked_papers}</td></tr>`;}).join("")}
-        </table></div>
-      </div>`;
-}
-
-route();
-</script>
+<script src="app.js"></script>
 </body>
 </html>

@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS instruments (
   specs_provenance TEXT DEFAULT 'curated',    -- 'curated' | 'datasheet'
   datasheet_url TEXT,
   status TEXT DEFAULT 'unknown',              -- 'current' | 'discontinued' | 'unknown'
-  epa_designation TEXT,                       -- roadmap 12.6 head start
+  epa_designation TEXT,                       -- US EPA reference/equivalent method (roadmap 12.6)
+  ccep_designation TEXT,                       -- China CCEP/MEE certification (roadmap 12.6)
   seed_confidence REAL DEFAULT 1.0,
   UNIQUE (manufacturer, model)
 );

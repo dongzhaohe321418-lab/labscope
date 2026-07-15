@@ -1,144 +1,108 @@
-# LabScope — Instrument Intelligence Agent
+# LabScope · 仪器采购情报
 
-Reverse index from **instrument model → papers that actually used it**, plus specs and
-second-hand listing snapshots, for gas analyzers (NOx / NO₂ / SO₂ / O₃ / CO / NH₃).
-Implements the MVP in `instrument-agent-proposal.md` v0.1.
+> **从「哪台仪器」到「有据可依」** —— 把气体分析仪的规格、**实时联网检索到的、真正用过它的已发表论文**（含方法节证据句），以及市场入口汇到一处，支撑可辩护的采购决策。
 
-## Layout
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dongzhaohe321418-lab/labscope)
+&nbsp;![static](https://img.shields.io/badge/frontend-static-blue)
+&nbsp;![realtime](https://img.shields.io/badge/literature-realtime-2a78d6)
+&nbsp;![license](https://img.shields.io/badge/license-MIT-green)
 
-```
-labscope.py          CLI entry point
-common.py            HTTP client (proxy-tolerant TLS), query logging, rate limiting
-llm.py               LLM adapter: Anthropic SDK -> `claude` CLI fallback
-db/                  schema.sql + SQLite access layer (fuzzy model resolution)
-pipelines/
-  seed.py            load curated seed models into the DB
-  literature.py      Europe PMC (METHODS-scoped) + OpenAlex -> evidence snippets
-                     -> LLM disambiguation -> enrichment   ← the core
-  datasheets.py      PDF -> pymupdf -> LLM strict-schema spec extraction
-  marketplace.py     robots.txt-aware snapshot scraping + manual CSV import
-agent/
-  tools.py           the 6 tools (spec_lookup, compare_models, paper_search,
-                     usage_profile, market_search, recommend)
-  mcp_server.py      MCP server — plug the tools into Claude Code (no API key needed)
-  chat.py            SDK chat agent (needs ANTHROPIC_API_KEY / `ant auth login`)
-web/
-  server.py          stdlib HTTP server exposing the tools as a JSON API
-  index.html         single-page decision UI (search → dossier → compare)
-eval/run_eval.py     linkage precision (LLM-judged + human sample), spec spot-check, e2e
-data/                seed_models.json / .csv, caches, query logs
-```
+覆盖 **269 个气体分析仪型号**（NOx / NO₂ / SO₂ / O₃ / CO / NH₃ / CO₂·CH₄ / H₂S / THC·VOC / 多组分 / 校准仪），跨 Thermo、Teledyne API、Ecotech、Horiba、Envea、2B、Eco Physics、Picarro、LGR/ABB、Aerodyne、聚光科技 FPI、先河、雪迪龙等主流厂商。
 
-## Setup
+---
 
-```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-# behind a TLS-intercepting proxy: pip install --cert .certs/system.pem ...
-# (.certs/system.pem is exported from the macOS keychain; regenerate with
-#  security find-certificate -a -p /System/Library/Keychains/SystemRootCertificates.keychain)
-```
+## 为什么
 
-Optional environment:
+买一台实验室/监测仪器，最强的信任信号是**「哪些论文真的用过这个型号、用在什么场景」**——但这需要几天的文献翻找。LabScope 把它变成一次搜索：
 
-- `ANTHROPIC_API_KEY` — enables the SDK backend and `labscope chat`; without it, the
-  LLM steps run through the `claude` CLI (Claude Code subscription).
-- `LABSCOPE_LLM_MODEL` — pipeline model (default `claude-opus-4-8`).
-- `OPENALEX_MAILTO` — your email for OpenAlex's polite pool (faster rate limits).
-- `CORE_API_KEY` — reserved; the CORE recall source is wired but disabled without a key.
+**选型号 → 看文献证据 → 比同类 → 过采购论证**
 
-## Build the index
+## 核心特性
+
+- **🔎 实时文献证据** — 搜一个型号，浏览器**当场**查 [Europe PMC](https://europepmc.org/)（方法节域检索）+ [OpenAlex](https://openalex.org/)，抽取**方法节原文证据句**（"...measured using a Thermo Scientific Model 42i..."）。不预爬、不背数据。
+- **📊 有据可依的推荐** — 品类推荐用 Europe PMC 的 `hitCount` **实时**给型号按文献使用量排序，叠加在产状态、EPA/CCEP 合规认证。
+- **📋 规格 + 合规** — 策划的静态种子库：量程、检出限、响应时间、测量原理、US EPA 参考方法号、中国 CCEP 认证。
+- **⚡ 纯静态、零后端** — 前端直连公共 API（都支持 CORS），可一键部署到 Vercel/任意静态托管，无数据库、无服务器、无 API key。
+- **🎨 干净好用** — 一个智能搜索框按意图路由（型号→证据档案，品类→推荐+对比），深浅主题，响应式。
+
+## 一键部署到 Vercel
+
+1. 把本仓库推到你的 GitHub（见下方「本地开发」，或直接 fork）。
+2. 到 [vercel.com/new](https://vercel.com/new) → **Import Git Repository** → 选本仓库 → **Deploy**。
+   `vercel.json` 已把静态根设为 `web/`，**零配置**。
+3. 完成。站点纯静态，浏览器实时查文献。
+
+> 或点上方 **Deploy with Vercel** 按钮，按提示 clone + 部署。
+
+## 本地开发
 
 ```bash
+git clone https://github.com/dongzhaohe321418-lab/labscope.git
+cd labscope
+python3 web/server.py 8321        # 本地静态服务器（仅为让 fetch 生效；生产是纯静态）
+# 打开 http://127.0.0.1:8321
+```
+
+前端只依赖 `web/index.html`、`web/app.js`、`web/data/instruments.json`——没有构建步骤。
+
+## 架构
+
+```
+浏览器 (web/)                         公共 API（实时，CORS）
+┌───────────────────────────┐        ┌──────────────────────┐
+│ index.html · app.js       │──查──▶ │ Europe PMC  方法节检索 │
+│ · 智能搜索/路由            │        │             全文证据句 │
+│ · 前端模糊型号匹配         │──查──▶ │ OpenAlex    字段/引用   │
+│ · 实时文献查询 + 启发式消歧 │        └──────────────────────┘
+│ · 证据句提取 · 使用画像图表 │
+└───────────┬───────────────┘
+            │ 载入（静态）
+   web/data/instruments.json          ← 策划种子库（规格/别名/认证）
+```
+
+- **仪器种子库是策划的静态数据**——没有公共 API 能实时给出型号规格/别名/认证，这是产品的护城河，靠人工+多智能体策划（见下）。
+- **文献链接全部实时**——每次搜索当场查，永远最新。
+- **消歧是透明的启发式**：Europe PMC 的方法节域检索本身是强信号，叠加品牌词共现约束 + 证据句提取。诚实标注「未经 LLM 语义复核」。若需最高精度，用可选的 Python 后端（下）做 LLM 消歧的批量索引。
+
+## 扩展仪器库
+
+种子库由多智能体工作流策划（每个厂商一个 agent 起草 + 一个对抗性 agent 核实删幻觉），当前 269 个型号。要增补：
+
+```bash
+# 编辑 data/expanded_seed.json 或用后端工具重新策划，然后：
+python3 scripts/export_seed.py       # 重新生成 web/data/instruments.json
+```
+
+`web/data/instruments.json` 是前端唯一的数据依赖——直接编辑它也能加型号。
+
+## 可选：Python 后端（LLM 增强 / 批量索引）
+
+纯静态前端已能独立运行。仓库还带一套 Python 工具，用于**离线高精度索引**（LLM 语义消歧、数据表规格抽取、评估）：
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python labscope.py init-db
-.venv/bin/python labscope.py seed                      # data/seed_models.json -> DB
-.venv/bin/python labscope.py literature --limit 10     # pilot run (proposal week-2 checkpoint)
-.venv/bin/python labscope.py literature                # full run
-.venv/bin/python labscope.py datasheets                # optional: refine specs from PDFs
-.venv/bin/python labscope.py market                    # optional: listing snapshots
+.venv/bin/python labscope.py seed                 # 载入种子
+.venv/bin/python labscope.py literature --limit 10 # LLM 消歧的文献索引
 .venv/bin/python labscope.py stats
 ```
 
-Everything is idempotent and resumable; all external API queries are logged to
-`data/logs/queries.jsonl`; fulltext and PDFs are cached under `data/cache/`.
-
-## Use it
-
-**Web UI** (recommended — a single decision flow: search → evidence dossier → compare → decide):
+它还能作为 [Claude Code](https://claude.com/claude-code) 的 MCP 工具（无需 API key）：
 
 ```bash
-.venv/bin/python web/server.py 8321      # then open http://127.0.0.1:8321
+./scripts/register_mcp.sh
 ```
 
-One search box routes by intent — a **model** (`42i`, `T200`, `Serinus 40`) opens an
-evidence dossier (specs, per-year usage trend, the papers that used it with Methods
-snippets, second-hand listings); a **category** (`NOx 分析仪`, `ozone analyzer`) opens
-ranked recommendations plus an aligned spec-comparison matrix. Stdlib-only backend,
-light/dark themed, responsive. Landing page shows index coverage and the most-cited
-models.
+后端细节见 [`docs/BACKEND.md`](docs/BACKEND.md)。
 
-Direct tool calls (no LLM):
+## 数据来源
 
-```bash
-.venv/bin/python labscope.py tool spec_lookup '{"model": "thermo 42i"}'
-.venv/bin/python labscope.py tool paper_search '{"model": "T200", "limit": 5}'
-.venv/bin/python labscope.py tool recommend '{"category": "NOx analyzer"}'
-```
+- **[Europe PMC](https://europepmc.org/)** — 开放获取全文与方法节检索（REST API，CORS）。
+- **[OpenAlex](https://openalex.org/)** — 学术元数据（字段、机构、引用；polite pool）。
+- 仪器规格与认证：厂商数据表 + 人工/多智能体策划。
 
-As an agent inside Claude Code (recommended, no API key):
+请遵守各 API 的使用条款与速率限制。文献覆盖仅限开放获取，计数为真实使用量的**下限**。
 
-```bash
-claude mcp add labscope -- "$PWD/.venv/bin/python" "$PWD/agent/mcp_server.py"
-# then in any Claude Code session: "我想买一台NOx分析仪，帮我推荐并给出文献依据"
-```
+## License
 
-Standalone chat agent (needs API credentials):
-
-```bash
-.venv/bin/python labscope.py chat
-```
-
-## Evaluate (proposal §9)
-
-```bash
-.venv/bin/python eval/run_eval.py precision --n 50   # target >=90% linkage precision
-.venv/bin/python eval/run_eval.py specs              # 10% sample for manual datasheet check
-.venv/bin/python eval/run_eval.py e2e                # 10 realistic tool queries
-.venv/bin/python eval/test_fixes.py                  # regression tests for reviewed bugs
-```
-
-Pilot results (13-model run — Thermo 42i/43i/48i/49i/42C, Teledyne T100/T200/T400,
-Serinus 40, APNA-370, AC32M, 2B 205, CAPS NO2):
-
-| Metric | Target | Result |
-|---|---|---|
-| Linkage precision (LLM-judged, n=40) | ≥ 90% | **100%** |
-| End-to-end tool queries | 10/10 substantive | **10/10** |
-| Week-2 checkpoint: linked papers across pilot models | ≥ 20 | **354** (conf ≥ 0.7) |
-
-## Code review
-
-The codebase was reviewed by a multi-agent workflow (4 dimensions × adversarial
-verification). All 24 distinct confirmed findings were fixed — 4 high-severity
-(destructive DELETE on API outage, missing rollback on per-instrument failure,
-PDF-cache poisoning, dangling-tool_use REPL corruption), plus paper-dedup /
-unique-index, cache-poisoning-on-transient-error, and input-validation bugs.
-Regression coverage is in `eval/test_fixes.py`.
-
-## Design notes / deviations from the proposal
-
-- **Embeddings table → alias-based fuzzy matching.** MVP fuzzy model resolution uses the
-  alias table + token/sequence similarity (`db.resolve_instrument`) instead of embeddings —
-  no embedding API dependency; swap in later without schema changes.
-- **Link storage threshold.** Links are stored from confidence ≥ 0.5 and the agent tools
-  filter at ≥ 0.7 by default, so borderline links remain inspectable (`min_confidence` knob).
-- **OpenAlex-only hits** (fulltext match, no retrievable snippet) get confidence 0.6:
-  above storage threshold, below the default display threshold.
-- **CORE / Semantic Scholar**: CORE needs an API key (skipped without one); Semantic Scholar
-  added no Methods-scoped value over EPMC+OpenAlex in the pilot and is left out of the MVP loop.
-- **eBay**: robots.txt disallows search-page scraping, so the scraper skips it by design.
-  **LabX** allows the path in robots.txt but currently serves 403 to non-browser clients,
-  so snapshots come back empty; the supported route is manual import
-  (`labscope market-import`, template in `data/example_listings.template.csv`).
-  A production version should use official APIs (e.g. eBay Browse API) instead.
-- **Compliance head start**: `epa_designation` is already captured in the seed (roadmap 12.6).
+[MIT](LICENSE)

@@ -39,8 +39,9 @@ def upsert_instrument(conn: sqlite3.Connection, row: dict) -> int:
     cur = conn.execute(
         """
         INSERT INTO instruments (manufacturer, model, model_aliases, category, principle,
-                                 specs_json, datasheet_url, status, epa_designation, seed_confidence)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                 specs_json, datasheet_url, status, epa_designation,
+                                 ccep_designation, seed_confidence)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT (manufacturer, model) DO UPDATE SET
           model_aliases = excluded.model_aliases,
           category = excluded.category,
@@ -50,6 +51,7 @@ def upsert_instrument(conn: sqlite3.Connection, row: dict) -> int:
           datasheet_url = COALESCE(excluded.datasheet_url, instruments.datasheet_url),
           status = excluded.status,
           epa_designation = COALESCE(excluded.epa_designation, instruments.epa_designation),
+          ccep_designation = COALESCE(excluded.ccep_designation, instruments.ccep_designation),
           seed_confidence = excluded.seed_confidence
         """,
         (
@@ -62,6 +64,7 @@ def upsert_instrument(conn: sqlite3.Connection, row: dict) -> int:
             row.get("datasheet_url"),
             row.get("status", "unknown"),
             row.get("epa_designation"),
+            row.get("ccep_designation"),
             row.get("confidence", 1.0),
         ),
     )

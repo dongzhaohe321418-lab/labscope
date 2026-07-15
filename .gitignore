@@ -11,3 +11,5 @@ eval/precision_sample.json
 eval/precision_judged.json
 eval/spec_spotcheck.json
 eval/demo_transcript.md
+.vercel/
+.DS_Store
