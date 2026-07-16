@@ -1262,10 +1262,14 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "GasCal 1100",
   "model_aliases": [
+   "Ecotech (Acoem) GasCal 1100",
+   "Ecotech / Acoem GasCal-1100",
    "Ecotech GasCal 1100",
+   "Ecotech GasCal-1100",
+   "GasCal",
    "GasCal-1100",
    "Gascal 1100"
   ],
@@ -1284,24 +1288,29 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "ML9810",
   "model_aliases": [
+   "EC9810",
+   "EC9810B",
+   "Ecotech (Acoem) ML9810",
+   "Ecotech / Monitor Labs ML9810",
+   "Ecotech 9810",
+   "Ecotech ML9810",
    "ML9810B",
    "ML9811",
    "ML9812",
-   "EC9810",
-   "EC9810B",
    "Monitor Labs 9810",
-   "Ecotech 9810"
+   "Monitor Labs ML9810",
+   "TML 9810"
   ],
   "category": "O3 analyzer",
-  "principle": "UV photometry (254 nm absorption)",
+  "principle": "UV photometry",
   "specs": {
-   "ranges": "EPA-designated operation on full-scale ranges 0-0.05 ppm to 0-1.0 ppm",
-   "lod": null,
+   "ranges": "0-0.05 to 0-20 ppm (selectable)",
+   "lod": "~0.5 ppb",
    "response_time_s": null,
-   "notes": "Legacy 9800-series UV-absorption ozone analyzer; EPA designation EQOA-0193-091 covers ML9810/CM2010/EC9810, -9811, -9812, ML9810B/CM2010B/EC9810B and Casella CM2010 variants (FR Vol. 58 p. 6964, 02/03/1993)"
+   "notes": "UV-absorption ozone analyzer, Monitor Labs / Teledyne Monitor Labs 9800 series; confirmed as the ozone model (OEM twins EC9810/CM2010). The coverage hint labeling 9810 as CO is incorrect (CO is ML9830). Removed 'ML9811' from aliases: it is a distinct ozone model number, not an alias of 9810."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
@@ -1310,15 +1319,21 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "ML9830",
   "model_aliases": [
-   "ML9830B",
    "EC9830",
    "EC9830B",
    "EC9830T",
+   "Ecotech (Acoem) ML9830",
+   "Ecotech / Monitor Labs ML9830",
+   "Ecotech 9830",
+   "Ecotech ML9830",
+   "ML9830B",
    "Monitor Labs 9830",
-   "Ecotech 9830"
+   "Monitor Labs ML9830",
+   "TML 9830",
+   "Teledyne ML9830"
   ],
   "category": "CO analyzer",
   "principle": "NDIR / gas filter correlation",
@@ -1335,25 +1350,29 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "ML9841",
   "model_aliases": [
-   "ML9841A",
-   "ML9841B",
    "EC9841",
    "EC9841A",
    "EC9841B",
    "EC9841T",
-   "Monitor Labs 9841",
-   "Ecotech 9841"
+   "Ecotech (Acoem) ML9841",
+   "Ecotech / Monitor Labs ML9841",
+   "Ecotech 9841",
+   "Ecotech ML9841",
+   "ML9841A",
+   "ML9841B",
+   "ML9841T",
+   "Monitor Labs 9841"
   ],
   "category": "NOx analyzer",
-  "principle": "chemiluminescence (Mo or vitreous carbon converter for NO2)",
+  "principle": "chemiluminescence",
   "specs": {
-   "ranges": "EPA-designated operation on full-scale ranges 0-0.05 ppm to 0-1.0 ppm",
-   "lod": null,
+   "ranges": "0-0.05 to 0-20 ppm (selectable)",
+   "lod": "~0.5 ppb",
    "response_time_s": null,
-   "notes": "Legacy 9800-series NOx analyzer sold under Lear Siegler / Monitor Labs (later Teledyne Monitor Labs) / Casella (CM2041) / Ecotech brands; EPA designation RFNA-1292-090 covers ML9841/CM2041, ML9841A/CM2041A/EC9841A, ML9841B/CM2041B/EC9841B and EC9841T (FR Vol. 57 p. 60198, 12/18/1992); common in 1990s-2000s Australian and European papers"
+   "notes": "Chemiluminescence NO/NO2/NOx analyzer, TML 9800 series; confirmed in federal reference/equivalent-method lists. Variants ML9841A/ML9841B confirmed; ML9841T (trace) plausible."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
@@ -1362,24 +1381,29 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "ML9850",
   "model_aliases": [
-   "ML9850B",
+   "9850B",
+   "Casella ML9850",
    "EC9850",
    "EC9850B",
    "EC9850T",
-   "Monitor Labs 9850",
+   "Ecotech (Acoem) ML9850",
+   "Ecotech / Monitor Labs ML9850",
    "Ecotech 9850",
-   "Casella ML9850"
+   "Ecotech ML9850",
+   "ML9850B",
+   "Monitor Labs 9850",
+   "Monitor Labs ML9850"
   ],
   "category": "SO2 analyzer",
   "principle": "UV fluorescence",
   "specs": {
-   "ranges": "EPA-designated operation on full-scale ranges 0-0.05 ppm to 0-1.0 ppm",
-   "lod": null,
+   "ranges": "0-0.05 to 0-20 ppm (selectable)",
+   "lod": "~0.5 ppb",
    "response_time_s": null,
-   "notes": "Legacy 9800-series pulsed UV fluorescence SO2 analyzer; EPA designation EQSA-0193-092 covers ML9850/CM2050/EC9850/EC9850T and ML9850B/CM2050B/EC9850B (FR Vol. 58 p. 6964, 02/03/1993)"
+   "notes": "Pulsed UV-fluorescence SO2 analyzer, TML 9800 series; confirmed (ML9850/ML9850B SO2 UV-fluorescence units in circulation). TML 9850 branding confirmed."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
@@ -1388,12 +1412,19 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus 10",
   "model_aliases": [
-   "Ecotech Serinus 10",
    "Acoem Serinus 10",
    "American Ecotech Serinus 10",
+   "Ecotech (Acoem) Serinus 10",
+   "Ecotech / Acoem Serinus 10",
+   "Ecotech Serinus 10",
+   "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero Serinus 10",
+   "Met One GAS-1010",
+   "Sailhero Serinus 10",
+   "Serinus 10 O3",
+   "Serinus 10 O3 analyser",
    "Serinus 10 Ozone Analyser"
   ],
   "category": "O3 analyzer",
@@ -1411,12 +1442,19 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus 30",
   "model_aliases": [
-   "Ecotech Serinus 30",
    "Acoem Serinus 30",
    "American Ecotech Serinus 30",
+   "Ecotech (Acoem) Serinus 30",
+   "Ecotech / Acoem Serinus 30",
+   "Ecotech Serinus 30",
+   "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero Serinus 30",
+   "Met One GAS-1030",
+   "Sailhero Serinus 30",
+   "Serinus 30 CO",
+   "Serinus 30 CO analyser",
    "Serinus 30 Carbon Monoxide Analyser"
   ],
   "category": "CO analyzer",
@@ -1434,12 +1472,20 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus 40",
   "model_aliases": [
-   "Ecotech Serinus 40",
    "Acoem Serinus 40",
    "American Ecotech Serinus 40",
+   "Ecotech (Acoem) Serinus 40",
+   "Ecotech / Acoem Serinus 40",
+   "Ecotech Serinus 40",
+   "Ecotech Serinus 40 oxides of nitrogen analyzer",
+   "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero Serinus 40",
+   "Met One GAS-1040",
+   "Sailhero Serinus 40",
+   "Serinus 40 NOx",
+   "Serinus 40 NOx analyser",
    "Serinus 40 Oxides of Nitrogen Analyser"
   ],
   "category": "NOx analyzer",
@@ -1457,13 +1503,17 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus 44",
   "model_aliases": [
-   "Ecotech Serinus 44",
    "Acoem Serinus 44",
+   "Ecotech (Acoem) Serinus 44",
+   "Ecotech / Acoem Serinus 44",
+   "Ecotech Serinus 44",
+   "Ecotech Serinus 44 ammonia analyzer",
    "Met One GAS-1044",
-   "Serinus 44 Ammonia & Oxides of Nitrogen Analyser"
+   "Serinus 44 Ammonia & Oxides of Nitrogen Analyser",
+   "Serinus 44 NO/NO2/NOx/NH3 analyser"
   ],
   "category": "NH3 analyzer",
   "principle": "chemiluminescence with external thermal catalytic NH3 converter",
@@ -1476,16 +1526,23 @@
   "specs_provenance": "curated",
   "datasheet_url": "https://www.acoem.com/en/products/air-quality-monitoring/air-quality-gas-monitors/nox-analyser/serinus-44/",
   "status": "current",
-  "epa_designation": null,
+  "epa_designation": "RFNA-0809-186",
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus 50",
   "model_aliases": [
-   "Ecotech Serinus 50",
    "Acoem Serinus 50",
    "American Ecotech Serinus 50",
+   "Ecotech (Acoem) Serinus 50",
+   "Ecotech / Acoem Serinus 50",
+   "Ecotech Serinus 50",
+   "Ecotech Serinus 50 sulfur dioxide analyzer",
+   "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero Serinus 50",
+   "Sailhero Serinus 50",
+   "Serinus 50 SO2",
+   "Serinus 50 SO2 analyser",
    "Serinus 50 Sulfur Dioxide Analyser"
   ],
   "category": "SO2 analyzer",
@@ -1497,20 +1554,24 @@
    "notes": "Pulsed UV fluorescence with hydrocarbon kicker; US EPA equivalent method designated July 2009 (FR Vol. 74 p. 38184); trace variant Serinus 50T available"
   },
   "specs_provenance": "curated",
-  "datasheet_url": null,
+  "datasheet_url": "https://old.ecotech.com/wp-content/uploads/2015/01/M010029-Serinus-50-SO2-User-Manual-2.2.pdf",
   "status": "current",
   "epa_designation": "EQSA-0809-188",
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus 60",
   "model_aliases": [
-   "Ecotech Serinus 60",
    "Acoem Serinus 60",
+   "Ecotech (Acoem) Serinus 60",
+   "Ecotech / Acoem Serinus 60",
+   "Ecotech Serinus 60",
+   "Ecotech Serinus 60 NO2 CAPS Analyzer",
    "Met One GAS-1060",
+   "Serinus 60 CAPS",
    "Serinus 60 Direct Nitrogen Dioxide Analyser",
-   "Ecotech Serinus 60 NO2 CAPS Analyzer"
+   "Serinus 60 NO2 analyser"
   ],
   "category": "NO2 analyzer",
   "principle": "CAPS (cavity attenuated phase shift spectroscopy)",
@@ -1527,12 +1588,15 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus Cal 1000",
   "model_aliases": [
-   "Ecotech Serinus Cal 1000",
    "Acoem Serinus Cal 1000",
-   "Serinus CAL 1000"
+   "Ecotech (Acoem) Serinus Cal 1000",
+   "Ecotech / Acoem Serinus Cal 1000",
+   "Ecotech Serinus Cal 1000",
+   "Serinus CAL 1000",
+   "SerinusCal 1000"
   ],
   "category": "calibrator",
   "principle": "mass-flow-controller gas dilution",
@@ -1549,12 +1613,15 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus Cal 2000",
   "model_aliases": [
-   "Ecotech Serinus Cal 2000",
    "Acoem Serinus Cal 2000",
-   "Serinus CAL 2000"
+   "Ecotech (Acoem) Serinus Cal 2000",
+   "Ecotech / Acoem Serinus Cal 2000",
+   "Ecotech Serinus Cal 2000",
+   "Serinus CAL 2000",
+   "SerinusCal 2000"
   ],
   "category": "calibrator",
   "principle": "mass-flow-controller gas dilution with internal O3 generator (GPT)",
@@ -1571,12 +1638,15 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Ecotech (Acoem)",
+  "manufacturer": "Ecotech",
   "model": "Serinus Cal 3000",
   "model_aliases": [
-   "Ecotech Serinus Cal 3000",
    "Acoem Serinus Cal 3000",
-   "Serinus CAL 3000"
+   "Ecotech (Acoem) Serinus Cal 3000",
+   "Ecotech / Acoem Serinus Cal 3000",
+   "Ecotech Serinus Cal 3000",
+   "Serinus CAL 3000",
+   "SerinusCal 3000"
   ],
   "category": "calibrator",
   "principle": "mass-flow-controller gas dilution with O3 generator and photometer",
@@ -1613,150 +1683,6 @@
   "datasheet_url": null,
   "status": "current",
   "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "GasCal-1100",
-  "model_aliases": [
-   "Ecotech GasCal-1100",
-   "GasCal 1100",
-   "Ecotech GasCal 1100",
-   "GasCal"
-  ],
-  "category": "calibrator",
-  "principle": "gas dilution (mass flow controllers)",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Legacy Ecotech gas dilution calibrator predating the Serinus Cal line; connects up to four external gas cylinders for precise dilution with zero/dilution air, ozone precision checks and gas-phase titration, for ambient and source-emission analyzer calibration. Removed unverified 'GasCal-1000' alias/portable-model claim from draft. 'Discontinued' status inferred, not confirmed."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus 10",
-  "model_aliases": [
-   "Ecotech Serinus 10",
-   "Serinus 10",
-   "Acoem Serinus 10",
-   "Serinus 10 O3 analyser",
-   "Met One GAS-1010"
-  ],
-  "category": "O3 analyzer",
-  "principle": "UV photometry",
-  "specs": {
-   "ranges": "0-20 ppm full scale (selectable); U.S. EPA range 0-0.5 ppm",
-   "lod": "<0.5 ppb",
-   "response_time_s": null,
-   "notes": "UV absorption photometry at 254 nm. Successor to the ML9810. Rebadged by Met One Instruments as GAS-1010 (verified via Met One user manual)."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": "EQOA-0809-187",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus 30",
-  "model_aliases": [
-   "Ecotech Serinus 30",
-   "Serinus 30",
-   "Acoem Serinus 30",
-   "Serinus 30 CO analyser",
-   "Met One GAS-1030"
-  ],
-  "category": "CO analyzer",
-  "principle": "NDIR / gas filter correlation",
-  "specs": {
-   "ranges": "0-200 ppm full scale (selectable); EPA-designated 0-50 ppm",
-   "lod": "<40 ppb (0.04 ppm)",
-   "response_time_s": null,
-   "notes": "Gas filter correlation NDIR. Successor to the ML9830. Rebadged by Met One as GAS-1030 (verified)."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": "RFCA-0509-174",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus 40",
-  "model_aliases": [
-   "Ecotech Serinus 40",
-   "Serinus 40",
-   "Acoem Serinus 40",
-   "Ecotech Serinus 40 oxides of nitrogen analyzer",
-   "Serinus 40 NOx analyser",
-   "Met One GAS-1040"
-  ],
-  "category": "NOx analyzer",
-  "principle": "chemiluminescence",
-  "specs": {
-   "ranges": "0-20 ppm full scale (selectable); U.S. EPA range 0-0.5 ppm",
-   "lod": "<0.4 ppb",
-   "response_time_s": null,
-   "notes": "Chemiluminescence with molybdenum converter for NO2. Measures NO/NO2/NOx. A HIGH-concentration variant (Serinus 40H, NO 0-1000 ppm / NO2 0-150 ppm) also exists - the 'H' denotes high range, NOT trace/high-sensitivity (draft was wrong). Rebadged as Met One GAS-1040 (verified)."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": "RFNA-0809-186",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus 44",
-  "model_aliases": [
-   "Ecotech Serinus 44",
-   "Serinus 44",
-   "Acoem Serinus 44",
-   "Serinus 44 NO/NO2/NOx/NH3 analyser",
-   "Ecotech Serinus 44 ammonia analyzer"
-  ],
-  "category": "NH3 analyzer",
-  "principle": "chemiluminescence",
-  "specs": {
-   "ranges": "0-20 ppm full scale (selectable)",
-   "lod": "<0.4 ppb",
-   "response_time_s": null,
-   "notes": "Chemiluminescence NOx analyzer with an additional external thermal catalytic converter to measure NH3; reports NO/NO2/NOx/NH3. Genuinely shares the Serinus 40's EPA NOx designation (RFNA-0809-186) - verified; NH3 itself is not an EPA-designated method. Rebadged as Met One GAS-1044."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": "RFNA-0809-186",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus 50",
-  "model_aliases": [
-   "Ecotech Serinus 50",
-   "Serinus 50",
-   "Acoem Serinus 50",
-   "Serinus 50 SO2 analyser",
-   "Ecotech Serinus 50 sulfur dioxide analyzer"
-  ],
-  "category": "SO2 analyzer",
-  "principle": "UV fluorescence",
-  "specs": {
-   "ranges": "0-20 ppm full scale (selectable); U.S. EPA range 0-0.5 ppm",
-   "lod": "<0.3 ppb",
-   "response_time_s": null,
-   "notes": "Pulsed UV fluorescence. Successor to the ML9850. Rebadged as Met One GAS-1050."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": "EQSA-0809-188",
   "ccep_designation": null
  },
  {
@@ -1827,296 +1753,6 @@
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus 60",
-  "model_aliases": [
-   "Ecotech Serinus 60",
-   "Serinus 60",
-   "Acoem Serinus 60",
-   "Serinus 60 NO2 analyser",
-   "Serinus 60 CAPS",
-   "Met One GAS-1060"
-  ],
-  "category": "NO2 analyzer",
-  "principle": "CAPS",
-  "specs": {
-   "ranges": "0-1 ppm (selectable); reliably measures well under 1 ppb up to ~1000 ppb",
-   "lod": null,
-   "response_time_s": 30,
-   "notes": "Direct NO2 measurement by Cavity Attenuated Phase Shift (CAPS) spectroscopy - no converter, so no NOy interference. EPA-designated when operated 20-45 C. Response time <30 s (verified). Rebadged as Met One GAS-1060 (verified)."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": "EQNA-0217-242",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus Cal 1000",
-  "model_aliases": [
-   "Ecotech Serinus Cal 1000",
-   "Serinus Cal 1000",
-   "Acoem Serinus Cal 1000",
-   "SerinusCal 1000"
-  ],
-  "category": "calibrator",
-  "principle": "gas dilution (mass flow controllers)",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Stand-alone multi-gas dilution calibrator using precision mass flow controllers; single/multi-point calibration of ambient gas analyzers via zero air and cylinder gas dilution. No ozone generator (base model of the Serinus Cal range). Met One rebadge CAL-100 series."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus Cal 2000",
-  "model_aliases": [
-   "Ecotech Serinus Cal 2000",
-   "Serinus Cal 2000",
-   "Acoem Serinus Cal 2000",
-   "SerinusCal 2000"
-  ],
-  "category": "calibrator",
-  "principle": "gas dilution (mass flow controllers) with internal ozone generator",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Serinus Cal 1000 functionality plus an internal ozone generator, enabling O3 calibration/checks and gas-phase titration (GPT) for NOx analyzers. No internal ozone photometer (that is the Cal 3000)."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Acoem",
-  "model": "Serinus Cal 3000",
-  "model_aliases": [
-   "Ecotech Serinus Cal 3000",
-   "Serinus Cal 3000",
-   "Acoem Serinus Cal 3000",
-   "SerinusCal 3000"
-  ],
-  "category": "calibrator",
-  "principle": "gas dilution (mass flow controllers) with ozone generator and UV photometer",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Top of the Serinus Cal range: adds an internal UV ozone photometer (based on Serinus 10 technology) to control ozone generator output; usable as an ozone transfer standard. Verified against Acoem product literature."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Monitor Labs",
-  "model": "ML9810",
-  "model_aliases": [
-   "Ecotech ML9810",
-   "Monitor Labs ML9810",
-   "ML9810",
-   "ML9810B",
-   "EC9810",
-   "Teledyne Monitor Labs ML9810"
-  ],
-  "category": "O3 analyzer",
-  "principle": "UV photometry",
-  "specs": {
-   "ranges": "0-20 ppm (selectable); common EPA range 0-0.5 ppm",
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Legacy Monitor Labs 9800-series ozone analyzer, UV photometry at 254 nm. Rebadged across Ecotech (EC9810), Casella (CM2010) and later AE-series (verified). Predecessor to the Serinus 10; common in pre-2010 literature."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": "EQOA-0193-091",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Monitor Labs",
-  "model": "ML9830",
-  "model_aliases": [
-   "Ecotech ML9830",
-   "Monitor Labs ML9830",
-   "ML9830",
-   "ML9830B",
-   "EC9830",
-   "Teledyne Monitor Labs ML9830"
-  ],
-  "category": "CO analyzer",
-  "principle": "NDIR / gas filter correlation",
-  "specs": {
-   "ranges": "0-200 ppm (selectable)",
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Legacy Monitor Labs 9800-series CO analyzer, gas filter correlation NDIR. Rebadged as Ecotech EC9830, Casella CM2030 (verified). Predecessor to the Serinus 30."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": "RFCA-0992-088",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Monitor Labs",
-  "model": "ML9841",
-  "model_aliases": [
-   "Ecotech ML9841",
-   "Monitor Labs ML9841",
-   "ML9841",
-   "ML9841A",
-   "ML9841B",
-   "EC9841"
-  ],
-  "category": "NOx analyzer",
-  "principle": "chemiluminescence",
-  "specs": {
-   "ranges": "0-20 ppm (selectable); common EPA range 0-0.5 ppm",
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Legacy Monitor Labs 9800-series NO/NO2/NOx chemiluminescence analyzer with molybdenum converter. Variants ML9841A/B, EC9841A/EC9841T/EC9841B and Casella CM2041 series share EPA designation RFNA-1292-090 (verified). Predecessor to the Serinus 40."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": "RFNA-1292-090",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech / Monitor Labs",
-  "model": "ML9850",
-  "model_aliases": [
-   "Ecotech ML9850",
-   "Monitor Labs ML9850",
-   "ML9850",
-   "ML9850B",
-   "EC9850",
-   "Teledyne Monitor Labs ML9850"
-  ],
-  "category": "SO2 analyzer",
-  "principle": "UV fluorescence",
-  "specs": {
-   "ranges": "0-20 ppm (selectable); common EPA range 0-0.5 ppm",
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Legacy Monitor Labs 9800-series SO2 analyzer, pulsed UV fluorescence. Rebadged as Ecotech EC9850, Casella CM2050 (verified). Predecessor to the Serinus 50."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": "EQSA-0193-092",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
-  "model": "Serinus 10",
-  "model_aliases": [
-   "Serinus 10",
-   "Serinus 10 O3",
-   "Ecotech Serinus 10",
-   "Acoem Serinus 10",
-   "Sailhero Serinus 10"
-  ],
-  "category": "O3 analyzer",
-  "principle": "UV photometry (254 nm)",
-  "specs": {
-   "ranges": "0–20 ppm",
-   "lod": "0.5 ppb",
-   "response_time_s": null,
-   "notes": "Ecotech/Acoem Serinus ozone analyzer; successor to EC9810. VERIFIED via Acoem product page: non-dispersive UV absorption at 254 nm, 0–20 ppm, LOD 0.5 ppb, US EPA equivalent-method designated (exact EQOA number not captured, left null). Distributed in China by Sailhero; literature usually cites Ecotech/Acoem."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": "https://www.acoem.com/en/products/air-quality-monitoring/air-quality-gas-monitors/serinus-10/",
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
-  "model": "Serinus 30",
-  "model_aliases": [
-   "Serinus 30",
-   "Serinus 30 CO",
-   "Ecotech Serinus 30",
-   "Acoem Serinus 30",
-   "Sailhero Serinus 30"
-  ],
-  "category": "CO analyzer",
-  "principle": "NDIR / gas filter correlation",
-  "specs": {
-   "ranges": "0–200 ppm",
-   "lod": "<40 ppb (0.04 ppm)",
-   "response_time_s": 60,
-   "notes": "Ecotech/Acoem Serinus CO analyzer; successor to EC9830. Gas-filter-correlation IR; response time ~60 s to 95% (plausible, not independently re-verified). Distributed in China by Sailhero; literature usually cites Ecotech/Acoem."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
-  "model": "Serinus 40",
-  "model_aliases": [
-   "Serinus 40",
-   "Serinus 40 NOx",
-   "Ecotech Serinus 40",
-   "Acoem Serinus 40",
-   "Sailhero Serinus 40"
-  ],
-  "category": "NOx analyzer",
-  "principle": "chemiluminescence (molybdenum converter)",
-  "specs": {
-   "ranges": "0–20 ppm",
-   "lod": "<0.4 ppb",
-   "response_time_s": 15,
-   "notes": "Ecotech/Acoem Serinus NOx analyzer; successor to EC9841. Spec sheet VERIFIED: chemiluminescence, LDL <0.4 ppb, 0–20 ppm, response 15 s to 95%; US EPA designation RFNA-0809-186 CONFIRMED (added). Distributed in China by Sailhero; literature usually cites Ecotech/Acoem. CORRECTED: draft datasheet_url (digitalkiosk.ecotech.com) returned HTTP 403 and could not be confirmed, so it was nulled."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": "RFNA-0809-186",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Ecotech/Acoem (Australia); distributed in China by Hebei Sailhero",
-  "model": "Serinus 50",
-  "model_aliases": [
-   "Serinus 50",
-   "Serinus 50 SO2",
-   "Ecotech Serinus 50",
-   "Acoem Serinus 50",
-   "Sailhero Serinus 50"
-  ],
-  "category": "SO2 analyzer",
-  "principle": "pulsed UV fluorescence",
-  "specs": {
-   "ranges": "0–20 ppm",
-   "lod": "<0.3 ppb",
-   "response_time_s": null,
-   "notes": "Ecotech/Acoem Serinus-series SO2 analyzer; successor to EC9850. Datasheet/manual URL VERIFIED (valid Serinus 50 SO2 user manual). Listed on Sailhero product pages and integrated into Sailhero Chinese stations, but in literature it is usually attributed to Ecotech/Acoem rather than Sailhero. Serinus 51 is a combined SO2/H2S variant; Serinus 50T is a trace (ppt) variant."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": "https://old.ecotech.com/wp-content/uploads/2015/01/M010029-Serinus-50-SO2-User-Manual-2.2.pdf",
   "status": "current",
   "epa_designation": null,
   "ccep_designation": null
@@ -2568,54 +2204,6 @@
  },
  {
   "manufacturer": "Focused Photonics (FPI) 聚光科技",
-  "model": "AQMS-200",
-  "model_aliases": [
-   "FPI AQMS-200",
-   "Focused Photonics AQMS-200",
-   "聚光科技 AQMS-200",
-   "AQMS-200 dynamic dilution calibrator",
-   "AQMS-200 multi-point calibrator"
-  ],
-  "category": "calibrator",
-  "principle": "dynamic dilution / gas-phase titration",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Dynamic dilution multi-point calibrator confirmed on en.fpi-inc.com: two mass flow controllers (dilution 0–10 SLPM, standard 0–100 sccm), up to 4 calibration gas inputs, optional internal ozone generator (0.1–6 ppm output) and UV photometer for GPT/O3 calibration. QA/QC device, not a gas analyzer."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": "https://en.fpi-inc.com/product/aqms-200-multi-point-calibrator/",
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics (FPI) 聚光科技",
-  "model": "AQMS-300",
-  "model_aliases": [
-   "FPI AQMS-300",
-   "Focused Photonics AQMS-300",
-   "聚光科技 AQMS-300",
-   "AQMS-300 ozone analyzer",
-   "AQMS-300臭氧分析仪"
-  ],
-  "category": "O3 analyzer",
-  "principle": "UV photometry",
-  "specs": {
-   "ranges": "0–0.1 to 0–10 ppm (selectable)",
-   "lod": null,
-   "response_time_s": 60,
-   "notes": "UV photometric absorption at 254 nm with reference measurement via ozone scrubber; ppb-level O3. Confirmed FPI product (聚光科技 AQMS-300臭氧分析仪). Draft datasheet URL removed — it 302-redirects to a 404 page and does not resolve to a live product page."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics (FPI) 聚光科技",
   "model": "AQMS-3000",
   "model_aliases": [
    "FPI AQMS-3000",
@@ -2631,30 +2219,6 @@
    "lod": null,
    "response_time_s": null,
    "notes": "Micro/mini air-quality station confirmed as an FPI product (environmental-expert 'AQMS-3000 Micro Air Quality Monitoring System') measuring SO2, NO, NOx, CO, O3, PM2.5, PM10 in a compact grid-monitoring enclosure. This is a gridded-network micro-station, NOT a single reference analyzer; sensor principles vary by channel and 'multi-gas analyzer' is only the closest available category."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics (FPI) 聚光科技",
-  "model": "AQMS-400",
-  "model_aliases": [
-   "FPI AQMS-400",
-   "Focused Photonics AQMS-400",
-   "聚光科技 AQMS-400",
-   "AQMS-400 CO analyzer",
-   "FPI Model AQMS-400"
-  ],
-  "category": "CO analyzer",
-  "principle": "NDIR / gas filter correlation",
-  "specs": {
-   "ranges": "0–1 to 0–1000 ppm (selectable); typ. 0–50/0–100 ppm",
-   "lod": "~40 ppb (0.04 ppm)",
-   "response_time_s": 60,
-   "notes": "Non-dispersive infrared with gas filter correlation (GFC wheel), long-path cell (~14 m). Confirmed FPI product (environmental-expert / directindustry). LOD is an approximate datasheet-class value typical of GFC CO analyzers."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
@@ -2687,30 +2251,6 @@
  },
  {
   "manufacturer": "Focused Photonics (FPI) 聚光科技",
-  "model": "AQMS-500",
-  "model_aliases": [
-   "FPI AQMS-500",
-   "Focused Photonics AQMS-500",
-   "聚光科技 AQMS-500",
-   "AQMS-500 SO2 analyzer",
-   "FPI Model AQMS-500"
-  ],
-  "category": "SO2 analyzer",
-  "principle": "UV fluorescence",
-  "specs": {
-   "ranges": "0–0.05 to 0–20 ppm (selectable/auto)",
-   "lod": "0.4 ppb",
-   "response_time_s": 60,
-   "notes": "Pulsed-UV fluorescence with PMT. Confirmed FPI product (directindustry / en.fpi-inc.com). Principle is the US-EPA-recommended reference method for trace SO2; note the instrument itself carries Chinese certification, not a US EPA designation. Widely deployed in China's national ambient network."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics (FPI) 聚光科技",
   "model": "AQMS-550",
   "model_aliases": [
    "FPI AQMS-550",
@@ -2725,78 +2265,6 @@
    "lod": null,
    "response_time_s": null,
    "notes": "Ambient H2S analyzer confirmed as an FPI product (datasheet available). H2S catalytically converted to SO2 (internal converter ~315 °C) after an SO2 scrubber, then detected by pulsed UV fluorescence."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics (FPI) 聚光科技",
-  "model": "AQMS-600",
-  "model_aliases": [
-   "FPI AQMS-600",
-   "Focused Photonics AQMS-600",
-   "聚光科技 AQMS-600",
-   "AQMS-600 NO-NO2-NOx analyzer",
-   "FPI Model AQMS-600"
-  ],
-  "category": "NOx analyzer",
-  "principle": "chemiluminescence",
-  "specs": {
-   "ranges": "0–0.05 to 0–20 ppm (selectable/auto)",
-   "lod": "0.4 ppb",
-   "response_time_s": 60,
-   "notes": "NO/NO2/NOx by chemiluminescence with catalytic/molybdenum NO2-to-NO converter. Confirmed FPI product (directindustry). Chemiluminescence is the US EPA reference method for NO2/NOx (describes the principle, not a US EPA designation for this model). Range/LOD identical to AQMS-500 in the draft — plausible trace-ambient values but not independently cross-checked against the datasheet."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics (FPI) 聚光科技",
-  "model": "AQMS-650",
-  "model_aliases": [
-   "FPI AQMS-650",
-   "Focused Photonics AQMS-650",
-   "聚光科技 AQMS-650",
-   "AQMS-650 ammonia analyzer",
-   "AQMS-650 NH3 analyzer"
-  ],
-  "category": "NH3 analyzer",
-  "principle": "chemiluminescence (with NH3 converter)",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Ambient NH3 analyzer confirmed as an FPI product; NH3 oxidatively converted to NO via an external converter and detected by chemiluminescence, designed to pair with the AQMS-600 NOx analyzer."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics (FPI) 聚光科技",
-  "model": "AQMS-700",
-  "model_aliases": [
-   "FPI AQMS-700",
-   "Focused Photonics AQMS-700",
-   "聚光科技 AQMS-700",
-   "AQMS-700 CAPS NO2 analyzer",
-   "FPI Model AQMS-700"
-  ],
-  "category": "NO2 analyzer",
-  "principle": "CAPS",
-  "specs": {
-   "ranges": "0–0.5 / 0–1 ppm (approx.)",
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Direct NO2 measurement by cavity attenuated phase shift (CAPS), avoiding the converter artefact of chemiluminescence NOx analyzers. Confirmed as a real FPI product. Range values are approximate/unverified against the datasheet."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
@@ -2877,54 +2345,6 @@
  },
  {
   "manufacturer": "Focused Photonics Inc. (FPI)",
-  "model": "AQMS-200",
-  "model_aliases": [
-   "FPI AQMS-200",
-   "Focused Photonics AQMS-200",
-   "AQMS-200 multi-point calibrator",
-   "AQMS-200 dynamic dilution calibrator"
-  ],
-  "category": "calibrator",
-  "principle": "dynamic dilution (dual mass flow controllers) with optional O3 generator, GPT and photometer",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Two-MFC dynamic dilution for zero/span/multi-point calibration; up to 4 standard-gas ports; stable trace O3 output down to 0.1 ppm; optional gas-phase titration and photometer for independent O3 calibration of AQMS-series analyzers. Draft flow figures (dilution 0-10 SLM, standard gas 0-100 sccm) consistent with distributor listings but not independently verified line-by-line."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": "https://en.fpi-inc.com/product/aqms-200-multi-point-calibrator/",
-  "status": "current",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics Inc. (FPI)",
-  "model": "AQMS-300",
-  "model_aliases": [
-   "FPI AQMS-300",
-   "Focused Photonics AQMS-300",
-   "AQMS-300 ozone analyzer",
-   "AQMS-300 (Focused Photonics Inc., Hangzhou, China)"
-  ],
-  "category": "O3 analyzer",
-  "principle": "UV photometry (254 nm absorption, MnO2 scrubber reference cycle)",
-  "specs": {
-   "ranges": null,
-   "lod": null,
-   "response_time_s": null,
-   "precision": "<1%",
-   "flow_rate": "800±80 sccm",
-   "notes": "Technical Data table is badly misaligned in the source text: labels (Standard Range, Zero Noise, Span Noise, Lower Detectable Limit, Zero Drift, Span Drift, Linearity, Precision, Response Time) are separated from their values (0.4 ppb RMS, 0.5% F.S, 0.8 ppb RMS, <1%, <1% F.S., 800±80 sccm, 0~5%RH), so most label-to-value mappings cannot be determined without guessing. Only Sample Flow Rate (800±80 sccm) is unambiguous. Precision listed as <1% but a duplicate <1% (Linearity) makes even this uncertain. Response Time has no discernible value in the text. O3 analyzer, 254nm UV photometric absorption, 42cm optical path, MnO2 ozone scrubber, US EPA equivalent method."
-  },
-  "specs_provenance": "datasheet",
-  "datasheet_url": "https://www.ecosoft.com.br/wp-content/uploads/2021/09/FPI_AQMS-300.pdf",
-  "status": "current",
-  "epa_designation": "EQOA-0719-253",
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Focused Photonics Inc. (FPI)",
   "model": "AQMS-350",
   "model_aliases": [
    "FPI AQMS-350",
@@ -2946,46 +2366,105 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Focused Photonics Inc. (FPI)",
+  "manufacturer": "Focused Photonics 聚光科技",
+  "model": "AQMS-200",
+  "model_aliases": [
+   "AQMS-200 dynamic dilution calibrator",
+   "AQMS-200 multi-point calibrator",
+   "FPI AQMS-200",
+   "Focused Photonics (FPI) 聚光科技 AQMS-200",
+   "Focused Photonics AQMS-200",
+   "Focused Photonics Inc. (FPI) AQMS-200",
+   "聚光科技 AQMS-200"
+  ],
+  "category": "calibrator",
+  "principle": "dynamic dilution / gas-phase titration",
+  "specs": {
+   "ranges": null,
+   "lod": null,
+   "response_time_s": null,
+   "notes": "Dynamic dilution multi-point calibrator confirmed on en.fpi-inc.com: two mass flow controllers (dilution 0–10 SLPM, standard 0–100 sccm), up to 4 calibration gas inputs, optional internal ozone generator (0.1–6 ppm output) and UV photometer for GPT/O3 calibration. QA/QC device, not a gas analyzer."
+  },
+  "specs_provenance": "curated",
+  "datasheet_url": "https://en.fpi-inc.com/product/aqms-200-multi-point-calibrator/",
+  "status": "current",
+  "epa_designation": null,
+  "ccep_designation": null
+ },
+ {
+  "manufacturer": "Focused Photonics 聚光科技",
+  "model": "AQMS-300",
+  "model_aliases": [
+   "AQMS-300 (Focused Photonics Inc., Hangzhou, China)",
+   "AQMS-300 ozone analyzer",
+   "AQMS-300臭氧分析仪",
+   "FPI AQMS-300",
+   "Focused Photonics (FPI) 聚光科技 AQMS-300",
+   "Focused Photonics AQMS-300",
+   "Focused Photonics Inc. (FPI) AQMS-300",
+   "聚光科技 AQMS-300"
+  ],
+  "category": "O3 analyzer",
+  "principle": "UV photometry",
+  "specs": {
+   "ranges": "0–0.1 to 0–10 ppm (selectable)",
+   "lod": null,
+   "response_time_s": 60,
+   "notes": "UV photometric absorption at 254 nm with reference measurement via ozone scrubber; ppb-level O3. Confirmed FPI product (聚光科技 AQMS-300臭氧分析仪). Draft datasheet URL removed — it 302-redirects to a 404 page and does not resolve to a live product page."
+  },
+  "specs_provenance": "curated",
+  "datasheet_url": "https://www.ecosoft.com.br/wp-content/uploads/2021/09/FPI_AQMS-300.pdf",
+  "status": "current",
+  "epa_designation": "EQOA-0719-253",
+  "ccep_designation": null
+ },
+ {
+  "manufacturer": "Focused Photonics 聚光科技",
   "model": "AQMS-400",
   "model_aliases": [
-   "FPI AQMS-400",
-   "Focused Photonics AQMS-400",
+   "AQMS-400 (Focused Photonics Inc., Hangzhou, China)",
    "AQMS-400 CO analyzer",
-   "AQMS-400 (Focused Photonics Inc., Hangzhou, China)"
+   "FPI AQMS-400",
+   "FPI Model AQMS-400",
+   "Focused Photonics (FPI) 聚光科技 AQMS-400",
+   "Focused Photonics AQMS-400",
+   "Focused Photonics Inc. (FPI) AQMS-400",
+   "聚光科技 AQMS-400"
   ],
   "category": "CO analyzer",
   "principle": "NDIR / gas filter correlation",
   "specs": {
-   "ranges": null,
-   "lod": "0.08 ppm",
-   "response_time_s": null,
-   "precision": "<1%",
-   "flow_rate": "800±80 sccm",
-   "notes": "Datasheet spec table is garbled/misaligned; several values not clearly stated. Zero Noise 0.04ppm (RMS), Span Noise 0.5% F.S, Zero Drift <0.1ppm, Linearity <1%. Standard Range value and Response Time value are not legibly present in the text, so left null rather than guessed. NDIR with gas filter correlation (GFC) method."
+   "ranges": "0–1 to 0–1000 ppm (selectable); typ. 0–50/0–100 ppm",
+   "lod": "~40 ppb (0.04 ppm)",
+   "response_time_s": 60,
+   "notes": "Non-dispersive infrared with gas filter correlation (GFC wheel), long-path cell (~14 m). Confirmed FPI product (environmental-expert / directindustry). LOD is an approximate datasheet-class value typical of GFC CO analyzers."
   },
-  "specs_provenance": "datasheet",
+  "specs_provenance": "curated",
   "datasheet_url": "https://www.ecosoft.com.br/wp-content/uploads/2021/09/FPI_AQMS-400.pdf",
   "status": "current",
   "epa_designation": "RFCA-0419-252",
   "ccep_designation": null
  },
  {
-  "manufacturer": "Focused Photonics Inc. (FPI)",
+  "manufacturer": "Focused Photonics 聚光科技",
   "model": "AQMS-500",
   "model_aliases": [
-   "FPI AQMS-500",
-   "Focused Photonics AQMS-500",
+   "AQMS-500 (Focused Photonics Inc., Hangzhou, China)",
    "AQMS-500 SO2 analyzer",
-   "AQMS-500 (Focused Photonics Inc., Hangzhou, China)"
+   "FPI AQMS-500",
+   "FPI Model AQMS-500",
+   "Focused Photonics (FPI) 聚光科技 AQMS-500",
+   "Focused Photonics AQMS-500",
+   "Focused Photonics Inc. (FPI) AQMS-500",
+   "聚光科技 AQMS-500"
   ],
   "category": "SO2 analyzer",
-  "principle": "UV fluorescence (pulsed UV lamp, PMT detection)",
+  "principle": "UV fluorescence",
   "specs": {
-   "ranges": "0-500 ppb (US EPA specification range)",
-   "lod": "0.5 ppb",
-   "response_time_s": 120,
-   "notes": "T90 <120 s; zero noise <=0.25 ppb RMS; zero drift <1 ppb/24 h; linearity <1% FS. Permeation-scrubber hydrocarbon kicker removes aromatic HC interference; critical-orifice flow control. Deployed in Chinese national ambient monitoring network stations."
+   "ranges": "0–0.05 to 0–20 ppm (selectable/auto)",
+   "lod": "0.4 ppb",
+   "response_time_s": 60,
+   "notes": "Pulsed-UV fluorescence with PMT. Confirmed FPI product (directindustry / en.fpi-inc.com). Principle is the US-EPA-recommended reference method for trace SO2; note the instrument itself carries Chinese certification, not a US EPA designation. Widely deployed in China's national ambient network."
   },
   "specs_provenance": "curated",
   "datasheet_url": "https://www.ecosoft.com.br/wp-content/uploads/2022/04/FPI_AQMS-500-R1.pdf",
@@ -2994,21 +2473,26 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Focused Photonics Inc. (FPI)",
+  "manufacturer": "Focused Photonics 聚光科技",
   "model": "AQMS-600",
   "model_aliases": [
-   "FPI AQMS-600",
-   "Focused Photonics AQMS-600",
+   "AQMS-600 (Focused Photonics Inc., Hangzhou, China)",
+   "AQMS-600 NO-NO2-NOx analyzer",
    "AQMS-600 nitrogen oxides analyzer",
-   "AQMS-600 (Focused Photonics Inc., Hangzhou, China)"
+   "FPI AQMS-600",
+   "FPI Model AQMS-600",
+   "Focused Photonics (FPI) 聚光科技 AQMS-600",
+   "Focused Photonics AQMS-600",
+   "Focused Photonics Inc. (FPI) AQMS-600",
+   "聚光科技 AQMS-600"
   ],
   "category": "NOx analyzer",
-  "principle": "chemiluminescence (NO/NO2/NOx with molybdenum NO2-to-NO converter at 315 C)",
+  "principle": "chemiluminescence",
   "specs": {
-   "ranges": "0-100 ppb to 0-20 ppm (selectable); 0-0.5 ppm US EPA designated range",
-   "lod": "<=0.4 ppb (RMS)",
+   "ranges": "0–0.05 to 0–20 ppm (selectable/auto)",
+   "lod": "0.4 ppb",
    "response_time_s": 60,
-   "notes": "T90 <60 s; zero noise <=0.2 ppb RMS; zero drift +/-1 ppb/24 h; span drift +/-5 ppb/24 h; linearity <1% FS; sample flow 500+/-50 sccm; permeation dryer on ozone generator and catalytic ozone scrubber. Workhorse NOx analyzer in the Chinese national ambient monitoring network."
+   "notes": "NO/NO2/NOx by chemiluminescence with catalytic/molybdenum NO2-to-NO converter. Confirmed FPI product (directindustry). Chemiluminescence is the US EPA reference method for NO2/NOx (describes the principle, not a US EPA designation for this model). Range/LOD identical to AQMS-500 in the draft — plausible trace-ambient values but not independently cross-checked against the datasheet."
   },
   "specs_provenance": "curated",
   "datasheet_url": "https://www.ecosoft.com.br/wp-content/uploads/2021/09/FPI_AQMS-600_2023.pdf",
@@ -3017,21 +2501,24 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Focused Photonics Inc. (FPI)",
+  "manufacturer": "Focused Photonics 聚光科技",
   "model": "AQMS-650",
   "model_aliases": [
-   "FPI AQMS-650",
-   "Focused Photonics AQMS-650",
+   "AQMS-650 NH3 analyzer",
    "AQMS-650 ammonia analyzer",
-   "AQMS-650 NH3 analyzer"
+   "FPI AQMS-650",
+   "Focused Photonics (FPI) 聚光科技 AQMS-650",
+   "Focused Photonics AQMS-650",
+   "Focused Photonics Inc. (FPI) AQMS-650",
+   "聚光科技 AQMS-650"
   ],
   "category": "NH3 analyzer",
-  "principle": "chemiluminescence with external high-temperature NH3-to-NO converter (difference method)",
+  "principle": "chemiluminescence (with NH3 converter)",
   "specs": {
    "ranges": null,
    "lod": null,
    "response_time_s": null,
-   "notes": "Measures ambient NH3 indirectly via catalytic oxidation of NH3 to NO; designed to operate alongside/combined with the AQMS-600 NOx analyzer for independent NOx and NH3 readout. Distributor specifications cite a lower detectable limit <0.4 ppb (not verified against a manufacturer datasheet)."
+   "notes": "Ambient NH3 analyzer confirmed as an FPI product; NH3 oxidatively converted to NO via an external converter and detected by chemiluminescence, designed to pair with the AQMS-600 NOx analyzer."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
@@ -3040,21 +2527,25 @@
   "ccep_designation": null
  },
  {
-  "manufacturer": "Focused Photonics Inc. (FPI)",
+  "manufacturer": "Focused Photonics 聚光科技",
   "model": "AQMS-700",
   "model_aliases": [
-   "FPI AQMS-700",
-   "Focused Photonics AQMS-700",
    "AQMS-700 CAPS NO2 analyzer",
-   "AQMS-700 NO2 analyzer"
+   "AQMS-700 NO2 analyzer",
+   "FPI AQMS-700",
+   "FPI Model AQMS-700",
+   "Focused Photonics (FPI) 聚光科技 AQMS-700",
+   "Focused Photonics AQMS-700",
+   "Focused Photonics Inc. (FPI) AQMS-700",
+   "聚光科技 AQMS-700"
   ],
   "category": "NO2 analyzer",
-  "principle": "CAPS (cavity attenuated phase shift spectroscopy, modulated LED with high-reflectivity mirror cavity)",
+  "principle": "CAPS",
   "specs": {
-   "ranges": null,
+   "ranges": "0–0.5 / 0–1 ppm (approx.)",
    "lod": null,
    "response_time_s": null,
-   "notes": "Direct optical NO2 measurement without converter or reagents; measures concentration from the phase difference between a reference cavity beam and the sample cavity beam. Announced by FPI as a new addition to the AQMS ambient series. Published spec numbers not verified - treat quantitative specs as unknown."
+   "notes": "Direct NO2 measurement by cavity attenuated phase shift (CAPS), avoiding the converter artefact of chemiluminescence NOx analyzers. Confirmed as a real FPI product. Range values are approximate/unverified against the datasheet."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,
@@ -5583,100 +5074,6 @@
    "lod": null,
    "response_time_s": null,
    "notes": "Monitor Labs 8000-series analyzer; gas assignment VERIFIED as nitrogen oxides (chemiluminescence) via product listings ('Monitor Labs 8840 Nitrogen Oxides Analyzer'). 8000-series predecessor to the 9841. Predates the 2007 Teledyne acquisition (Monitor Labs / Lear Siegler era), so the anachronistic 'TML 8840' alias was removed; exact 'Lear Siegler' branding form not independently confirmed."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Teledyne Monitor Labs",
-  "model": "ML9810",
-  "model_aliases": [
-   "Monitor Labs 9810",
-   "ML9810B",
-   "Teledyne ML9810",
-   "TML 9810"
-  ],
-  "category": "O3 analyzer",
-  "principle": "UV photometry",
-  "specs": {
-   "ranges": "0-0.05 to 0-20 ppm (selectable)",
-   "lod": "~0.5 ppb",
-   "response_time_s": null,
-   "notes": "UV-absorption ozone analyzer, Monitor Labs / Teledyne Monitor Labs 9800 series; confirmed as the ozone model (OEM twins EC9810/CM2010). The coverage hint labeling 9810 as CO is incorrect (CO is ML9830). Removed 'ML9811' from aliases: it is a distinct ozone model number, not an alias of 9810."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Teledyne Monitor Labs",
-  "model": "ML9830",
-  "model_aliases": [
-   "Monitor Labs 9830",
-   "ML9830B",
-   "Teledyne ML9830",
-   "TML 9830"
-  ],
-  "category": "CO analyzer",
-  "principle": "NDIR / gas filter correlation",
-  "specs": {
-   "ranges": "0-1 to 0-200 ppm (selectable)",
-   "lod": null,
-   "response_time_s": null,
-   "notes": "Gas-filter-correlation NDIR CO analyzer, TML 9800 series. CO assignment corroborated by the OEM-twin Ecotech EC9830 (GFC NDIR CO, ~0-50/200 ppm). This is the 9800-series CO model (the coverage hint mislabeled 9810 as CO)."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Teledyne Monitor Labs",
-  "model": "ML9841",
-  "model_aliases": [
-   "Monitor Labs 9841",
-   "ML9841A",
-   "ML9841B",
-   "ML9841T",
-   "TML 9841"
-  ],
-  "category": "NOx analyzer",
-  "principle": "chemiluminescence",
-  "specs": {
-   "ranges": "0-0.05 to 0-20 ppm (selectable)",
-   "lod": "~0.5 ppb",
-   "response_time_s": null,
-   "notes": "Chemiluminescence NO/NO2/NOx analyzer, TML 9800 series; confirmed in federal reference/equivalent-method lists. Variants ML9841A/ML9841B confirmed; ML9841T (trace) plausible."
-  },
-  "specs_provenance": "curated",
-  "datasheet_url": null,
-  "status": "discontinued",
-  "epa_designation": null,
-  "ccep_designation": null
- },
- {
-  "manufacturer": "Teledyne Monitor Labs",
-  "model": "ML9850",
-  "model_aliases": [
-   "Monitor Labs 9850",
-   "ML9850B",
-   "Teledyne ML9850",
-   "TML 9850",
-   "9850B"
-  ],
-  "category": "SO2 analyzer",
-  "principle": "UV fluorescence",
-  "specs": {
-   "ranges": "0-0.05 to 0-20 ppm (selectable)",
-   "lod": "~0.5 ppb",
-   "response_time_s": null,
-   "notes": "Pulsed UV-fluorescence SO2 analyzer, TML 9800 series; confirmed (ML9850/ML9850B SO2 UV-fluorescence units in circulation). TML 9850 branding confirmed."
   },
   "specs_provenance": "curated",
   "datasheet_url": null,

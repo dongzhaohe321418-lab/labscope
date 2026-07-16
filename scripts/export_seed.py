@@ -17,6 +17,41 @@ import db as dbm  # noqa: E402
 OUT = ROOT / "web" / "data" / "instruments.json"
 
 
+def _dedupe(rows: list[dict]) -> list[dict]:
+    """Rule-based merge of duplicate models (same model, different manufacturer
+    spellings). For LLM-normalised manufacturer names, run scripts/dedupe_seed.py
+    afterwards."""
+    import re
+
+    def key(s):
+        return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+    groups: dict[str, list[dict]] = {}
+    for r in rows:
+        groups.setdefault(key(r["model"]), []).append(r)
+    out = []
+    for v in groups.values():
+        if len(v) == 1:
+            out.append(v[0])
+            continue
+        base = dict(max(v, key=lambda r: sum(1 for x in (r.get("specs") or {}).values() if x not in (None, ""))))
+        mfrs = [re.sub(r"\s*\(.*?\)\s*", " ", r["manufacturer"]).split(";")[0].strip() for r in v]
+        base["manufacturer"] = min([m for m in mfrs if m] or [v[0]["manufacturer"]], key=len)
+        aliases = set()
+        for r in v:
+            aliases.update(r.get("model_aliases") or [])
+            aliases.add(f"{r['manufacturer']} {r['model']}")
+        aliases.discard(base["model"])
+        base["model_aliases"] = sorted(aliases)[:12]
+        for f in ("epa_designation", "ccep_designation", "datasheet_url", "principle", "category"):
+            if not base.get(f):
+                base[f] = next((r[f] for r in v if r.get(f)), None)
+        if any(r.get("status") == "current" for r in v):
+            base["status"] = "current"
+        out.append(base)
+    return out
+
+
 def main() -> None:
     conn = dbm.connect()
     rows = []
@@ -35,6 +70,7 @@ def main() -> None:
             "ccep_designation": r["ccep_designation"] if "ccep_designation" in r.keys() else None,
         })
     conn.close()
+    rows = _dedupe(rows)   # merge models seeded under inconsistent mfr spellings
     rows.sort(key=lambda x: (x["manufacturer"], x["model"]))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")

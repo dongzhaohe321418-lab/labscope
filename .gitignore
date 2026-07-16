@@ -14,3 +14,8 @@ eval/demo_transcript.md
 .vercel/
 .DS_Store
 .vercel
+
+# never commit API keys
+*.oai_key
+.env
+.env.local
