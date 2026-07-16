@@ -62,6 +62,11 @@
     display:inline-flex; align-items:center; gap:.3rem; }
   .iconbtn:hover { border-color:var(--accent); color:var(--accent); }
 
+  @media (max-width:560px) {
+    .brand span { display:none; }
+    .bar { flex-wrap:wrap; row-gap:.5rem; }
+    .search { order:3; flex-basis:100%; }
+  }
   main { max-width:1200px; margin:0 auto; padding:1.4rem 1.25rem 4rem; }
 
   .crumbs { display:flex; gap:.4rem; align-items:center; font-size:.82rem; color:var(--muted); margin-bottom:1rem; flex-wrap:wrap; }
