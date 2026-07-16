@@ -115,7 +115,8 @@
   .facets { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; margin:0 0 .3rem; }
   .facet { position:relative; }
   .facet select { appearance:none; border:1px solid var(--line-2); background:var(--surface); color:var(--ink);
-    font-family:inherit; font-size:.85rem; padding:.4rem 1.7rem .4rem .7rem; border-radius:99px; cursor:pointer; }
+    font-family:inherit; font-size:.85rem; padding:.4rem 1.7rem .4rem .7rem; border-radius:99px; cursor:pointer;
+    max-width:170px; text-overflow:ellipsis; }
   .facet select:hover { border-color:var(--accent); }
   .facet::after { content:"⌄"; position:absolute; right:.65rem; top:.28rem; color:var(--muted); pointer-events:none; }
   .facet.on select { border-color:var(--accent); color:var(--accent); background:var(--accent-soft); }
