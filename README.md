@@ -2,6 +2,8 @@
 
 > **从「哪台仪器」到「有据可依」** —— 把气体分析仪的规格、**实时联网检索到的、真正用过它的已发表论文**（含方法节证据句），以及市场入口汇到一处，支撑可辩护的采购决策。
 
+**🔗 在线体验 · Live demo:&nbsp; [labscope.vercel.app](https://labscope.vercel.app)**
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dongzhaohe321418-lab/labscope)
 &nbsp;![static](https://img.shields.io/badge/frontend-static-blue)
 &nbsp;![realtime](https://img.shields.io/badge/literature-realtime-2a78d6)
