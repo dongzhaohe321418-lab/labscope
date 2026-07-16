@@ -1,12 +1,12 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
   "builds": [
-    { "src": "web/**/*", "use": "@vercel/static" },
-    { "src": "api/*.js", "use": "@vercel/node" }
+    { "src": "api/disambiguate.js", "use": "@vercel/node" },
+    { "src": "web/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/data/(.*)", "dest": "/web/data/$1", "headers": { "Cache-Control": "public, max-age=3600, must-revalidate" } },
+    { "src": "/api/disambiguate", "dest": "/api/disambiguate.js" },
+    { "src": "/data/(.*)", "dest": "/web/data/$1" },
     { "src": "/", "dest": "/web/index.html" },
     { "src": "/(.+)", "dest": "/web/$1" }
   ]
