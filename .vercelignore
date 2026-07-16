@@ -1,0 +1,15 @@
+# Only the static site (web/index.html, web/app.js, web/data/) is deployed.
+# All Python (backend tools + the local dev server) is excluded so Vercel
+# treats this as a pure static project.
+*.py
+__pycache__/
+/.venv/
+/pipelines/
+/agent/
+/db/
+/eval/
+/scripts/
+/docs/
+/data/
+/.certs/
+/requirements.txt
